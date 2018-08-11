@@ -1,0 +1,809 @@
+<html>
+    <head>
+        <title>N-5 Nihongo</title>
+        <style type="text/css">
+            <!--
+            span.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_006{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_006{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_007{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_007{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_008{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_008{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_009{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_009{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_011{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_011{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_012{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_012{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_013{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_013{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_014{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_014{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_016{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_016{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            -->
+            .video-background{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width:100%;
+                height: 100%;
+                z-index: -100;
+                margin-left:25%;
+                padding:1px 16px;
+                position: fixed;
+            }
+            @media(min-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+
+            }
+            @media(max-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .menu{
+                float: right;
+                list-style: none;
+                margin:20px;
+            }
+            .header{
+                background: rgba(0,0,255,500);
+                height: 100vh;
+            }
+            ul{
+                float:right;
+                list-style: none;
+                margin: 20px;
+                top:0px;
+            }
+            li{
+                display: inline-block;
+                margin: 10px 5px;
+            }
+            li a{
+                text-decoration: none;
+                color: #ffffff;
+                padding:5px 10px;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+                border-bottom: 1px solid #ffffff;
+            }
+            li a:hover{
+                background: coral;
+                border-bottom:1px solid coral;
+                transition: .42s; 
+            }
+            li a.active{
+              background: coral;
+              border-bottom:1px solid coral;
+               }
+            .nav{
+                background-color: rgba(0,0,0,0.5);
+                height:110px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="nav" align="center" style="top:0px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="l1.html">Lesson-01</a></li>
+            <li><a class="active" href="l2.html">Lesson-02</a></li>
+            <li><a href="l3.html">Lesson-03</a></li>
+            <li><a href="l4.html">Lesson-04</a></li>
+            <li><a href="l5.html">Lesson-05</a></li>
+            <li><a href="l6.html">Lesson-06</a></li>
+            <li><a href="l7.html">Lesson-07</a></li>
+            <li><a href="l8.html">Lesson-08</a></li>
+            <li><a href="l9.html">Lesson-09</a></li>
+            <li><a href="l10.html">Lesson-10</a></li>
+            <li><a href="l11.html">Lesson-11</a></li>
+            <li><a href="l12.html">Lesson-12</a></li>
+            <li><a href="l13.html">Lesson-13</a></li>
+            <li><a href="l14.html">Lesson-14</a></li>
+            <li><a href="l15.html">Lesson-15</a></li>
+        </ul>
+        </div>
+        <div style="margin-left:10%;padding:1px 16px;height:auto;">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/5ztUtyCb7g8?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/K3TFQDnhhkg?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/bzBVreLQd-4?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<div style="position:absolute;left:50%;margin-left:-297px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:155.66px;top:138.78px" class="cls_004"><span class="cls_004">Online Japanese N5 Course</span></div>
+<div style="position:absolute;left:109.34px;top:210.30px" class="cls_002"><span class="cls_002">だい</span><span class="cls_004"> 2</span><span class="cls_003"> </span><span class="cls_002">か</span><span class="cls_003">  </span><span class="cls_002">このひとは</span><span class="cls_003">  </span><span class="cls_002">だれですか。</span></div>
+<div style="position:absolute;left:107.18px;top:246.81px" class="cls_004"><span class="cls_004">dainika   konohitowa  daredesuka</span></div>
+<div style="position:absolute;left:107.18px;top:282.81px" class="cls_004"><span class="cls_004">Lesson 2  Who is this person?</span></div>
+<div style="position:absolute;left:85.10px;top:359.49px" class="cls_006"><span class="cls_006">Ⅰ</span><span class="cls_007">.</span><span class="cls_008">レッスン</span><span class="cls_007"> </span><span class="cls_008">もくひょう</span><span class="cls_006"> </span><span class="cls_007">  ressun</span><span class="cls_006"> </span><span class="cls_007"> mokuhyoo</span></div>
+<div style="position:absolute;left:106.22px;top:386.73px" class="cls_007"><span class="cls_007">Goals of this lesson</span></div>
+<div style="position:absolute;left:97.10px;top:423.69px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">「この」、「その」、「あの」</span><span class="cls_009"> </span><span class="cls_010">の</span><span class="cls_011">  </span><span class="cls_010">つかいかた</span></div>
+<div style="position:absolute;left:109.10px;top:441.71px" class="cls_010"><span class="cls_010">「</span><span class="cls_009">kono</span><span class="cls_010">」「</span><span class="cls_009">sono</span><span class="cls_010">」「</span><span class="cls_009">ano</span><span class="cls_010">」</span><span class="cls_009">   no</span><span class="cls_011"> </span><span class="cls_009"> tsukaikata</span></div>
+<div style="position:absolute;left:115.10px;top:459.95px" class="cls_009"><span class="cls_009">Learn how to use "kono", "sono" and "ano".</span></div>
+<div style="position:absolute;left:97.10px;top:495.71px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">「これ」、「それ」、「あれ」</span><span class="cls_009"> </span><span class="cls_010">の</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">つかいかた</span></div>
+<div style="position:absolute;left:109.10px;top:513.71px" class="cls_010"><span class="cls_010">「</span><span class="cls_009">kore</span><span class="cls_010">」「</span><span class="cls_009">sore</span><span class="cls_010">」</span><span class="cls_009"> </span><span class="cls_010">「</span><span class="cls_009">are</span><span class="cls_010">」</span><span class="cls_009">  no</span><span class="cls_012"> </span><span class="cls_009"> tsukaikata</span></div>
+<div style="position:absolute;left:115.10px;top:531.95px" class="cls_009"><span class="cls_009">Learn how to use "kore", "sore" and "are"</span></div>
+<div style="position:absolute;left:97.10px;top:567.71px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">かぞくの</span><span class="cls_011">  </span><span class="cls_010">よびかた</span><span class="cls_011">  </span><span class="cls_010">と</span><span class="cls_011">  </span><span class="cls_010">にんずうの</span><span class="cls_011">  </span><span class="cls_010">かぞえかた</span></div>
+<div style="position:absolute;left:109.10px;top:585.95px" class="cls_009"><span class="cls_009">kazokuno  yobikata  to  ninzuuno   kazoekata</span></div>
+<div style="position:absolute;left:111.38px;top:603.95px" class="cls_009"><span class="cls_009">Learn how to say family member names in Japanese and how to count</span></div>
+<div style="position:absolute;left:111.38px;top:621.98px" class="cls_009"><span class="cls_009">people.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:107.46px" class="cls_006"><span class="cls_006">Ⅱ</span><span class="cls_007">.</span><span class="cls_008">かいわ</span><span class="cls_007">   kaiwa</span></div>
+<div style="position:absolute;left:98.90px;top:134.70px" class="cls_007"><span class="cls_007">Conversation</span></div>
+<div style="position:absolute;left:97.10px;top:171.66px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_009"> </span><span class="cls_010">ごめんください。</span></div>
+<div style="position:absolute;left:97.10px;top:189.66px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009">  gomenkudasai</span></div>
+<div style="position:absolute;left:97.10px;top:225.66px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：  </span><span class="cls_010">はい。</span><span class="cls_011">  </span><span class="cls_010">どなたですか。</span></div>
+<div style="position:absolute;left:97.10px;top:243.66px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:243.66px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">  hai     donatadesuka</span></div>
+<div style="position:absolute;left:97.10px;top:279.69px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_009"> </span><span class="cls_010">こんにちは、おなじかいしゃの</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">ラジです。</span></div>
+<div style="position:absolute;left:97.10px;top:297.69px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009">  konnichiwa  onajikaishano</span></div>
+<div style="position:absolute;left:323.95px;top:297.69px" class="cls_009"><span class="cls_009">rajidesu</span></div>
+<div style="position:absolute;left:97.10px;top:351.69px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">ああ、ラジさん、こんにちは。</span></div>
+<div style="position:absolute;left:97.10px;top:369.69px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:369.69px" class="cls_011"><span class="cls_011">：</span><span class="cls_009"> aa   rajisan   konnichiwa</span></div>
+<div style="position:absolute;left:97.10px;top:405.69px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_009"> </span><span class="cls_010">これ、あしたの</span><span class="cls_011">  </span><span class="cls_010">しごとの</span><span class="cls_011">  </span><span class="cls_010">しりょうです。</span></div>
+<div style="position:absolute;left:97.10px;top:423.69px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009">  kore  ashitano  shigotono  shiryoodesu</span></div>
+<div style="position:absolute;left:97.10px;top:459.71px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">ああ、ありがとう</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">ございます。</span></div>
+<div style="position:absolute;left:97.10px;top:477.71px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:477.71px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">aa    arigatoo</span><span class="cls_012"> </span><span class="cls_009">   gozaimasu</span></div>
+<div style="position:absolute;left:97.10px;top:513.71px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_010">いいえ。</span></div>
+<div style="position:absolute;left:97.10px;top:531.71px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009"> iie</span></div>
+<div style="position:absolute;left:97.10px;top:567.71px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">どうぞ</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">はいってください。</span></div>
+<div style="position:absolute;left:97.10px;top:585.71px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:585.71px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">doozo  haittekudasai</span></div>
+<div style="position:absolute;left:97.10px;top:621.74px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_010">おじゃまします。</span></div>
+<div style="position:absolute;left:97.10px;top:639.74px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009">  ojamashimasu</span></div>
+<div style="position:absolute;left:97.10px;top:693.74px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">おちゃです。</span><span class="cls_011">  </span><span class="cls_010">どうぞ。</span></div>
+<div style="position:absolute;left:97.10px;top:711.74px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:711.74px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">ochadesu</span></div>
+<div style="position:absolute;left:243.17px;top:711.74px" class="cls_009"><span class="cls_009">doozo</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:97.10px;top:99.66px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_010">ありがとう</span><span class="cls_009"> </span><span class="cls_010">ございます。</span><span class="cls_011">  </span><span class="cls_010">いただきます。</span></div>
+<div style="position:absolute;left:97.10px;top:117.66px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009"> arigatoo   gozaimasu</span></div>
+<div style="position:absolute;left:286.61px;top:117.66px" class="cls_009"><span class="cls_009">itadakimasu</span></div>
+<div style="position:absolute;left:133.10px;top:135.66px" class="cls_010"><span class="cls_010">このひとは  だれですか。</span></div>
+<div style="position:absolute;left:133.10px;top:153.90px" class="cls_009"><span class="cls_009">konohitowa  daredesuka</span></div>
+<div style="position:absolute;left:97.10px;top:189.66px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">このひとは</span><span class="cls_011">  </span><span class="cls_010">わたしの</span><span class="cls_011">  </span><span class="cls_010">はは</span><span class="cls_011">  </span><span class="cls_010">です。</span></div>
+<div style="position:absolute;left:97.10px;top:207.66px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:149.90px;top:207.66px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">konohitowa  watashino  haha  desu</span></div>
+<div style="position:absolute;left:95.66px;top:243.66px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_009"> </span><span class="cls_011"> </span><span class="cls_010">おかあさんですか、きれいですね。</span><span class="cls_009"> </span><span class="cls_010">このひとは</span><span class="cls_011">  </span><span class="cls_010">おとうとさんですか。</span></div>
+<div style="position:absolute;left:95.66px;top:261.69px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009"> okaasandesuka   kireedesune   konohitowa  otootosandesuka</span></div>
+<div style="position:absolute;left:97.10px;top:297.69px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">このひとは</span><span class="cls_011">  </span><span class="cls_010">おとうとじゃ</span><span class="cls_011">  </span><span class="cls_010">ありません。このひとは</span><span class="cls_011">  </span><span class="cls_010">あにです。</span></div>
+<div style="position:absolute;left:97.10px;top:315.69px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:137.90px;top:315.69px" class="cls_011"><span class="cls_011">：</span><span class="cls_009"> konohitowa  otootoja</span></div>
+<div style="position:absolute;left:311.71px;top:315.69px" class="cls_009"><span class="cls_009">arimasen   konohitowa  anidesu</span></div>
+<div style="position:absolute;left:97.10px;top:351.69px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：</span><span class="cls_010">ごかぞくは</span><span class="cls_011">  </span><span class="cls_010">なんにん</span><span class="cls_011">  </span><span class="cls_010">ですか。</span></div>
+<div style="position:absolute;left:97.10px;top:369.69px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009"> gokazokuwa  nannin  desuka</span></div>
+<div style="position:absolute;left:95.66px;top:405.69px" class="cls_010"><span class="cls_010">あんどう</span><span class="cls_011">：</span><span class="cls_010">ちち、はは、あにと</span><span class="cls_011">  </span><span class="cls_010">わたしです。</span><span class="cls_011">  </span><span class="cls_010">ぜんぶで</span><span class="cls_011"> </span><span class="cls_009"> 4</span><span class="cls_011"> </span><span class="cls_010">にんです。</span></div>
+<div style="position:absolute;left:95.66px;top:423.69px" class="cls_009"><span class="cls_009">Ando</span></div>
+<div style="position:absolute;left:142.46px;top:423.69px" class="cls_011"><span class="cls_011">：</span><span class="cls_009">chichi haha  anito   watashidesu  zembude  yonindesu</span></div>
+<div style="position:absolute;left:154.10px;top:441.71px" class="cls_010"><span class="cls_010">ラジさんの  ごかぞくは  なんにんですか。</span></div>
+<div style="position:absolute;left:157.10px;top:459.95px" class="cls_009"><span class="cls_009">rajisanno   gokazokuwa  nannindesuka</span></div>
+<div style="position:absolute;left:97.10px;top:495.71px" class="cls_010"><span class="cls_010">ラジ</span><span class="cls_011">：  </span><span class="cls_010">わたしとつまの</span><span class="cls_011"> </span><span class="cls_009">   </span><span class="cls_010">ふたりです。</span></div>
+<div style="position:absolute;left:97.10px;top:513.71px" class="cls_009"><span class="cls_009">Raj</span><span class="cls_011">：</span><span class="cls_009">   watashitotsumano  hutaridesu</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:107.46px" class="cls_006"><span class="cls_006">Ⅲ</span><span class="cls_007">.</span><span class="cls_008">ごい</span><span class="cls_006"> </span><span class="cls_007"> goi</span></div>
+<div style="position:absolute;left:105.62px;top:134.70px" class="cls_007"><span class="cls_007">Vocabulary</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">いいえ</span></div>
+<div style="position:absolute;left:281.09px;top:171.66px" class="cls_009"><span class="cls_009">iie</span></div>
+<div style="position:absolute;left:385.15px;top:171.66px" class="cls_009"><span class="cls_009">no</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">おなじ</span></div>
+<div style="position:absolute;left:191.21px;top:189.66px" class="cls_010"><span class="cls_010">同じ</span></div>
+<div style="position:absolute;left:281.09px;top:189.66px" class="cls_009"><span class="cls_009">onaji</span></div>
+<div style="position:absolute;left:385.15px;top:189.66px" class="cls_009"><span class="cls_009">same</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">かいしゃ</span></div>
+<div style="position:absolute;left:191.21px;top:207.66px" class="cls_010"><span class="cls_010">会社</span></div>
+<div style="position:absolute;left:281.09px;top:207.66px" class="cls_009"><span class="cls_009">kaisha</span></div>
+<div style="position:absolute;left:385.15px;top:207.66px" class="cls_009"><span class="cls_009">company</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_009"><span class="cls_009">4.</span><span class="cls_010">しごと</span></div>
+<div style="position:absolute;left:191.21px;top:225.66px" class="cls_010"><span class="cls_010">仕事</span></div>
+<div style="position:absolute;left:281.09px;top:225.66px" class="cls_009"><span class="cls_009">shigoto</span></div>
+<div style="position:absolute;left:385.15px;top:225.66px" class="cls_009"><span class="cls_009">work</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_009"><span class="cls_009">5.</span><span class="cls_010">しりょう</span></div>
+<div style="position:absolute;left:191.21px;top:243.66px" class="cls_010"><span class="cls_010">資料</span></div>
+<div style="position:absolute;left:281.09px;top:243.66px" class="cls_009"><span class="cls_009">shiryoo</span></div>
+<div style="position:absolute;left:385.15px;top:243.66px" class="cls_009"><span class="cls_009">information/materials</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_009"><span class="cls_009">6.</span><span class="cls_010">ざっし</span></div>
+<div style="position:absolute;left:191.21px;top:261.69px" class="cls_010"><span class="cls_010">雑誌</span></div>
+<div style="position:absolute;left:281.09px;top:261.69px" class="cls_009"><span class="cls_009">zasshi</span></div>
+<div style="position:absolute;left:385.15px;top:261.69px" class="cls_009"><span class="cls_009">magazine</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_009"><span class="cls_009">7.</span><span class="cls_010">しんぶん</span></div>
+<div style="position:absolute;left:191.21px;top:279.69px" class="cls_010"><span class="cls_010">新聞</span></div>
+<div style="position:absolute;left:281.09px;top:279.69px" class="cls_009"><span class="cls_009">shimbun</span></div>
+<div style="position:absolute;left:382.87px;top:279.69px" class="cls_009"><span class="cls_009">newspaper</span></div>
+<div style="position:absolute;left:85.10px;top:297.69px" class="cls_009"><span class="cls_009">8.</span><span class="cls_010">しゃしん</span></div>
+<div style="position:absolute;left:191.21px;top:297.69px" class="cls_010"><span class="cls_010">写真</span></div>
+<div style="position:absolute;left:281.09px;top:297.69px" class="cls_009"><span class="cls_009">shashin</span></div>
+<div style="position:absolute;left:382.87px;top:297.69px" class="cls_009"><span class="cls_009">photograph</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_009"><span class="cls_009">9.</span><span class="cls_010">かさ</span></div>
+<div style="position:absolute;left:191.21px;top:315.69px" class="cls_010"><span class="cls_010">傘</span></div>
+<div style="position:absolute;left:281.09px;top:315.69px" class="cls_009"><span class="cls_009">kasa</span></div>
+<div style="position:absolute;left:382.87px;top:315.69px" class="cls_009"><span class="cls_009">umbrella</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_009"><span class="cls_009">10.</span><span class="cls_010">かばん</span></div>
+<div style="position:absolute;left:191.93px;top:333.69px" class="cls_010"><span class="cls_010">鞄</span></div>
+<div style="position:absolute;left:281.81px;top:333.69px" class="cls_009"><span class="cls_009">kaban</span></div>
+<div style="position:absolute;left:382.87px;top:333.69px" class="cls_009"><span class="cls_009">bag</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_009"><span class="cls_009">11.</span><span class="cls_010">あした</span></div>
+<div style="position:absolute;left:191.21px;top:351.69px" class="cls_010"><span class="cls_010">明日</span></div>
+<div style="position:absolute;left:281.21px;top:351.69px" class="cls_009"><span class="cls_009">ashita</span></div>
+<div style="position:absolute;left:382.87px;top:351.69px" class="cls_009"><span class="cls_009">tomorrow</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_009"><span class="cls_009">12.</span><span class="cls_010">ああ</span></div>
+<div style="position:absolute;left:281.81px;top:369.69px" class="cls_009"><span class="cls_009">aa</span></div>
+<div style="position:absolute;left:382.87px;top:369.69px" class="cls_009"><span class="cls_009">Ah!/Oh!</span></div>
+<div style="position:absolute;left:85.10px;top:387.69px" class="cls_009"><span class="cls_009">13.</span><span class="cls_010">どうぞ</span></div>
+<div style="position:absolute;left:281.81px;top:387.69px" class="cls_009"><span class="cls_009">doozo</span></div>
+<div style="position:absolute;left:382.87px;top:387.69px" class="cls_009"><span class="cls_009">please/here you are</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_009"><span class="cls_009">14.</span><span class="cls_010">はいる</span></div>
+<div style="position:absolute;left:191.93px;top:405.69px" class="cls_010"><span class="cls_010">入る</span></div>
+<div style="position:absolute;left:281.81px;top:405.69px" class="cls_009"><span class="cls_009">hairu</span></div>
+<div style="position:absolute;left:383.71px;top:405.69px" class="cls_009"><span class="cls_009">to enter</span></div>
+<div style="position:absolute;left:85.10px;top:423.69px" class="cls_009"><span class="cls_009">15.</span><span class="cls_010">おちゃ</span></div>
+<div style="position:absolute;left:191.93px;top:423.69px" class="cls_010"><span class="cls_010">お茶</span></div>
+<div style="position:absolute;left:281.81px;top:423.69px" class="cls_009"><span class="cls_009">ocha</span></div>
+<div style="position:absolute;left:383.71px;top:423.69px" class="cls_009"><span class="cls_009">tea</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_009"><span class="cls_009">16.</span><span class="cls_010">みず</span></div>
+<div style="position:absolute;left:191.93px;top:441.71px" class="cls_010"><span class="cls_010">水</span></div>
+<div style="position:absolute;left:281.81px;top:441.71px" class="cls_009"><span class="cls_009">mizu</span></div>
+<div style="position:absolute;left:383.71px;top:441.71px" class="cls_009"><span class="cls_009">water</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_009"><span class="cls_009">17.</span><span class="cls_010">こうちゃ</span></div>
+<div style="position:absolute;left:191.93px;top:459.71px" class="cls_010"><span class="cls_010">紅茶</span></div>
+<div style="position:absolute;left:282.41px;top:459.71px" class="cls_009"><span class="cls_009">koocha</span></div>
+<div style="position:absolute;left:383.71px;top:459.71px" class="cls_009"><span class="cls_009">black tea</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_009"><span class="cls_009">18.</span><span class="cls_010">ジュース</span></div>
+<div style="position:absolute;left:282.41px;top:477.71px" class="cls_009"><span class="cls_009">juusu</span></div>
+<div style="position:absolute;left:383.71px;top:477.71px" class="cls_009"><span class="cls_009">juice</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_009"><span class="cls_009">19.</span><span class="cls_010">この</span></div>
+<div style="position:absolute;left:282.41px;top:495.71px" class="cls_009"><span class="cls_009">kono</span></div>
+<div style="position:absolute;left:386.83px;top:495.71px" class="cls_009"><span class="cls_009">this</span></div>
+<div style="position:absolute;left:85.10px;top:513.71px" class="cls_009"><span class="cls_009">20.</span><span class="cls_010">その</span></div>
+<div style="position:absolute;left:281.81px;top:513.71px" class="cls_009"><span class="cls_009">sono</span></div>
+<div style="position:absolute;left:384.67px;top:513.71px" class="cls_009"><span class="cls_009">that</span></div>
+<div style="position:absolute;left:85.10px;top:531.71px" class="cls_009"><span class="cls_009">21.</span><span class="cls_010">あの</span></div>
+<div style="position:absolute;left:281.81px;top:531.71px" class="cls_009"><span class="cls_009">ano</span></div>
+<div style="position:absolute;left:385.15px;top:531.71px" class="cls_009"><span class="cls_009">that…(over there)</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_009"><span class="cls_009">22.</span><span class="cls_010">どの</span></div>
+<div style="position:absolute;left:281.81px;top:549.71px" class="cls_009"><span class="cls_009">dono</span></div>
+<div style="position:absolute;left:385.15px;top:549.71px" class="cls_009"><span class="cls_009">which</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_009"><span class="cls_009">23.</span><span class="cls_010">これ</span></div>
+<div style="position:absolute;left:281.81px;top:567.71px" class="cls_009"><span class="cls_009">kore</span></div>
+<div style="position:absolute;left:385.87px;top:567.71px" class="cls_009"><span class="cls_009">this</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_009"><span class="cls_009">24.</span><span class="cls_010">それ</span></div>
+<div style="position:absolute;left:281.81px;top:585.71px" class="cls_009"><span class="cls_009">sore</span></div>
+<div style="position:absolute;left:385.87px;top:585.71px" class="cls_009"><span class="cls_009">that</span></div>
+<div style="position:absolute;left:85.10px;top:603.71px" class="cls_009"><span class="cls_009">25.</span><span class="cls_010">あれ</span></div>
+<div style="position:absolute;left:281.81px;top:603.71px" class="cls_009"><span class="cls_009">are</span></div>
+<div style="position:absolute;left:385.87px;top:603.71px" class="cls_009"><span class="cls_009">that (thing over</span></div>
+<div style="position:absolute;left:385.87px;top:621.98px" class="cls_009"><span class="cls_009">there)</span></div>
+<div style="position:absolute;left:85.10px;top:639.74px" class="cls_009"><span class="cls_009">26.</span><span class="cls_010">どれ</span></div>
+<div style="position:absolute;left:281.81px;top:639.74px" class="cls_009"><span class="cls_009">dore</span></div>
+<div style="position:absolute;left:385.87px;top:639.74px" class="cls_009"><span class="cls_009">which</span></div>
+<div style="position:absolute;left:85.10px;top:657.74px" class="cls_009"><span class="cls_009">27.</span><span class="cls_010">ひと</span></div>
+<div style="position:absolute;left:197.81px;top:657.74px" class="cls_010"><span class="cls_010">人</span></div>
+<div style="position:absolute;left:281.81px;top:657.74px" class="cls_009"><span class="cls_009">hito</span></div>
+<div style="position:absolute;left:385.87px;top:657.74px" class="cls_009"><span class="cls_009">human/people</span></div>
+<div style="position:absolute;left:85.10px;top:675.74px" class="cls_009"><span class="cls_009">28.</span><span class="cls_010">はは</span></div>
+<div style="position:absolute;left:197.81px;top:675.74px" class="cls_010"><span class="cls_010">母</span></div>
+<div style="position:absolute;left:281.81px;top:675.74px" class="cls_009"><span class="cls_009">haha</span></div>
+<div style="position:absolute;left:385.15px;top:675.74px" class="cls_009"><span class="cls_009">mom (when</span></div>
+<div style="position:absolute;left:385.15px;top:693.98px" class="cls_009"><span class="cls_009">talking about your</span></div>
+<div style="position:absolute;left:385.15px;top:711.98px" class="cls_009"><span class="cls_009">own mom)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_009"><span class="cls_009">29.</span><span class="cls_010">おかあさん</span></div>
+<div style="position:absolute;left:197.81px;top:99.66px" class="cls_010"><span class="cls_010">お母さん</span></div>
+<div style="position:absolute;left:281.81px;top:99.66px" class="cls_009"><span class="cls_009">okaasan</span></div>
+<div style="position:absolute;left:385.51px;top:99.66px" class="cls_009"><span class="cls_009">mother (when</span></div>
+<div style="position:absolute;left:385.15px;top:117.90px" class="cls_009"><span class="cls_009">referring to</span></div>
+<div style="position:absolute;left:384.43px;top:135.90px" class="cls_009"><span class="cls_009">someone else's</span></div>
+<div style="position:absolute;left:384.43px;top:153.90px" class="cls_009"><span class="cls_009">mother)</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_009"><span class="cls_009">30.</span><span class="cls_010">きれい</span></div>
+<div style="position:absolute;left:197.81px;top:171.66px" class="cls_010"><span class="cls_010">綺麗</span></div>
+<div style="position:absolute;left:281.81px;top:171.66px" class="cls_009"><span class="cls_009">kiree</span></div>
+<div style="position:absolute;left:385.15px;top:171.66px" class="cls_009"><span class="cls_009">beautiful</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_009"><span class="cls_009">31.</span><span class="cls_010">おとうと</span></div>
+<div style="position:absolute;left:197.81px;top:189.66px" class="cls_010"><span class="cls_010">弟</span></div>
+<div style="position:absolute;left:281.81px;top:189.66px" class="cls_009"><span class="cls_009">otooto</span></div>
+<div style="position:absolute;left:387.19px;top:189.66px" class="cls_009"><span class="cls_009">younger brother</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_009"><span class="cls_009">32.</span><span class="cls_010">かぞく</span></div>
+<div style="position:absolute;left:197.81px;top:207.66px" class="cls_010"><span class="cls_010">家族</span></div>
+<div style="position:absolute;left:281.81px;top:207.66px" class="cls_009"><span class="cls_009">kazoku</span></div>
+<div style="position:absolute;left:385.15px;top:207.66px" class="cls_009"><span class="cls_009">family</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_009"><span class="cls_009">33.</span><span class="cls_010">なんにん</span></div>
+<div style="position:absolute;left:197.81px;top:225.66px" class="cls_010"><span class="cls_010">何人</span></div>
+<div style="position:absolute;left:281.81px;top:225.66px" class="cls_009"><span class="cls_009">nannin</span></div>
+<div style="position:absolute;left:384.43px;top:225.66px" class="cls_009"><span class="cls_009">how many people</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_009"><span class="cls_009">34.</span><span class="cls_010">あに</span></div>
+<div style="position:absolute;left:197.81px;top:243.66px" class="cls_010"><span class="cls_010">兄</span></div>
+<div style="position:absolute;left:281.81px;top:243.66px" class="cls_009"><span class="cls_009">ani</span></div>
+<div style="position:absolute;left:384.43px;top:243.66px" class="cls_009"><span class="cls_009">elder brother</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_009"><span class="cls_009">35.</span><span class="cls_010">おにいさん</span></div>
+<div style="position:absolute;left:197.81px;top:261.69px" class="cls_010"><span class="cls_010">お兄さん</span></div>
+<div style="position:absolute;left:281.81px;top:261.69px" class="cls_009"><span class="cls_009">oniisan</span></div>
+<div style="position:absolute;left:386.71px;top:261.69px" class="cls_009"><span class="cls_009">elder brother</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_009"><span class="cls_009">36.</span><span class="cls_010">ちち</span></div>
+<div style="position:absolute;left:197.81px;top:279.69px" class="cls_010"><span class="cls_010">父</span></div>
+<div style="position:absolute;left:281.81px;top:279.69px" class="cls_009"><span class="cls_009">chichi</span></div>
+<div style="position:absolute;left:386.52px;top:279.69px" class="cls_009"><span class="cls_009">father (when talking</span></div>
+<div style="position:absolute;left:384.43px;top:297.93px" class="cls_009"><span class="cls_009">about your own</span></div>
+<div style="position:absolute;left:384.43px;top:315.93px" class="cls_009"><span class="cls_009">father)</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_009"><span class="cls_009">37.</span><span class="cls_010">ぜんぶ</span></div>
+<div style="position:absolute;left:197.81px;top:333.69px" class="cls_010"><span class="cls_010">全部</span></div>
+<div style="position:absolute;left:282.53px;top:333.69px" class="cls_009"><span class="cls_009">zembu</span></div>
+<div style="position:absolute;left:386.71px;top:333.69px" class="cls_009"><span class="cls_009">all</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_009"><span class="cls_009">38.</span><span class="cls_010">つま</span></div>
+<div style="position:absolute;left:197.81px;top:351.69px" class="cls_010"><span class="cls_010">妻</span></div>
+<div style="position:absolute;left:281.81px;top:351.69px" class="cls_009"><span class="cls_009">tsuma</span></div>
+<div style="position:absolute;left:382.75px;top:351.69px" class="cls_009"><span class="cls_009">wife (when talking to</span></div>
+<div style="position:absolute;left:386.71px;top:369.93px" class="cls_009"><span class="cls_009">your own wife)</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_009"><span class="cls_009">39.</span><span class="cls_010">おくさん</span></div>
+<div style="position:absolute;left:197.81px;top:405.69px" class="cls_010"><span class="cls_010">奥さん</span></div>
+<div style="position:absolute;left:281.81px;top:405.69px" class="cls_009"><span class="cls_009">okusan</span></div>
+<div style="position:absolute;left:387.79px;top:405.69px" class="cls_009"><span class="cls_009">wife (when referring</span></div>
+<div style="position:absolute;left:391.15px;top:423.93px" class="cls_009"><span class="cls_009">to someone else's</span></div>
+<div style="position:absolute;left:391.15px;top:441.95px" class="cls_009"><span class="cls_009">wife)</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_009"><span class="cls_009">40.</span><span class="cls_010">ふたり</span></div>
+<div style="position:absolute;left:197.81px;top:459.71px" class="cls_010"><span class="cls_010">二人</span></div>
+<div style="position:absolute;left:281.93px;top:459.71px" class="cls_009"><span class="cls_009">futari</span></div>
+<div style="position:absolute;left:391.87px;top:459.71px" class="cls_009"><span class="cls_009">two people</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_009"><span class="cls_009">41.</span><span class="cls_010">じゅう</span></div>
+<div style="position:absolute;left:197.81px;top:477.71px" class="cls_010"><span class="cls_010">十</span></div>
+<div style="position:absolute;left:281.81px;top:477.71px" class="cls_009"><span class="cls_009">juu</span></div>
+<div style="position:absolute;left:390.07px;top:477.71px" class="cls_009"><span class="cls_009">ten</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_009"><span class="cls_009">42.</span><span class="cls_010">ひゃく</span></div>
+<div style="position:absolute;left:197.81px;top:495.71px" class="cls_010"><span class="cls_010">百</span></div>
+<div style="position:absolute;left:281.81px;top:495.71px" class="cls_009"><span class="cls_009">hyaku</span></div>
+<div style="position:absolute;left:388.75px;top:495.71px" class="cls_009"><span class="cls_009">hundred</span></div>
+<div style="position:absolute;left:85.10px;top:513.71px" class="cls_009"><span class="cls_009">43.</span><span class="cls_010">せん</span></div>
+<div style="position:absolute;left:197.81px;top:513.71px" class="cls_010"><span class="cls_010">千</span></div>
+<div style="position:absolute;left:281.81px;top:513.71px" class="cls_009"><span class="cls_009">sen</span></div>
+<div style="position:absolute;left:390.67px;top:513.71px" class="cls_009"><span class="cls_009">thousand</span></div>
+<div style="position:absolute;left:85.10px;top:531.71px" class="cls_009"><span class="cls_009">44.</span><span class="cls_010">まん</span></div>
+<div style="position:absolute;left:197.81px;top:531.71px" class="cls_010"><span class="cls_010">万</span></div>
+<div style="position:absolute;left:281.81px;top:531.71px" class="cls_009"><span class="cls_009">man</span></div>
+<div style="position:absolute;left:390.43px;top:531.71px" class="cls_009"><span class="cls_009">ten thousand</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_009"><span class="cls_009">45.</span><span class="cls_010">と</span></div>
+<div style="position:absolute;left:281.81px;top:549.71px" class="cls_009"><span class="cls_009">to</span></div>
+<div style="position:absolute;left:390.43px;top:549.71px" class="cls_009"><span class="cls_009">and/with</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_009"><span class="cls_009">46.</span><span class="cls_010">だれ</span></div>
+<div style="position:absolute;left:197.81px;top:567.71px" class="cls_010"><span class="cls_010">誰</span></div>
+<div style="position:absolute;left:281.81px;top:567.71px" class="cls_009"><span class="cls_009">dare</span></div>
+<div style="position:absolute;left:390.79px;top:567.71px" class="cls_009"><span class="cls_009">who</span></div>
+<div style="position:absolute;left:80.78px;top:604.19px" class="cls_010"><span class="cls_010">メモ</span><span class="cls_011">（</span><span class="cls_009">Memo</span><span class="cls_011">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:79.82px;top:100.14px" class="cls_010"><span class="cls_010">メモ</span><span class="cls_011">（</span><span class="cls_009">Memo</span><span class="cls_011">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:107.46px" class="cls_006"><span class="cls_006">Ⅳ</span><span class="cls_007">.</span><span class="cls_008">ひょうげん</span><span class="cls_007">  hyoogen</span></div>
+<div style="position:absolute;left:106.22px;top:134.70px" class="cls_007"><span class="cls_007">Expressions</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">ごめんください。</span></div>
+<div style="position:absolute;left:287.09px;top:171.66px" class="cls_009"><span class="cls_009">May I come in?</span></div>
+<div style="position:absolute;left:97.10px;top:189.90px" class="cls_009"><span class="cls_009">gomenkudasai</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">ありがとう</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">ございます。</span></div>
+<div style="position:absolute;left:287.09px;top:225.66px" class="cls_009"><span class="cls_009">Thank you.</span></div>
+<div style="position:absolute;left:97.10px;top:243.90px" class="cls_009"><span class="cls_009">arigatoo</span></div>
+<div style="position:absolute;left:166.70px;top:243.90px" class="cls_009"><span class="cls_009">gozaimasu</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">どうぞ</span><span class="cls_012"> </span><span class="cls_011"> </span><span class="cls_010">入ってください。</span></div>
+<div style="position:absolute;left:287.09px;top:279.69px" class="cls_009"><span class="cls_009">Please come in.</span></div>
+<div style="position:absolute;left:97.10px;top:297.93px" class="cls_009"><span class="cls_009">doozo   haittekudasai</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_009"><span class="cls_009">4.</span><span class="cls_010">おじゃまします。</span></div>
+<div style="position:absolute;left:287.09px;top:333.69px" class="cls_009"><span class="cls_009">Excuse me for disturbing you.</span></div>
+<div style="position:absolute;left:97.10px;top:351.93px" class="cls_009"><span class="cls_009">ojamashimasu</span></div>
+<div style="position:absolute;left:85.10px;top:387.69px" class="cls_009"><span class="cls_009">5.</span><span class="cls_010">どうぞ。</span></div>
+<div style="position:absolute;left:287.09px;top:387.69px" class="cls_009"><span class="cls_009">Please.</span></div>
+<div style="position:absolute;left:97.10px;top:405.93px" class="cls_009"><span class="cls_009">doozo</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_009"><span class="cls_009">6.</span><span class="cls_010">いただきます。</span></div>
+<div style="position:absolute;left:287.09px;top:441.71px" class="cls_009"><span class="cls_009">Expression of gratitude before a meal.</span></div>
+<div style="position:absolute;left:97.10px;top:459.95px" class="cls_009"><span class="cls_009">itadakimasu</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_009"><span class="cls_009">7.</span><span class="cls_010">ごかぞくは</span><span class="cls_011">  </span><span class="cls_010">なんにんですか。</span></div>
+<div style="position:absolute;left:287.09px;top:495.71px" class="cls_009"><span class="cls_009">How many people are there in your</span></div>
+<div style="position:absolute;left:277.13px;top:513.95px" class="cls_009"><span class="cls_009">family?</span></div>
+<div style="position:absolute;left:97.10px;top:531.95px" class="cls_009"><span class="cls_009">gokazokuwa  nannindesuka</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:79.82px;top:100.14px" class="cls_010"><span class="cls_010">メモ</span><span class="cls_009">(Memo)</span></div>
+<div style="position:absolute;left:85.10px;top:302.97px" class="cls_006"><span class="cls_006">Ⅴ</span><span class="cls_007">.</span><span class="cls_008">ぶんぽう</span><span class="cls_007"> </span><span class="cls_006"> </span><span class="cls_007"> bumpoo</span></div>
+<div style="position:absolute;left:99.14px;top:330.21px" class="cls_007"><span class="cls_007">Grammar</span></div>
+<div style="position:absolute;left:85.10px;top:367.17px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">ね</span></div>
+<div style="position:absolute;left:97.10px;top:385.41px" class="cls_009"><span class="cls_009">ne</span></div>
+<div style="position:absolute;left:97.10px;top:403.41px" class="cls_009"><span class="cls_009">isn’t it</span></div>
+<div style="position:absolute;left:85.10px;top:439.19px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">ね</span><span class="cls_009">” comes at the end of a sentence. In Japanese conversation, you often hear</span></div>
+<div style="position:absolute;left:85.10px;top:457.19px" class="cls_009"><span class="cls_009">“…</span><span class="cls_010">ですね</span><span class="cls_009">” (desu ne) or “…</span><span class="cls_010">ますね</span><span class="cls_009">” (masune). When you end a sentence with</span></div>
+<div style="position:absolute;left:85.10px;top:475.19px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">ね</span><span class="cls_009">”, it is to confirm something, seek approval or put emphasis on something.</span></div>
+<div style="position:absolute;left:85.10px;top:529.19px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">あしたの</span><span class="cls_011">  </span><span class="cls_010">しごとの</span><span class="cls_011">  </span><span class="cls_010">しりょうですね。</span></div>
+<div style="position:absolute;left:97.10px;top:547.43px" class="cls_009"><span class="cls_009">ashitano  shigotono  shiryoodesune</span></div>
+<div style="position:absolute;left:97.10px;top:565.43px" class="cls_009"><span class="cls_009">These are tomorrow's work materials, right?</span></div>
+<div style="position:absolute;left:85.10px;top:601.19px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">インドから</span><span class="cls_011">  </span><span class="cls_010">きましたね。</span></div>
+<div style="position:absolute;left:97.10px;top:619.46px" class="cls_009"><span class="cls_009">indokara</span></div>
+<div style="position:absolute;left:170.90px;top:619.46px" class="cls_009"><span class="cls_009">kimashitane</span></div>
+<div style="position:absolute;left:97.10px;top:637.46px" class="cls_009"><span class="cls_009">You came from India, didn't you?</span></div>
+<div style="position:absolute;left:85.10px;top:673.22px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">キムさんは</span><span class="cls_011">  </span><span class="cls_010">かんこくじんですね。</span></div>
+<div style="position:absolute;left:97.10px;top:691.46px" class="cls_009"><span class="cls_009">kimsanwa  kankokujindesune</span></div>
+<div style="position:absolute;left:97.10px;top:709.22px" class="cls_009"><span class="cls_009">Miss Kim is Korean, isn't she</span><span class="cls_011">？</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6808px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:117.66px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">この</span><span class="cls_009">/</span><span class="cls_010">その</span><span class="cls_009">/</span><span class="cls_010">あの</span></div>
+<div style="position:absolute;left:186.14px;top:117.66px" class="cls_009"><span class="cls_009">+ N</span></div>
+<div style="position:absolute;left:97.10px;top:135.90px" class="cls_009"><span class="cls_009">kono/sono/ano</span></div>
+<div style="position:absolute;left:97.10px;top:153.90px" class="cls_009"><span class="cls_009">this/that/that…over there</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">この</span><span class="cls_009">/</span><span class="cls_010">その</span><span class="cls_009">/</span><span class="cls_010">あの</span><span class="cls_009">”(kono/sono/ano) are demonstrative words used when</span></div>
+<div style="position:absolute;left:85.10px;top:207.90px" class="cls_009"><span class="cls_009">referring to a particular noun. In English, they are “this”, “that”, and</span></div>
+<div style="position:absolute;left:85.10px;top:225.90px" class="cls_009"><span class="cls_009">“that…over there”.</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_009"><span class="cls_009">When the object is close to the speaker, “</span><span class="cls_010">この</span><span class="cls_009"> N” is used. When the object is</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_009"><span class="cls_009">close to the listener and far from the speaker, “</span><span class="cls_010">その</span><span class="cls_009"> N” is used. When the</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_009"><span class="cls_009">object is far from both persons, “</span><span class="cls_010">あの</span><span class="cls_009"> N” is used.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7659px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:97.10px;top:315.69px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">このひとは</span><span class="cls_011">  </span><span class="cls_010">だれですか</span></div>
+<div style="position:absolute;left:109.10px;top:333.93px" class="cls_009"><span class="cls_009">konohitowa daredesuka</span></div>
+<div style="position:absolute;left:343.15px;top:333.93px" class="cls_009"><span class="cls_009">Who is this person?</span></div>
+<div style="position:absolute;left:97.10px;top:369.69px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">あのかばんは</span><span class="cls_011">  </span><span class="cls_010">きれいです。</span></div>
+<div style="position:absolute;left:109.10px;top:387.93px" class="cls_009"><span class="cls_009">anokabanwa  kireedesu</span></div>
+<div style="position:absolute;left:347.59px;top:387.93px" class="cls_009"><span class="cls_009">That bag is beautiful.</span></div>
+<div style="position:absolute;left:97.10px;top:423.69px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">そのひとは</span><span class="cls_011">  </span><span class="cls_010">わたしの</span><span class="cls_011">  </span><span class="cls_010">ちちです。</span></div>
+<div style="position:absolute;left:109.10px;top:441.95px" class="cls_009"><span class="cls_009">sonohitowa  watashino chichidesu</span></div>
+<div style="position:absolute;left:345.19px;top:441.95px" class="cls_009"><span class="cls_009">That person is my father.</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_010"><span class="cls_010">どの</span><span class="cls_011">＋Ｎ</span></div>
+<div style="position:absolute;left:85.10px;top:513.95px" class="cls_009"><span class="cls_009">dono</span></div>
+<div style="position:absolute;left:85.10px;top:531.95px" class="cls_009"><span class="cls_009">which</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_009"><span class="cls_009">When you point out an object and want to ask something, you use “</span><span class="cls_010">ど</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_010"><span class="cls_010">の</span><span class="cls_009">”(dono). “</span><span class="cls_010">どの</span><span class="cls_009"> + a noun” is the correct usage.</span></div>
+<div style="position:absolute;left:85.10px;top:603.71px" class="cls_009"><span class="cls_009">For example </span><span class="cls_011">  </span><span class="cls_010">どのかさ</span></div>
+<div style="position:absolute;left:253.13px;top:603.71px" class="cls_009"><span class="cls_009">which umbrella</span></div>
+<div style="position:absolute;left:169.10px;top:621.74px" class="cls_010"><span class="cls_010">どのざっし</span><span class="cls_012"> </span><span class="cls_009">   which magazine</span></div>
+<div style="position:absolute;left:85.10px;top:675.74px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">これ</span><span class="cls_009">/</span><span class="cls_010">それ</span><span class="cls_009">/</span><span class="cls_010">あれ</span></div>
+<div style="position:absolute;left:97.10px;top:693.98px" class="cls_009"><span class="cls_009">kore/sore/are</span></div>
+<div style="position:absolute;left:97.10px;top:711.98px" class="cls_009"><span class="cls_009">this/that/that…over there</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8510px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">これ</span><span class="cls_009">/</span><span class="cls_010">それ</span><span class="cls_009">/</span><span class="cls_010">あれ</span><span class="cls_009">” are also used to refer to a particular noun. The same rule as</span></div>
+<div style="position:absolute;left:85.10px;top:117.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">この</span><span class="cls_009">”, “</span><span class="cls_010">その</span><span class="cls_009">”, “</span><span class="cls_010">あの</span><span class="cls_009">” can be applied. “</span><span class="cls_010">この</span><span class="cls_009">”, “</span><span class="cls_010">その</span><span class="cls_009">”,“</span><span class="cls_010">あの</span><span class="cls_009">” can immediately be</span></div>
+<div style="position:absolute;left:85.10px;top:135.66px" class="cls_009"><span class="cls_009">followed by a noun, however, “</span><span class="cls_010">これ</span><span class="cls_009">”, “</span><span class="cls_010">それ</span><span class="cls_009">”, “</span><span class="cls_010">あれ</span><span class="cls_009">” cannot immediately be</span></div>
+<div style="position:absolute;left:85.10px;top:153.90px" class="cls_009"><span class="cls_009">followed by a noun.</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_009"><span class="cls_009">When the object is close to the speaker, “</span><span class="cls_010">これ</span><span class="cls_009">”is used. When the object is</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_009"><span class="cls_009">close to the listener and far from the speaker, “</span><span class="cls_010">それ</span><span class="cls_009">”is used. When the object</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_009"><span class="cls_009">is far from both persons, “</span><span class="cls_010">あれ</span><span class="cls_009">”is used.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9361px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_009"><span class="cls_009">1.</span><span class="cls_010">これは</span><span class="cls_011">  </span><span class="cls_010">だれの</span><span class="cls_011">  </span><span class="cls_010">みずですか</span></div>
+<div style="position:absolute;left:97.10px;top:333.93px" class="cls_009"><span class="cls_009">korewa  dareno  mizudesuka</span></div>
+<div style="position:absolute;left:361.15px;top:333.93px" class="cls_009"><span class="cls_009">Whose water is this?</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_009"><span class="cls_009">2.</span><span class="cls_010">あれは</span><span class="cls_011">  </span><span class="cls_010">ジュースです。</span></div>
+<div style="position:absolute;left:97.10px;top:387.93px" class="cls_009"><span class="cls_009">arewa  juusudesu</span></div>
+<div style="position:absolute;left:361.15px;top:387.93px" class="cls_009"><span class="cls_009">That is juice.</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_009"><span class="cls_009">3.</span><span class="cls_010">それは</span><span class="cls_009"> </span><span class="cls_010">わたしの</span><span class="cls_009"> </span><span class="cls_010">しごとでは</span><span class="cls_011">  </span><span class="cls_010">ありません。</span></div>
+<div style="position:absolute;left:97.10px;top:423.93px" class="cls_009"><span class="cls_009">sorewa watashino shigotodewa arimasen</span></div>
+<div style="position:absolute;left:360.07px;top:423.93px" class="cls_009"><span class="cls_009">That is not my job.</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_010"><span class="cls_010">どれ</span></div>
+<div style="position:absolute;left:85.10px;top:495.95px" class="cls_009"><span class="cls_009">dore</span></div>
+<div style="position:absolute;left:85.10px;top:513.95px" class="cls_009"><span class="cls_009">Which thing</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">どれ</span><span class="cls_009">”(dore) is a demonstrative pronoun that is used when you point to an</span></div>
+<div style="position:absolute;left:85.10px;top:567.95px" class="cls_009"><span class="cls_009">object and want to ask something. It literally means “which”.</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_009"><span class="cls_009">For example,   </span><span class="cls_010">やまださんの</span><span class="cls_011">  </span><span class="cls_010">しりょうは</span><span class="cls_011">  </span><span class="cls_010">どれですか。</span></div>
+<div style="position:absolute;left:175.10px;top:603.95px" class="cls_009"><span class="cls_009">yamadasanno  shiryoowa  doredesuka</span></div>
+<div style="position:absolute;left:175.10px;top:621.98px" class="cls_009"><span class="cls_009">Which ones are Mr. Yamada's materials?</span></div>
+<div style="position:absolute;left:85.10px;top:657.74px" class="cls_009"><span class="cls_009">4.</span><span class="cls_010">かぞくの</span><span class="cls_009"> </span><span class="cls_010">よびかた</span></div>
+<div style="position:absolute;left:97.10px;top:675.98px" class="cls_009"><span class="cls_009">kazokuno yobikata</span></div>
+<div style="position:absolute;left:97.10px;top:693.98px" class="cls_009"><span class="cls_009">How to say family member names</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10212px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11063px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:148.22px;top:100.98px" class="cls_010"><span class="cls_010">わたしの</span><span class="cls_011">  </span><span class="cls_010">かぞく</span><span class="cls_009">(watashino  kazoku)</span><span class="cls_011"> </span><span class="cls_013">  </span><span class="cls_009">My family</span></div>
+<div style="position:absolute;left:138.50px;top:120.54px" class="cls_010"><span class="cls_010">そぼ</span></div>
+<div style="position:absolute;left:279.89px;top:120.78px" class="cls_009"><span class="cls_009">sobo</span></div>
+<div style="position:absolute;left:397.27px;top:120.78px" class="cls_009"><span class="cls_009">grandmother</span></div>
+<div style="position:absolute;left:138.50px;top:139.02px" class="cls_010"><span class="cls_010">そふ</span></div>
+<div style="position:absolute;left:280.49px;top:139.26px" class="cls_009"><span class="cls_009">sofu</span></div>
+<div style="position:absolute;left:400.27px;top:139.26px" class="cls_009"><span class="cls_009">grandfather</span></div>
+<div style="position:absolute;left:138.50px;top:157.50px" class="cls_010"><span class="cls_010">はは</span></div>
+<div style="position:absolute;left:277.97px;top:157.74px" class="cls_009"><span class="cls_009">haha</span></div>
+<div style="position:absolute;left:413.59px;top:157.74px" class="cls_009"><span class="cls_009">mother</span></div>
+<div style="position:absolute;left:138.50px;top:175.98px" class="cls_010"><span class="cls_010">ちち</span></div>
+<div style="position:absolute;left:275.57px;top:176.22px" class="cls_009"><span class="cls_009">chichi</span></div>
+<div style="position:absolute;left:416.59px;top:176.22px" class="cls_009"><span class="cls_009">father</span></div>
+<div style="position:absolute;left:126.50px;top:194.58px" class="cls_010"><span class="cls_010">いもうと</span></div>
+<div style="position:absolute;left:273.41px;top:194.82px" class="cls_009"><span class="cls_009">imooto</span></div>
+<div style="position:absolute;left:394.03px;top:194.82px" class="cls_009"><span class="cls_009">younger sister</span></div>
+<div style="position:absolute;left:126.50px;top:213.06px" class="cls_010"><span class="cls_010">おとうと</span></div>
+<div style="position:absolute;left:275.33px;top:213.30px" class="cls_009"><span class="cls_009">otooto</span></div>
+<div style="position:absolute;left:388.87px;top:213.30px" class="cls_009"><span class="cls_009">younger brother</span></div>
+<div style="position:absolute;left:138.50px;top:231.54px" class="cls_010"><span class="cls_010">あね</span></div>
+<div style="position:absolute;left:281.93px;top:231.78px" class="cls_009"><span class="cls_009">ane</span></div>
+<div style="position:absolute;left:402.55px;top:231.78px" class="cls_009"><span class="cls_009">elder sister</span></div>
+<div style="position:absolute;left:138.50px;top:250.02px" class="cls_010"><span class="cls_010">あに</span></div>
+<div style="position:absolute;left:283.13px;top:250.26px" class="cls_009"><span class="cls_009">ani</span></div>
+<div style="position:absolute;left:397.27px;top:250.26px" class="cls_009"><span class="cls_009">elder brother</span></div>
+<div style="position:absolute;left:138.50px;top:268.53px" class="cls_010"><span class="cls_010">つま</span></div>
+<div style="position:absolute;left:274.49px;top:268.77px" class="cls_009"><span class="cls_009">tsuma</span></div>
+<div style="position:absolute;left:421.99px;top:268.77px" class="cls_009"><span class="cls_009">wife</span></div>
+<div style="position:absolute;left:135.50px;top:287.01px" class="cls_010"><span class="cls_010">おっと</span></div>
+<div style="position:absolute;left:281.33px;top:287.25px" class="cls_009"><span class="cls_009">otto</span></div>
+<div style="position:absolute;left:409.75px;top:287.25px" class="cls_009"><span class="cls_009">husband</span></div>
+<div style="position:absolute;left:132.50px;top:305.61px" class="cls_010"><span class="cls_010">わたし</span></div>
+<div style="position:absolute;left:269.93px;top:305.85px" class="cls_009"><span class="cls_009">watashi</span></div>
+<div style="position:absolute;left:431.11px;top:305.85px" class="cls_009"><span class="cls_009">I</span></div>
+<div style="position:absolute;left:132.50px;top:324.09px" class="cls_010"><span class="cls_010">むすめ</span></div>
+<div style="position:absolute;left:268.25px;top:324.33px" class="cls_009"><span class="cls_009">musume</span></div>
+<div style="position:absolute;left:408.31px;top:324.33px" class="cls_009"><span class="cls_009">daughter</span></div>
+<div style="position:absolute;left:132.50px;top:342.57px" class="cls_010"><span class="cls_010">むすこ</span></div>
+<div style="position:absolute;left:269.93px;top:342.81px" class="cls_009"><span class="cls_009">musuko</span></div>
+<div style="position:absolute;left:424.15px;top:342.81px" class="cls_009"><span class="cls_009">son</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11914px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:105.14px;top:101.22px" class="cls_010"><span class="cls_010">やまださんの</span><span class="cls_011">  </span><span class="cls_010">かぞく</span><span class="cls_009">(yamadasanno kazoku) Mr Yamada's family</span></div>
+<div style="position:absolute;left:79.82px;top:120.66px" class="cls_010"><span class="cls_010">おばあさん</span></div>
+<div style="position:absolute;left:263.93px;top:120.90px" class="cls_009"><span class="cls_009">obaasan</span></div>
+<div style="position:absolute;left:391.99px;top:120.90px" class="cls_009"><span class="cls_009">grandmother</span></div>
+<div style="position:absolute;left:79.82px;top:139.14px" class="cls_010"><span class="cls_010">おじいさん</span></div>
+<div style="position:absolute;left:268.37px;top:139.38px" class="cls_009"><span class="cls_009">ojiisan</span></div>
+<div style="position:absolute;left:394.99px;top:139.38px" class="cls_009"><span class="cls_009">grandfather</span></div>
+<div style="position:absolute;left:79.82px;top:157.62px" class="cls_010"><span class="cls_010">おかあさん</span></div>
+<div style="position:absolute;left:263.69px;top:157.86px" class="cls_009"><span class="cls_009">okaasan</span></div>
+<div style="position:absolute;left:408.31px;top:157.86px" class="cls_009"><span class="cls_009">mother</span></div>
+<div style="position:absolute;left:79.82px;top:176.22px" class="cls_010"><span class="cls_010">おとうさん</span></div>
+<div style="position:absolute;left:265.61px;top:176.46px" class="cls_009"><span class="cls_009">otoosan</span></div>
+<div style="position:absolute;left:411.31px;top:176.46px" class="cls_009"><span class="cls_009">father</span></div>
+<div style="position:absolute;left:79.82px;top:194.70px" class="cls_010"><span class="cls_010">おもうとさん</span></div>
+<div style="position:absolute;left:258.41px;top:194.94px" class="cls_009"><span class="cls_009">imootosan</span></div>
+<div style="position:absolute;left:388.75px;top:194.94px" class="cls_009"><span class="cls_009">younger sister</span></div>
+<div style="position:absolute;left:79.82px;top:213.18px" class="cls_010"><span class="cls_010">おとうとさん</span></div>
+<div style="position:absolute;left:260.21px;top:213.42px" class="cls_009"><span class="cls_009">otootosan</span></div>
+<div style="position:absolute;left:383.59px;top:213.42px" class="cls_009"><span class="cls_009">younger brother</span></div>
+<div style="position:absolute;left:79.82px;top:231.66px" class="cls_010"><span class="cls_010">おねえさん</span></div>
+<div style="position:absolute;left:264.29px;top:231.90px" class="cls_009"><span class="cls_009">oneesan</span></div>
+<div style="position:absolute;left:397.27px;top:231.90px" class="cls_009"><span class="cls_009">elder sister</span></div>
+<div style="position:absolute;left:79.82px;top:250.14px" class="cls_010"><span class="cls_010">おにいさん</span></div>
+<div style="position:absolute;left:266.45px;top:250.38px" class="cls_009"><span class="cls_009">oniisan</span></div>
+<div style="position:absolute;left:391.99px;top:250.38px" class="cls_009"><span class="cls_009">elder brother</span></div>
+<div style="position:absolute;left:79.82px;top:269.25px" class="cls_014"><span class="cls_014">おくさん</span></div>
+<div style="position:absolute;left:266.69px;top:268.89px" class="cls_009"><span class="cls_009">okusan</span></div>
+<div style="position:absolute;left:416.71px;top:268.89px" class="cls_009"><span class="cls_009">wife</span></div>
+<div style="position:absolute;left:79.82px;top:286.89px" class="cls_014"><span class="cls_014">ごしゅじん</span></div>
+<div style="position:absolute;left:266.09px;top:287.49px" class="cls_009"><span class="cls_009">goshujin</span></div>
+<div style="position:absolute;left:404.47px;top:287.49px" class="cls_009"><span class="cls_009">husband</span></div>
+<div style="position:absolute;left:79.82px;top:305.73px" class="cls_010"><span class="cls_010">やまださん</span></div>
+<div style="position:absolute;left:254.93px;top:305.97px" class="cls_009"><span class="cls_009">yamadasan</span></div>
+<div style="position:absolute;left:394.99px;top:305.97px" class="cls_009"><span class="cls_009">Mr. Yamada</span></div>
+<div style="position:absolute;left:79.82px;top:324.21px" class="cls_010"><span class="cls_010">むすめさん</span></div>
+<div style="position:absolute;left:253.13px;top:324.45px" class="cls_009"><span class="cls_009">musumesan</span></div>
+<div style="position:absolute;left:403.03px;top:324.45px" class="cls_009"><span class="cls_009">daughter</span></div>
+<div style="position:absolute;left:79.82px;top:342.69px" class="cls_010"><span class="cls_010">むすこさん</span></div>
+<div style="position:absolute;left:254.93px;top:342.93px" class="cls_009"><span class="cls_009">musukosan</span></div>
+<div style="position:absolute;left:418.87px;top:342.93px" class="cls_009"><span class="cls_009">son</span></div>
+<div style="position:absolute;left:85.10px;top:362.25px" class="cls_009"><span class="cls_009">Note: When you talk about someone else's family, you usually insert “</span><span class="cls_010">さん</span><span class="cls_009">”</span></div>
+<div style="position:absolute;left:85.10px;top:380.25px" class="cls_009"><span class="cls_009">after the name. However, there are some exceptions, such as </span><span class="cls_010">ごしゅじん</span></div>
+<div style="position:absolute;left:85.10px;top:398.49px" class="cls_009"><span class="cls_009">(husband), so please be careful.</span></div>
+<div style="position:absolute;left:85.10px;top:434.27px" class="cls_009"><span class="cls_009">5.</span><span class="cls_010">すうじの</span><span class="cls_009"> </span><span class="cls_010">かぞえかた①</span></div>
+<div style="position:absolute;left:97.10px;top:452.51px" class="cls_009"><span class="cls_009">suujino  kazoekata</span></div>
+<div style="position:absolute;left:97.22px;top:470.27px" class="cls_009"><span class="cls_009">how to count numbers</span><span class="cls_010">①</span></div>
+<div style="position:absolute;left:85.10px;top:506.27px" class="cls_009"><span class="cls_009">1</span><span class="cls_011">～</span><span class="cls_009">10</span></div>
+<div style="position:absolute;left:280.25px;top:525.71px" class="cls_010"><span class="cls_010">すうじ</span><span class="cls_011">（</span><span class="cls_009">suuji</span><span class="cls_011">）</span><span class="cls_009">Number</span></div>
+<div style="position:absolute;left:123.14px;top:545.51px" class="cls_009"><span class="cls_009">0</span></div>
+<div style="position:absolute;left:183.86px;top:545.27px" class="cls_010"><span class="cls_010">れい</span></div>
+<div style="position:absolute;left:331.51px;top:545.51px" class="cls_009"><span class="cls_009">ree</span></div>
+<div style="position:absolute;left:123.14px;top:563.99px" class="cls_009"><span class="cls_009">1</span></div>
+<div style="position:absolute;left:183.86px;top:563.75px" class="cls_010"><span class="cls_010">いち</span></div>
+<div style="position:absolute;left:331.51px;top:563.99px" class="cls_009"><span class="cls_009">ichi</span></div>
+<div style="position:absolute;left:123.14px;top:582.47px" class="cls_009"><span class="cls_009">2</span></div>
+<div style="position:absolute;left:183.86px;top:582.23px" class="cls_010"><span class="cls_010">に</span></div>
+<div style="position:absolute;left:331.51px;top:582.47px" class="cls_009"><span class="cls_009">ni</span></div>
+<div style="position:absolute;left:123.14px;top:600.95px" class="cls_009"><span class="cls_009">3</span></div>
+<div style="position:absolute;left:183.86px;top:600.71px" class="cls_010"><span class="cls_010">さん</span></div>
+<div style="position:absolute;left:331.51px;top:600.95px" class="cls_009"><span class="cls_009">san</span></div>
+<div style="position:absolute;left:123.14px;top:619.46px" class="cls_009"><span class="cls_009">4</span></div>
+<div style="position:absolute;left:183.86px;top:619.22px" class="cls_010"><span class="cls_010">よん</span></div>
+<div style="position:absolute;left:231.89px;top:619.22px" class="cls_011"><span class="cls_011">（</span><span class="cls_010">し</span><span class="cls_011">）</span></div>
+<div style="position:absolute;left:331.51px;top:619.22px" class="cls_009"><span class="cls_009">yon</span></div>
+<div style="position:absolute;left:375.31px;top:619.22px" class="cls_011"><span class="cls_011">（</span><span class="cls_009">shi</span><span class="cls_011">）</span></div>
+<div style="position:absolute;left:123.14px;top:637.94px" class="cls_009"><span class="cls_009">5</span></div>
+<div style="position:absolute;left:183.86px;top:637.70px" class="cls_010"><span class="cls_010">ご</span></div>
+<div style="position:absolute;left:331.51px;top:637.94px" class="cls_009"><span class="cls_009">go</span></div>
+<div style="position:absolute;left:123.14px;top:656.54px" class="cls_009"><span class="cls_009">6</span></div>
+<div style="position:absolute;left:183.86px;top:656.30px" class="cls_010"><span class="cls_010">ろく</span></div>
+<div style="position:absolute;left:331.51px;top:656.54px" class="cls_009"><span class="cls_009">roku</span></div>
+<div style="position:absolute;left:123.14px;top:675.02px" class="cls_009"><span class="cls_009">7</span></div>
+<div style="position:absolute;left:183.86px;top:674.78px" class="cls_010"><span class="cls_010">なな</span></div>
+<div style="position:absolute;left:237.89px;top:674.78px" class="cls_009"><span class="cls_009">(</span><span class="cls_010">しち</span><span class="cls_009">)</span></div>
+<div style="position:absolute;left:331.51px;top:675.02px" class="cls_009"><span class="cls_009">nana</span></div>
+<div style="position:absolute;left:383.53px;top:675.02px" class="cls_009"><span class="cls_009">(shichi)</span></div>
+<div style="position:absolute;left:123.14px;top:693.50px" class="cls_009"><span class="cls_009">8</span></div>
+<div style="position:absolute;left:183.86px;top:693.26px" class="cls_010"><span class="cls_010">はち</span></div>
+<div style="position:absolute;left:331.51px;top:693.50px" class="cls_009"><span class="cls_009">hachi</span></div>
+<div style="position:absolute;left:123.14px;top:711.98px" class="cls_009"><span class="cls_009">9</span></div>
+<div style="position:absolute;left:183.86px;top:711.74px" class="cls_010"><span class="cls_010">きゅう</span></div>
+<div style="position:absolute;left:237.89px;top:711.74px" class="cls_009"><span class="cls_009">(</span><span class="cls_010">く</span><span class="cls_009">)</span></div>
+<div style="position:absolute;left:331.51px;top:711.74px" class="cls_009"><span class="cls_009">kyuu</span></div>
+<div style="position:absolute;left:377.71px;top:711.74px" class="cls_011"><span class="cls_011">（</span><span class="cls_009">ku</span><span class="cls_011">）</span></div>
+<div style="position:absolute;left:119.78px;top:730.46px" class="cls_009"><span class="cls_009">10</span></div>
+<div style="position:absolute;left:183.86px;top:730.22px" class="cls_010"><span class="cls_010">じゅう</span></div>
+<div style="position:absolute;left:331.51px;top:730.46px" class="cls_009"><span class="cls_009">juu</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12765px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_009"><span class="cls_009">There are two ways of counting “4”, “7”, and “9”.</span></div>
+<div style="position:absolute;left:369.20px;top:99.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">よん</span><span class="cls_009">”(yon), “</span><span class="cls_010">なな</span><span class="cls_009">”(nana),</span></div>
+<div style="position:absolute;left:85.10px;top:117.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">きゅう</span><span class="cls_009">”(kyuu) and “</span><span class="cls_010">し</span><span class="cls_009">”(shi),</span></div>
+<div style="position:absolute;left:255.49px;top:117.66px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">しち</span><span class="cls_009">”(shichi), “</span><span class="cls_010">く</span><span class="cls_009">”(ku).</span></div>
+<div style="position:absolute;left:85.10px;top:135.90px" class="cls_009"><span class="cls_009">They are divided into 2 groups.</span></div>
+<div style="position:absolute;left:85.10px;top:153.66px" class="cls_010"><span class="cls_010">①</span><span class="cls_009">The first group is reading “</span><span class="cls_010">よん</span><span class="cls_009">, </span><span class="cls_010">なな</span><span class="cls_009">, </span><span class="cls_010">きゅう</span><span class="cls_009">” which are followed by a</span></div>
+<div style="position:absolute;left:85.10px;top:171.90px" class="cls_009"><span class="cls_009">counter suffix. The counter suffix is a suffix that follows a number when</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_009"><span class="cls_009">counting numbers. “</span><span class="cls_010">よん</span><span class="cls_009">,</span><span class="cls_011">  </span><span class="cls_010">なな</span><span class="cls_009">,</span><span class="cls_011">  </span><span class="cls_010">きゅう</span><span class="cls_009">”, are used with counter suffixes.</span></div>
+<div style="position:absolute;left:85.10px;top:207.90px" class="cls_009"><span class="cls_009">Examples</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_010"><span class="cls_010">よんかい</span><span class="cls_009">   yonkai</span></div>
+<div style="position:absolute;left:218.45px;top:225.66px" class="cls_009"><span class="cls_009">4th floor</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_010"><span class="cls_010">ななかい</span><span class="cls_009">   nanakai</span></div>
+<div style="position:absolute;left:214.73px;top:243.66px" class="cls_009"><span class="cls_009">7th floor</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_010"><span class="cls_010">きゅうかい</span><span class="cls_009"> kyuukai</span></div>
+<div style="position:absolute;left:214.97px;top:261.69px" class="cls_009"><span class="cls_009">9th floor</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_010"><span class="cls_010">よんさい</span><span class="cls_009">   yonsai</span></div>
+<div style="position:absolute;left:216.76px;top:279.69px" class="cls_009"><span class="cls_009">4 years old</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_009"><span class="cls_009">“</span><span class="cls_010">かい</span><span class="cls_009">”(kai)</span><span class="cls_011"> </span><span class="cls_009"> and “</span><span class="cls_010">さい</span><span class="cls_009">”(sai) are counter suffixes.</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_010"><span class="cls_010">②</span><span class="cls_009"> The second group is read as “</span><span class="cls_010">し、しち、く</span><span class="cls_009">”, which are used for special</span></div>
+<div style="position:absolute;left:85.10px;top:369.93px" class="cls_009"><span class="cls_009">occasions.</span></div>
+<div style="position:absolute;left:85.10px;top:387.93px" class="cls_009"><span class="cls_009">Examples</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_010"><span class="cls_010">しがつ</span><span class="cls_009">     shigatsu</span></div>
+<div style="position:absolute;left:234.53px;top:405.69px" class="cls_009"><span class="cls_009">April</span></div>
+<div style="position:absolute;left:85.10px;top:423.69px" class="cls_010"><span class="cls_010">しちがつ</span><span class="cls_009">   shichigatsu   July</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_010"><span class="cls_010">くがつ</span><span class="cls_009">     kugatsu</span></div>
+<div style="position:absolute;left:232.25px;top:441.71px" class="cls_009"><span class="cls_009">September</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_010"><span class="cls_010">しちじ</span><span class="cls_009">     shichiji</span></div>
+<div style="position:absolute;left:233.57px;top:459.71px" class="cls_009"><span class="cls_009">7 o'clock</span></div>
+<div style="position:absolute;left:85.10px;top:495.95px" class="cls_010"><span class="cls_010">①</span><span class="cls_009"> and </span><span class="cls_010">②</span><span class="cls_009"> are the basic rules, however, there’re some exceptions.</span></div>
+<div style="position:absolute;left:85.10px;top:513.71px" class="cls_009"><span class="cls_009">For example,</span></div>
+<div style="position:absolute;left:175.58px;top:513.71px" class="cls_009"><span class="cls_009">4:00  </span><span class="cls_010">よじ</span><span class="cls_009">  yoji</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_009"><span class="cls_009">11</span><span class="cls_011">～</span><span class="cls_009">99</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_009"><span class="cls_009">Counting up to 100 consists of counting from 1 to 10. For example, “12” is “</span><span class="cls_010">じ</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_010"><span class="cls_010">ゅうに</span><span class="cls_009">”(juuni), “23” is “</span><span class="cls_010">にじゅうさん</span><span class="cls_009">”(nijuusan), “40” is “</span><span class="cls_010">よんじゅう</span><span class="cls_009">”(yonjuu).</span></div>
+<div style="position:absolute;left:85.10px;top:621.98px" class="cls_009"><span class="cls_009">Practice</span></div>
+<div style="position:absolute;left:85.10px;top:639.74px" class="cls_011"><span class="cls_011">１５ </span><span class="cls_009"> …</span></div>
+<div style="position:absolute;left:85.10px;top:657.74px" class="cls_011"><span class="cls_011">８８ </span><span class="cls_009"> …</span></div>
+<div style="position:absolute;left:85.10px;top:675.74px" class="cls_011"><span class="cls_011">９０ </span><span class="cls_009"> …</span></div>
+<div style="position:absolute;left:85.10px;top:693.74px" class="cls_011"><span class="cls_011">９９ </span><span class="cls_009"> …</span></div>
+<div style="position:absolute;left:85.10px;top:729.74px" class="cls_009"><span class="cls_009">100</span></div>
+<div style="position:absolute;left:129.38px;top:729.74px" class="cls_010"><span class="cls_010">ひゃく</span><span class="cls_011"> </span><span class="cls_009"> hyaku</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13616px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:117.66px" class="cls_009"><span class="cls_009">6.</span><span class="cls_010">にんずうの</span><span class="cls_011">  </span><span class="cls_010">かぞえかた</span></div>
+<div style="position:absolute;left:103.10px;top:135.90px" class="cls_009"><span class="cls_009">ninzuuno   kazoekata</span></div>
+<div style="position:absolute;left:103.22px;top:153.90px" class="cls_009"><span class="cls_009">how to count people</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_010"><span class="cls_010">じょすうし</span><span class="cls_009">  josuushi</span></div>
+<div style="position:absolute;left:85.10px;top:207.90px" class="cls_009"><span class="cls_009">counter suffix</span></div>
+<div style="position:absolute;left:85.10px;top:243.90px" class="cls_009"><span class="cls_009">In Japanese, when referring to quantity, you use a counter suffix. The</span></div>
+<div style="position:absolute;left:85.10px;top:261.93px" class="cls_009"><span class="cls_009">counter suffix retains shape or property of the object that you are counting.</span></div>
+<div style="position:absolute;left:85.10px;top:279.93px" class="cls_009"><span class="cls_009">The object that you are counting defines how to count.</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_009"><span class="cls_009">Number+</span><span class="cls_010">にん</span><span class="cls_011">（</span><span class="cls_009">nin</span><span class="cls_011">）</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_009"><span class="cls_009">When counting the number of people, a sentence pattern of the “number + </span><span class="cls_010">に</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_010"><span class="cls_010">ん</span><span class="cls_009">(nin)” is applied. But there are special expressions for counting 1 person or</span></div>
+<div style="position:absolute;left:85.10px;top:369.93px" class="cls_009"><span class="cls_009">2 people.</span></div>
+<div style="position:absolute;left:91.10px;top:387.69px" class="cls_009"><span class="cls_009">1 person  </span><span class="cls_010">ひとり</span><span class="cls_009">  hitori</span></div>
+<div style="position:absolute;left:91.10px;top:405.69px" class="cls_009"><span class="cls_009">2 people  </span><span class="cls_010">ふたり</span><span class="cls_009">  futari</span></div>
+<div style="position:absolute;left:91.10px;top:423.69px" class="cls_009"><span class="cls_009">3 people onwards, the rule “number + </span><span class="cls_010">にん</span><span class="cls_009">(nin)" is applied.</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_009"><span class="cls_009">1</span><span class="cls_011">～</span><span class="cls_009">10 people</span></div>
+<div style="position:absolute;left:174.98px;top:479.27px" class="cls_010"><span class="cls_010">にんずう</span><span class="cls_011">（</span><span class="cls_009">ninzuu</span><span class="cls_011">）</span><span class="cls_009">How to count people</span></div>
+<div style="position:absolute;left:79.82px;top:498.71px" class="cls_009"><span class="cls_009">1</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:498.95px" class="cls_009"><span class="cls_009">hitori</span></div>
+<div style="position:absolute;left:362.95px;top:498.71px" class="cls_010"><span class="cls_010">ひとり</span></div>
+<div style="position:absolute;left:79.82px;top:517.19px" class="cls_009"><span class="cls_009">2</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:517.43px" class="cls_009"><span class="cls_009">futari</span></div>
+<div style="position:absolute;left:362.95px;top:517.19px" class="cls_010"><span class="cls_010">ふたり</span></div>
+<div style="position:absolute;left:79.82px;top:535.67px" class="cls_009"><span class="cls_009">3</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:535.91px" class="cls_009"><span class="cls_009">sannin</span></div>
+<div style="position:absolute;left:362.95px;top:535.67px" class="cls_010"><span class="cls_010">さんにん</span></div>
+<div style="position:absolute;left:79.82px;top:554.27px" class="cls_009"><span class="cls_009">4</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:554.51px" class="cls_009"><span class="cls_009">yonin</span></div>
+<div style="position:absolute;left:362.95px;top:554.27px" class="cls_010"><span class="cls_010">よにん</span></div>
+<div style="position:absolute;left:79.82px;top:572.75px" class="cls_009"><span class="cls_009">5</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:572.99px" class="cls_009"><span class="cls_009">gonin</span></div>
+<div style="position:absolute;left:362.95px;top:572.75px" class="cls_010"><span class="cls_010">ごにん</span></div>
+<div style="position:absolute;left:79.82px;top:591.23px" class="cls_009"><span class="cls_009">6</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:591.47px" class="cls_009"><span class="cls_009">rokunin</span></div>
+<div style="position:absolute;left:362.95px;top:591.23px" class="cls_010"><span class="cls_010">ろくにん</span></div>
+<div style="position:absolute;left:79.82px;top:609.71px" class="cls_009"><span class="cls_009">7</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:609.95px" class="cls_009"><span class="cls_009">nananin</span></div>
+<div style="position:absolute;left:362.95px;top:609.71px" class="cls_010"><span class="cls_010">ななにん</span></div>
+<div style="position:absolute;left:79.82px;top:628.22px" class="cls_009"><span class="cls_009">8</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:628.46px" class="cls_009"><span class="cls_009">hachinin</span></div>
+<div style="position:absolute;left:362.95px;top:628.22px" class="cls_010"><span class="cls_010">はちにん</span></div>
+<div style="position:absolute;left:79.82px;top:646.70px" class="cls_009"><span class="cls_009">9</span><span class="cls_010"> 人</span></div>
+<div style="position:absolute;left:221.33px;top:646.94px" class="cls_009"><span class="cls_009">kyuunin</span></div>
+<div style="position:absolute;left:362.95px;top:646.70px" class="cls_010"><span class="cls_010">きゅうにん</span></div>
+<div style="position:absolute;left:79.82px;top:665.30px" class="cls_009"><span class="cls_009">10</span><span class="cls_011"> </span><span class="cls_010">人</span></div>
+<div style="position:absolute;left:221.33px;top:665.54px" class="cls_009"><span class="cls_009">jyuunin</span></div>
+<div style="position:absolute;left:362.95px;top:665.30px" class="cls_010"><span class="cls_010">じゅうにん</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:14467px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:79.82px;top:100.14px" class="cls_010"><span class="cls_010">メモ</span><span class="cls_009">(Memo)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:15318px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:211.01px;top:102.42px" class="cls_016"><span class="cls_016">すう じ</span></div>
+<div style="position:absolute;left:85.10px;top:112.38px" class="cls_008"><span class="cls_008">付録</span></div>
+<div style="position:absolute;left:211.97px;top:112.38px" class="cls_008"><span class="cls_008">数字</span></div>
+<div style="position:absolute;left:202.01px;top:134.70px" class="cls_007"><span class="cls_007">suuji</span></div>
+<div style="position:absolute;left:96.50px;top:172.26px" class="cls_007"><span class="cls_007">1</span></div>
+<div style="position:absolute;left:133.70px;top:172.26px" class="cls_007"><span class="cls_007">2</span></div>
+<div style="position:absolute;left:170.78px;top:172.26px" class="cls_007"><span class="cls_007">3</span></div>
+<div style="position:absolute;left:212.21px;top:172.26px" class="cls_007"><span class="cls_007">4</span></div>
+<div style="position:absolute;left:250.13px;top:172.26px" class="cls_007"><span class="cls_007">5</span></div>
+<div style="position:absolute;left:288.53px;top:172.26px" class="cls_007"><span class="cls_007">6</span></div>
+<div style="position:absolute;left:334.27px;top:172.26px" class="cls_007"><span class="cls_007">7</span></div>
+<div style="position:absolute;left:382.27px;top:172.26px" class="cls_007"><span class="cls_007">8</span></div>
+<div style="position:absolute;left:433.03px;top:172.26px" class="cls_007"><span class="cls_007">9</span></div>
+<div style="position:absolute;left:486.70px;top:172.26px" class="cls_007"><span class="cls_007">10</span></div>
+<div style="position:absolute;left:93.38px;top:200.46px" class="cls_008"><span class="cls_008">一</span></div>
+<div style="position:absolute;left:130.58px;top:200.46px" class="cls_008"><span class="cls_008">ニ</span></div>
+<div style="position:absolute;left:167.66px;top:200.46px" class="cls_008"><span class="cls_008">三</span></div>
+<div style="position:absolute;left:209.09px;top:200.46px" class="cls_008"><span class="cls_008">四</span></div>
+<div style="position:absolute;left:247.01px;top:200.46px" class="cls_008"><span class="cls_008">五</span></div>
+<div style="position:absolute;left:285.41px;top:200.46px" class="cls_008"><span class="cls_008">六</span></div>
+<div style="position:absolute;left:331.15px;top:200.46px" class="cls_008"><span class="cls_008">七</span></div>
+<div style="position:absolute;left:379.15px;top:200.46px" class="cls_008"><span class="cls_008">八</span></div>
+<div style="position:absolute;left:429.91px;top:200.46px" class="cls_008"><span class="cls_008">九</span></div>
+<div style="position:absolute;left:487.42px;top:200.46px" class="cls_008"><span class="cls_008">十</span></div>
+<div style="position:absolute;left:86.42px;top:236.94px" class="cls_008"><span class="cls_008">いち</span></div>
+<div style="position:absolute;left:130.58px;top:236.94px" class="cls_008"><span class="cls_008">に</span></div>
+<div style="position:absolute;left:160.58px;top:236.94px" class="cls_008"><span class="cls_008">さん</span></div>
+<div style="position:absolute;left:202.13px;top:236.94px" class="cls_008"><span class="cls_008">よん</span></div>
+<div style="position:absolute;left:247.01px;top:236.94px" class="cls_008"><span class="cls_008">ご</span></div>
+<div style="position:absolute;left:278.33px;top:236.94px" class="cls_008"><span class="cls_008">ろく</span></div>
+<div style="position:absolute;left:324.19px;top:236.94px" class="cls_008"><span class="cls_008">なな</span></div>
+<div style="position:absolute;left:372.19px;top:236.94px" class="cls_008"><span class="cls_008">はち</span></div>
+<div style="position:absolute;left:415.87px;top:236.94px" class="cls_008"><span class="cls_008">きゅう</span></div>
+<div style="position:absolute;left:473.38px;top:236.94px" class="cls_008"><span class="cls_008">じゅう</span></div>
+<div style="position:absolute;left:209.09px;top:272.97px" class="cls_008"><span class="cls_008">し</span></div>
+<div style="position:absolute;left:324.19px;top:272.97px" class="cls_008"><span class="cls_008">しち</span></div>
+<div style="position:absolute;left:88.58px;top:300.69px" class="cls_007"><span class="cls_007">ichi</span></div>
+<div style="position:absolute;left:131.06px;top:300.69px" class="cls_007"><span class="cls_007">ni</span></div>
+<div style="position:absolute;left:163.22px;top:300.69px" class="cls_007"><span class="cls_007">san</span></div>
+<div style="position:absolute;left:204.65px;top:300.69px" class="cls_007"><span class="cls_007">yon</span></div>
+<div style="position:absolute;left:246.77px;top:300.69px" class="cls_007"><span class="cls_007">go</span></div>
+<div style="position:absolute;left:277.37px;top:300.69px" class="cls_007"><span class="cls_007">roku</span></div>
+<div style="position:absolute;left:321.79px;top:300.69px" class="cls_007"><span class="cls_007">nana</span></div>
+<div style="position:absolute;left:368.47px;top:300.69px" class="cls_007"><span class="cls_007">hachi</span></div>
+<div style="position:absolute;left:420.43px;top:300.69px" class="cls_007"><span class="cls_007">kyuu</span></div>
+<div style="position:absolute;left:483.82px;top:300.69px" class="cls_007"><span class="cls_007">juu</span></div>
+<div style="position:absolute;left:206.45px;top:318.69px" class="cls_007"><span class="cls_007">shi</span></div>
+<div style="position:absolute;left:318.91px;top:318.69px" class="cls_007"><span class="cls_007">shichi</span></div>
+<p>Copyright 2018 &copy; Vemula Shanmukha Srinivas & Bhuma Jeswanth Reddy.</p>
+</div>
+</div>
+</body>
+</html>

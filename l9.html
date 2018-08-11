@@ -1,0 +1,765 @@
+<html>
+    <head>
+        <title>N-5 Nihongo</title>
+        <style type="text/css">
+            <!--
+            span.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_005{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_005{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_007{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_007{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_008{font-family:"MS Mincho",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_008{font-family:"MS Mincho",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_009{font-family:"Century",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_009{font-family:"Century",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_013{font-family:"MS Mincho",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_013{font-family:"MS Mincho",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_014{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_014{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_015{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_015{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_017{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_017{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_019{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_019{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_012{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_012{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_020{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_020{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            -->
+            .video-background{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width:100%;
+                height: 100%;
+                z-index: -100;
+                margin-left:25%;
+                padding:1px 16px;
+                position: fixed;
+            }
+            @media(min-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+
+            }
+            @media(max-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .menu{
+                float: right;
+                list-style: none;
+                margin:20px;
+            }
+            .header{
+                background: rgba(0,0,255,500);
+                height: 100vh;
+            }
+            ul{
+                float:right;
+                list-style: none;
+                margin: 20px;
+                top:0px;
+            }
+            li{
+                display: inline-block;
+                margin: 10px 5px;
+            }
+            li a{
+                text-decoration: none;
+                color: #ffffff;
+                padding:5px 10px;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+                border-bottom: 1px solid #ffffff;
+            }
+            li a:hover{
+                background: coral;
+                border-bottom:1px solid coral;
+                transition: .42s; 
+            }
+            li a.active{
+              background: coral;
+              border-bottom:1px solid coral;
+               }
+            .nav{
+                background-color: rgba(0,0,0,0.5);
+                height:110px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="nav" align="center" style="top:0px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="l1.html">Lesson-01</a></li>
+            <li><a href="l2.html">Lesson-02</a></li>
+            <li><a href="l3.html">Lesson-03</a></li>
+            <li><a href="l4.html">Lesson-04</a></li>
+            <li><a href="l5.html">Lesson-05</a></li>
+            <li><a href="l6.html">Lesson-06</a></li>
+            <li><a href="l7.html">Lesson-07</a></li>
+            <li><a href="l8.html">Lesson-08</a></li>
+            <li><a class="active" href="l9.html">Lesson-09</a></li>
+            <li><a href="l10.html">Lesson-10</a></li>
+            <li><a href="l11.html">Lesson-11</a></li>
+            <li><a href="l12.html">Lesson-12</a></li>
+            <li><a href="l13.html">Lesson-13</a></li>
+            <li><a href="l14.html">Lesson-14</a></li>
+            <li><a href="l15.html">Lesson-15</a></li>
+        </ul>
+            </div>
+            <div style="margin-left:10%;padding:1px 16px;height:auto;">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/8hfGsLek9Q4?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/kM546hdCwMg?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/Ad1rBP2-MUk?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<div style="position:absolute;left:50%;margin-left:-297px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:125.18px;top:102.30px" class="cls_002"><span class="cls_002">オンライン</span><span class="cls_003">  </span><span class="cls_002">にほんご</span><span class="cls_003"> </span><span class="cls_004"> N5</span><span class="cls_003"> </span><span class="cls_002">コース</span></div>
+<div style="position:absolute;left:155.66px;top:138.78px" class="cls_004"><span class="cls_004">Online Japanese N5 Course</span></div>
+<div style="position:absolute;left:118.94px;top:209.70px" class="cls_005"><span class="cls_005">だい   か</span></div>
+<div style="position:absolute;left:202.61px;top:209.70px" class="cls_005"><span class="cls_005">みせ</span></div>
+<div style="position:absolute;left:384.19px;top:209.70px" class="cls_005"><span class="cls_005">ゆうめい</span></div>
+<div style="position:absolute;left:119.42px;top:219.66px" class="cls_007"><span class="cls_007">第</span><span class="cls_008">9</span><span class="cls_007">課</span><span class="cls_008">  </span><span class="cls_007">この店は</span><span class="cls_008">  </span><span class="cls_007">おいしくて</span><span class="cls_008">  </span><span class="cls_007">とても有名ですよ。</span></div>
+<div style="position:absolute;left:110.54px;top:251.10px" class="cls_009"><span class="cls_009">Lesson 9  This restaurant is delicious and very famous.</span></div>
+<div style="position:absolute;left:106.10px;top:318.45px" class="cls_005"><span class="cls_005">れ っ す ん</span></div>
+<div style="position:absolute;left:85.10px;top:328.41px" class="cls_013"><span class="cls_013">Ⅰ</span><span class="cls_014">.</span><span class="cls_015">レッスン</span><span class="cls_016">  </span><span class="cls_015">もくひょう</span></div>
+<div style="position:absolute;left:106.22px;top:350.73px" class="cls_014"><span class="cls_014">Goals of this lesson</span></div>
+<div style="position:absolute;left:107.06px;top:409.77px" class="cls_005"><span class="cls_005">けいようし       つか   かた</span></div>
+<div style="position:absolute;left:85.10px;top:419.73px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">な形容詞の</span><span class="cls_019">   </span><span class="cls_018">使</span><span class="cls_019"> </span><span class="cls_018">い方</span></div>
+<div style="position:absolute;left:97.10px;top:441.71px" class="cls_017"><span class="cls_017">Learn how to use </span><span class="cls_018">な</span><span class="cls_017">-adjectives</span></div>
+<div style="position:absolute;left:179.06px;top:481.79px" class="cls_005"><span class="cls_005">ちゅうもん</span></div>
+<div style="position:absolute;left:85.10px;top:491.75px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">レストランで</span><span class="cls_019">   </span><span class="cls_018">注</span><span class="cls_019">  </span><span class="cls_018">文</span><span class="cls_019"> </span><span class="cls_018">が</span><span class="cls_019">  </span><span class="cls_018">できること</span></div>
+<div style="position:absolute;left:96.38px;top:513.95px" class="cls_017"><span class="cls_017">Being able to order food in a restaurant</span></div>
+<div style="position:absolute;left:95.06px;top:553.79px" class="cls_005"><span class="cls_005">じょし</span></div>
+<div style="position:absolute;left:239.09px;top:553.79px" class="cls_005"><span class="cls_005">つか   かた</span></div>
+<div style="position:absolute;left:85.10px;top:563.75px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">助詞「から」と「よ」の</span><span class="cls_019">   </span><span class="cls_018">使</span><span class="cls_019"> </span><span class="cls_018">い</span><span class="cls_019"> </span><span class="cls_018">方</span></div>
+<div style="position:absolute;left:97.10px;top:585.71px" class="cls_017"><span class="cls_017">Learn how to use the particles “</span><span class="cls_018">から</span><span class="cls_017">” and “</span><span class="cls_018">よ</span><span class="cls_017">”</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:103.70px;top:102.42px" class="cls_005"><span class="cls_005">かいわ</span></div>
+<div style="position:absolute;left:85.10px;top:112.38px" class="cls_013"><span class="cls_013">Ⅱ</span><span class="cls_014">.</span><span class="cls_015">会話</span></div>
+<div style="position:absolute;left:105.74px;top:134.70px" class="cls_014"><span class="cls_014">Conversation</span></div>
+<div style="position:absolute;left:289.13px;top:175.74px" class="cls_005"><span class="cls_005">なんめい</span></div>
+<div style="position:absolute;left:85.10px;top:185.70px" class="cls_018"><span class="cls_018">ウェイトレス</span><span class="cls_019">：</span><span class="cls_018">いらっしゃいませ。</span><span class="cls_019">   </span><span class="cls_018">何</span><span class="cls_019"> </span><span class="cls_018">名</span><span class="cls_019"> </span><span class="cls_018">さまですか。</span></div>
+<div style="position:absolute;left:85.10px;top:229.74px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:87.14px;top:239.70px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:239.70px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">ふたりです。</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_018"><span class="cls_018">ウェイトレス</span><span class="cls_019">：</span><span class="cls_018">はい、こちらへ</span><span class="cls_019">  </span><span class="cls_018">どうぞ。</span></div>
+<div style="position:absolute;left:85.10px;top:319.77px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:189.17px;top:319.77px" class="cls_005"><span class="cls_005">みせ</span></div>
+<div style="position:absolute;left:349.15px;top:319.77px" class="cls_005"><span class="cls_005">ゆうめい</span></div>
+<div style="position:absolute;left:87.14px;top:329.73px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:329.73px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">この</span><span class="cls_019"> </span><span class="cls_018">店</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">おいしくて、とても</span><span class="cls_019">   </span><span class="cls_018">有</span><span class="cls_019"> </span><span class="cls_018">名</span><span class="cls_019"> </span><span class="cls_018">ですよ。</span></div>
+<div style="position:absolute;left:157.10px;top:373.77px" class="cls_005"><span class="cls_005">ほんとう</span></div>
+<div style="position:absolute;left:85.10px;top:383.73px" class="cls_018"><span class="cls_018">シルヴァン</span><span class="cls_019">： </span><span class="cls_018">本</span><span class="cls_019"> </span><span class="cls_018">当</span><span class="cls_019"> </span><span class="cls_018">ですか。</span></div>
+<div style="position:absolute;left:85.10px;top:409.77px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:214.37px;top:409.77px" class="cls_005"><span class="cls_005">ちか</span></div>
+<div style="position:absolute;left:338.35px;top:409.77px" class="cls_005"><span class="cls_005">みせ</span></div>
+<div style="position:absolute;left:87.14px;top:419.73px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:150.38px;top:419.73px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">はい、この</span><span class="cls_019"> </span><span class="cls_018">近</span><span class="cls_019"> </span><span class="cls_018">くには</span><span class="cls_019">  </span><span class="cls_018">おいしいお</span><span class="cls_019"> </span><span class="cls_018">店</span><span class="cls_019"> </span><span class="cls_018">が</span><span class="cls_019">  </span><span class="cls_018">たくさん</span><span class="cls_017"> </span><span class="cls_018">ありますから、</span></div>
+<div style="position:absolute;left:181.10px;top:445.79px" class="cls_005"><span class="cls_005">みち</span></div>
+<div style="position:absolute;left:157.10px;top:455.75px" class="cls_018"><span class="cls_018">この 道 は  いつも  にぎやかです。</span></div>
+<div style="position:absolute;left:253.13px;top:481.79px" class="cls_005"><span class="cls_005">なに       た</span></div>
+<div style="position:absolute;left:157.10px;top:491.75px" class="cls_018"><span class="cls_018">シルヴァンさん、 何 を  食べますか。</span></div>
+<div style="position:absolute;left:289.13px;top:535.79px" class="cls_005"><span class="cls_005">ていしょく</span></div>
+<div style="position:absolute;left:425.11px;top:535.79px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:85.10px;top:545.75px" class="cls_018"><span class="cls_018">シルヴァン</span><span class="cls_019">：</span><span class="cls_018">そうですね。</span><span class="cls_019">  </span><span class="cls_018">てんぷら</span><span class="cls_019"> </span><span class="cls_018">定</span><span class="cls_019">  </span><span class="cls_018">食</span><span class="cls_019"> </span><span class="cls_018">を</span><span class="cls_019">  </span><span class="cls_018">食べます。</span><span class="cls_019">   </span><span class="cls_018">安</span><span class="cls_019"> </span><span class="cls_018">藤</span><span class="cls_019"> </span><span class="cls_018">さんは</span><span class="cls_019">？</span></div>
+<div style="position:absolute;left:85.10px;top:589.79px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:299.09px;top:589.79px" class="cls_005"><span class="cls_005">た</span></div>
+<div style="position:absolute;left:87.14px;top:599.75px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:599.75px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">わたしは</span><span class="cls_019">  </span><span class="cls_018">やきそばを</span><span class="cls_019">  </span><span class="cls_018">食べます。</span></div>
+<div style="position:absolute;left:163.10px;top:625.82px" class="cls_005"><span class="cls_005">ちゅうもん</span></div>
+<div style="position:absolute;left:167.06px;top:635.78px" class="cls_018"><span class="cls_018">注 文 しましょう。すみません。</span></div>
+<div style="position:absolute;left:217.13px;top:679.82px" class="cls_005"><span class="cls_005">ちゅうもん</span></div>
+<div style="position:absolute;left:85.10px;top:689.78px" class="cls_018"><span class="cls_018">ウェイトレス</span><span class="cls_019">：</span><span class="cls_018">はい、ご</span><span class="cls_019"> </span><span class="cls_018">注</span><span class="cls_019">  </span><span class="cls_018">文</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">？</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:103.74px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:213.17px;top:103.74px" class="cls_005"><span class="cls_005">ひと</span></div>
+<div style="position:absolute;left:313.13px;top:103.74px" class="cls_005"><span class="cls_005">ていしょくひと</span></div>
+<div style="position:absolute;left:405.07px;top:103.74px" class="cls_005"><span class="cls_005">ねが</span></div>
+<div style="position:absolute;left:87.14px;top:113.70px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:113.70px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">やきそば</span><span class="cls_019"> </span><span class="cls_018">一</span><span class="cls_019"> </span><span class="cls_018">つと</span><span class="cls_019">  </span><span class="cls_018">てんぷら</span><span class="cls_019"> </span><span class="cls_018">定</span><span class="cls_019">  </span><span class="cls_018">食</span><span class="cls_019"> </span><span class="cls_018">一</span><span class="cls_019"> </span><span class="cls_018">つ、お</span><span class="cls_019"> </span><span class="cls_018">願</span><span class="cls_019"> </span><span class="cls_018">いします。</span></div>
+<div style="position:absolute;left:325.15px;top:157.74px" class="cls_005"><span class="cls_005">ていしょく</span></div>
+<div style="position:absolute;left:85.10px;top:167.70px" class="cls_018"><span class="cls_018">ウェイトレス</span><span class="cls_019">：</span><span class="cls_018">はい、やきそばと</span><span class="cls_019">  </span><span class="cls_018">てんぷら</span><span class="cls_019"> </span><span class="cls_018">定</span><span class="cls_019">  </span><span class="cls_018">食</span><span class="cls_019"> </span><span class="cls_018">ですね。</span></div>
+<div style="position:absolute;left:169.10px;top:193.74px" class="cls_005"><span class="cls_005">しょうしょう     ま</span></div>
+<div style="position:absolute;left:175.10px;top:203.70px" class="cls_018"><span class="cls_018">少  々  お待ちください。</span></div>
+<div style="position:absolute;left:169.10px;top:247.74px" class="cls_005"><span class="cls_005">ぜんぶ</span></div>
+<div style="position:absolute;left:243.77px;top:247.74px" class="cls_005"><span class="cls_005">えん</span></div>
+<div style="position:absolute;left:319.75px;top:247.74px" class="cls_005"><span class="cls_005">かいけい</span></div>
+<div style="position:absolute;left:387.79px;top:247.74px" class="cls_005"><span class="cls_005">いっしょ</span></div>
+<div style="position:absolute;left:85.10px;top:257.73px" class="cls_018"><span class="cls_018">ウェイトレス</span><span class="cls_019">：</span><span class="cls_018">全部で</span><span class="cls_019"> </span><span class="cls_017"> 1980</span><span class="cls_019"> </span><span class="cls_018">円</span><span class="cls_019"> </span><span class="cls_018">です。</span><span class="cls_019">  </span><span class="cls_018">お</span><span class="cls_019"> </span><span class="cls_018">会</span><span class="cls_019"> </span><span class="cls_018">計</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">ご</span><span class="cls_019"> </span><span class="cls_018">一</span><span class="cls_019"> </span><span class="cls_018">緒</span><span class="cls_019"> </span><span class="cls_018">ですか、</span></div>
+<div style="position:absolute;left:169.10px;top:283.77px" class="cls_005"><span class="cls_005">べつべつ</span></div>
+<div style="position:absolute;left:171.14px;top:293.73px" class="cls_018"><span class="cls_018">別 々ですか。</span></div>
+<div style="position:absolute;left:85.10px;top:319.77px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:165.14px;top:319.77px" class="cls_005"><span class="cls_005">いっしょ</span></div>
+<div style="position:absolute;left:233.21px;top:319.77px" class="cls_005"><span class="cls_005">ねが</span></div>
+<div style="position:absolute;left:87.14px;top:329.73px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:329.73px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">一 緒で</span><span class="cls_019">  </span><span class="cls_018">お願いします。</span></div>
+<div style="position:absolute;left:289.13px;top:373.77px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:85.10px;top:383.73px" class="cls_018"><span class="cls_018">シルヴァン</span><span class="cls_019">：</span><span class="cls_018">ああ、おいしかった。</span><span class="cls_019">   </span><span class="cls_018">安</span><span class="cls_019"> </span><span class="cls_018">藤</span><span class="cls_019"> </span><span class="cls_018">さん、ごちそうさまでした。</span></div>
+<div style="position:absolute;left:157.10px;top:405.69px" class="cls_018"><span class="cls_018">ありがとう  ございます。</span></div>
+<div style="position:absolute;left:85.10px;top:445.79px" class="cls_005"><span class="cls_005">あんどう</span></div>
+<div style="position:absolute;left:87.14px;top:455.75px" class="cls_018"><span class="cls_018">安藤</span></div>
+<div style="position:absolute;left:153.14px;top:455.75px" class="cls_019"><span class="cls_019">：</span><span class="cls_018">いいえ、どういたしまして。</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:107.46px" class="cls_013"><span class="cls_013">Ⅲ</span><span class="cls_014">.</span><span class="cls_015">ごい</span></div>
+<div style="position:absolute;left:106.22px;top:134.70px" class="cls_014"><span class="cls_014">Vocabulary</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">ひとつ</span></div>
+<div style="position:absolute;left:211.13px;top:171.66px" class="cls_017"><span class="cls_017">1</span><span class="cls_018"> つ</span></div>
+<div style="position:absolute;left:265.13px;top:171.66px" class="cls_017"><span class="cls_017">counters</span></div>
+<div style="position:absolute;left:337.15px;top:171.66px" class="cls_017"><span class="cls_017">one(used when counting</span></div>
+<div style="position:absolute;left:337.15px;top:189.90px" class="cls_017"><span class="cls_017">things)</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">ふたつ</span></div>
+<div style="position:absolute;left:211.13px;top:207.66px" class="cls_017"><span class="cls_017">2</span><span class="cls_018"> つ</span></div>
+<div style="position:absolute;left:265.13px;top:207.66px" class="cls_017"><span class="cls_017">counters</span></div>
+<div style="position:absolute;left:337.15px;top:207.66px" class="cls_017"><span class="cls_017">two</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_017"><span class="cls_017">3.</span><span class="cls_012"> </span><span class="cls_019">～</span><span class="cls_018">こ</span></div>
+<div style="position:absolute;left:211.13px;top:225.66px" class="cls_019"><span class="cls_019">～</span><span class="cls_018">個</span></div>
+<div style="position:absolute;left:265.13px;top:225.66px" class="cls_017"><span class="cls_017">counters</span></div>
+<div style="position:absolute;left:337.15px;top:225.66px" class="cls_017"><span class="cls_017">counter suffix for small things</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_017"><span class="cls_017">4.</span><span class="cls_018">めい</span></div>
+<div style="position:absolute;left:211.13px;top:243.66px" class="cls_018"><span class="cls_018">名</span></div>
+<div style="position:absolute;left:265.13px;top:243.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:243.66px" class="cls_017"><span class="cls_017">first name</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_017"><span class="cls_017">5.</span><span class="cls_018">なんめい</span></div>
+<div style="position:absolute;left:211.13px;top:261.69px" class="cls_018"><span class="cls_018">何名</span></div>
+<div style="position:absolute;left:265.13px;top:261.69px" class="cls_017"><span class="cls_017">interr.</span></div>
+<div style="position:absolute;left:337.15px;top:261.69px" class="cls_017"><span class="cls_017">how many people</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_017"><span class="cls_017">6.</span><span class="cls_018">ゆうめい</span></div>
+<div style="position:absolute;left:211.13px;top:279.69px" class="cls_018"><span class="cls_018">有名</span></div>
+<div style="position:absolute;left:265.13px;top:279.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:279.69px" class="cls_017"><span class="cls_017">famous</span></div>
+<div style="position:absolute;left:85.10px;top:297.69px" class="cls_017"><span class="cls_017">7.</span><span class="cls_018">にぎやか</span></div>
+<div style="position:absolute;left:211.13px;top:297.69px" class="cls_018"><span class="cls_018">賑やか</span></div>
+<div style="position:absolute;left:265.13px;top:297.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:297.69px" class="cls_017"><span class="cls_017">lively/busy</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_017"><span class="cls_017">8.</span><span class="cls_018">しずか</span></div>
+<div style="position:absolute;left:211.13px;top:315.69px" class="cls_018"><span class="cls_018">静か</span></div>
+<div style="position:absolute;left:265.13px;top:315.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:315.69px" class="cls_017"><span class="cls_017">quiet</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_017"><span class="cls_017">9.</span><span class="cls_018">べんり</span></div>
+<div style="position:absolute;left:211.13px;top:333.69px" class="cls_018"><span class="cls_018">便利</span></div>
+<div style="position:absolute;left:265.13px;top:333.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:333.69px" class="cls_017"><span class="cls_017">convenient</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_017"><span class="cls_017">10.</span><span class="cls_018">ふべん</span></div>
+<div style="position:absolute;left:211.13px;top:351.69px" class="cls_018"><span class="cls_018">不便</span></div>
+<div style="position:absolute;left:265.13px;top:351.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:351.69px" class="cls_017"><span class="cls_017">inconvenient</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_017"><span class="cls_017">11.</span><span class="cls_018">じょうぶ</span></div>
+<div style="position:absolute;left:211.13px;top:369.69px" class="cls_018"><span class="cls_018">丈夫</span></div>
+<div style="position:absolute;left:265.13px;top:369.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:369.69px" class="cls_017"><span class="cls_017">strong/solid</span></div>
+<div style="position:absolute;left:85.10px;top:387.69px" class="cls_017"><span class="cls_017">12.</span><span class="cls_018">まじめ</span></div>
+<div style="position:absolute;left:211.13px;top:387.69px" class="cls_018"><span class="cls_018">真面目</span></div>
+<div style="position:absolute;left:265.13px;top:387.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:387.69px" class="cls_017"><span class="cls_017">serious/honest</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_017"><span class="cls_017">13.</span><span class="cls_018">りっぱ</span></div>
+<div style="position:absolute;left:211.13px;top:405.69px" class="cls_018"><span class="cls_018">立派</span></div>
+<div style="position:absolute;left:265.13px;top:405.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:405.69px" class="cls_017"><span class="cls_017">fine/respectable</span></div>
+<div style="position:absolute;left:85.10px;top:423.69px" class="cls_017"><span class="cls_017">14.</span><span class="cls_018">ざんねん</span></div>
+<div style="position:absolute;left:211.13px;top:423.69px" class="cls_018"><span class="cls_018">残念</span></div>
+<div style="position:absolute;left:265.13px;top:423.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:423.69px" class="cls_017"><span class="cls_017">regrettable</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_017"><span class="cls_017">15.</span><span class="cls_018">ひま</span></div>
+<div style="position:absolute;left:211.13px;top:441.71px" class="cls_018"><span class="cls_018">暇</span></div>
+<div style="position:absolute;left:265.13px;top:441.71px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:441.71px" class="cls_017"><span class="cls_017">free</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_017"><span class="cls_017">16.</span><span class="cls_018">たいへん</span></div>
+<div style="position:absolute;left:211.13px;top:459.71px" class="cls_018"><span class="cls_018">大変</span></div>
+<div style="position:absolute;left:265.13px;top:459.71px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:459.71px" class="cls_017"><span class="cls_017">difficult/hard</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_017"><span class="cls_017">17.</span><span class="cls_018">たくさん</span></div>
+<div style="position:absolute;left:265.13px;top:477.71px" class="cls_017"><span class="cls_017">n./adv.</span></div>
+<div style="position:absolute;left:337.15px;top:477.71px" class="cls_017"><span class="cls_017">many</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_017"><span class="cls_017">18.</span><span class="cls_018">いつも</span></div>
+<div style="position:absolute;left:265.13px;top:495.71px" class="cls_017"><span class="cls_017">n./</span><span class="cls_018">な</span><span class="cls_017">- adj.</span></div>
+<div style="position:absolute;left:337.15px;top:495.71px" class="cls_017"><span class="cls_017">always</span></div>
+<div style="position:absolute;left:85.10px;top:513.71px" class="cls_017"><span class="cls_017">19.</span><span class="cls_018">みち</span></div>
+<div style="position:absolute;left:211.13px;top:513.71px" class="cls_018"><span class="cls_018">道</span></div>
+<div style="position:absolute;left:265.13px;top:513.71px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:513.71px" class="cls_017"><span class="cls_017">road/street</span></div>
+<div style="position:absolute;left:85.10px;top:531.71px" class="cls_017"><span class="cls_017">20.</span><span class="cls_018">まち</span></div>
+<div style="position:absolute;left:211.13px;top:531.71px" class="cls_018"><span class="cls_018">町</span><span class="cls_017">/</span><span class="cls_018">街</span></div>
+<div style="position:absolute;left:265.13px;top:531.71px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:531.71px" class="cls_017"><span class="cls_017">town</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_017"><span class="cls_017">21.</span><span class="cls_018">そば</span></div>
+<div style="position:absolute;left:265.13px;top:549.71px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:549.71px" class="cls_017"><span class="cls_017">soba(Japanese buckwheat</span></div>
+<div style="position:absolute;left:337.15px;top:567.95px" class="cls_017"><span class="cls_017">noodles)</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_017"><span class="cls_017">22.</span><span class="cls_018">うどん</span></div>
+<div style="position:absolute;left:265.13px;top:585.71px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:585.71px" class="cls_017"><span class="cls_017">udon (Japanese thick white</span></div>
+<div style="position:absolute;left:337.15px;top:603.95px" class="cls_017"><span class="cls_017">noodle)</span></div>
+<div style="position:absolute;left:85.10px;top:621.74px" class="cls_017"><span class="cls_017">23.</span><span class="cls_018">ぎゅうどん</span></div>
+<div style="position:absolute;left:211.13px;top:621.74px" class="cls_018"><span class="cls_018">牛丼</span></div>
+<div style="position:absolute;left:265.13px;top:621.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:621.74px" class="cls_017"><span class="cls_017">beef rice bowl</span></div>
+<div style="position:absolute;left:85.10px;top:639.74px" class="cls_017"><span class="cls_017">24.</span><span class="cls_018">やきにく</span></div>
+<div style="position:absolute;left:211.13px;top:639.74px" class="cls_018"><span class="cls_018">焼肉</span></div>
+<div style="position:absolute;left:265.13px;top:639.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:639.74px" class="cls_017"><span class="cls_017">yakiniku(Japanese grilled</span></div>
+<div style="position:absolute;left:337.15px;top:657.98px" class="cls_017"><span class="cls_017">beef)</span></div>
+<div style="position:absolute;left:85.10px;top:675.74px" class="cls_017"><span class="cls_017">25.</span><span class="cls_018">にく</span></div>
+<div style="position:absolute;left:211.13px;top:675.74px" class="cls_018"><span class="cls_018">肉</span></div>
+<div style="position:absolute;left:265.13px;top:675.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:675.74px" class="cls_017"><span class="cls_017">meat</span></div>
+<div style="position:absolute;left:85.10px;top:693.74px" class="cls_017"><span class="cls_017">26.</span><span class="cls_018">とりにく</span></div>
+<div style="position:absolute;left:211.13px;top:693.74px" class="cls_018"><span class="cls_018">鶏肉</span></div>
+<div style="position:absolute;left:265.13px;top:693.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:693.74px" class="cls_017"><span class="cls_017">chicken</span></div>
+<div style="position:absolute;left:85.10px;top:711.74px" class="cls_017"><span class="cls_017">27.</span><span class="cls_018">ぶたにく</span></div>
+<div style="position:absolute;left:211.13px;top:711.74px" class="cls_018"><span class="cls_018">豚肉</span></div>
+<div style="position:absolute;left:265.13px;top:711.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:711.74px" class="cls_017"><span class="cls_017">pork</span></div>
+<div style="position:absolute;left:85.10px;top:729.74px" class="cls_017"><span class="cls_017">28.</span><span class="cls_018">ぎゅうにく</span></div>
+<div style="position:absolute;left:211.13px;top:729.74px" class="cls_018"><span class="cls_018">牛肉</span></div>
+<div style="position:absolute;left:265.13px;top:729.74px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:729.74px" class="cls_017"><span class="cls_017">beef</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_017"><span class="cls_017">29.</span><span class="cls_018">やさい</span></div>
+<div style="position:absolute;left:211.13px;top:99.66px" class="cls_018"><span class="cls_018">野菜</span></div>
+<div style="position:absolute;left:265.13px;top:99.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:99.66px" class="cls_017"><span class="cls_017">vegetable</span></div>
+<div style="position:absolute;left:85.10px;top:117.66px" class="cls_017"><span class="cls_017">30.</span><span class="cls_018">やきそば</span></div>
+<div style="position:absolute;left:211.13px;top:117.66px" class="cls_018"><span class="cls_018">焼きそば</span><span class="cls_017"> n.</span></div>
+<div style="position:absolute;left:337.15px;top:117.66px" class="cls_017"><span class="cls_017">yakisoba (fried noodles)</span></div>
+<div style="position:absolute;left:85.10px;top:135.66px" class="cls_017"><span class="cls_017">31.</span><span class="cls_018">カレー</span><span class="cls_017">(</span><span class="cls_018">ライス</span><span class="cls_017">)</span></div>
+<div style="position:absolute;left:265.13px;top:135.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:135.66px" class="cls_017"><span class="cls_017">curry</span></div>
+<div style="position:absolute;left:85.10px;top:153.66px" class="cls_017"><span class="cls_017">32.</span><span class="cls_018">ピザ</span></div>
+<div style="position:absolute;left:265.13px;top:153.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:153.66px" class="cls_017"><span class="cls_017">pizza</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_017"><span class="cls_017">33.</span><span class="cls_018">ハンバーガー</span></div>
+<div style="position:absolute;left:265.13px;top:171.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:171.66px" class="cls_017"><span class="cls_017">hamburger</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_017"><span class="cls_017">34.</span><span class="cls_018">サンドイッチ</span></div>
+<div style="position:absolute;left:265.13px;top:189.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:189.66px" class="cls_017"><span class="cls_017">sandwich</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_017"><span class="cls_017">35.</span><span class="cls_018">リンゴ</span></div>
+<div style="position:absolute;left:265.13px;top:207.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:207.66px" class="cls_017"><span class="cls_017">apple</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_017"><span class="cls_017">36.</span><span class="cls_018">みかん</span></div>
+<div style="position:absolute;left:211.13px;top:225.66px" class="cls_018"><span class="cls_018">蜜柑</span></div>
+<div style="position:absolute;left:265.13px;top:225.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:225.66px" class="cls_017"><span class="cls_017">mandarin orange</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_017"><span class="cls_017">37.</span><span class="cls_018">なし</span></div>
+<div style="position:absolute;left:211.13px;top:243.66px" class="cls_018"><span class="cls_018">梨</span></div>
+<div style="position:absolute;left:265.13px;top:243.66px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:243.66px" class="cls_017"><span class="cls_017">pear</span></div>
+<div style="position:absolute;left:85.10px;top:261.69px" class="cls_017"><span class="cls_017">38.</span><span class="cls_018">ていしょく</span></div>
+<div style="position:absolute;left:211.13px;top:261.69px" class="cls_018"><span class="cls_018">定食</span></div>
+<div style="position:absolute;left:265.13px;top:261.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:261.69px" class="cls_017"><span class="cls_017">set meal</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_017"><span class="cls_017">39.</span><span class="cls_012"> </span><span class="cls_018">ウェイトレス</span></div>
+<div style="position:absolute;left:265.13px;top:279.69px" class="cls_017"><span class="cls_017">n</span></div>
+<div style="position:absolute;left:337.15px;top:279.69px" class="cls_017"><span class="cls_017">waitress</span></div>
+<div style="position:absolute;left:85.10px;top:297.69px" class="cls_017"><span class="cls_017">40.</span><span class="cls_018">ちゅうもん</span></div>
+<div style="position:absolute;left:211.13px;top:297.69px" class="cls_018"><span class="cls_018">注文</span></div>
+<div style="position:absolute;left:265.13px;top:297.69px" class="cls_017"><span class="cls_017">n./G3</span></div>
+<div style="position:absolute;left:337.15px;top:297.69px" class="cls_017"><span class="cls_017">order/to order</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_017"><span class="cls_017">41.</span><span class="cls_018">かいけい</span></div>
+<div style="position:absolute;left:211.13px;top:315.69px" class="cls_018"><span class="cls_018">会計</span></div>
+<div style="position:absolute;left:265.13px;top:315.69px" class="cls_017"><span class="cls_017">n./G3</span></div>
+<div style="position:absolute;left:337.15px;top:315.69px" class="cls_017"><span class="cls_017">payment/ to pay</span></div>
+<div style="position:absolute;left:85.10px;top:333.69px" class="cls_017"><span class="cls_017">42.</span><span class="cls_018">えん</span></div>
+<div style="position:absolute;left:211.13px;top:333.69px" class="cls_018"><span class="cls_018">円</span></div>
+<div style="position:absolute;left:265.13px;top:333.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:333.69px" class="cls_017"><span class="cls_017">yen (Japanese currency)</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_017"><span class="cls_017">43.</span><span class="cls_018">べつべつ</span></div>
+<div style="position:absolute;left:211.13px;top:351.69px" class="cls_018"><span class="cls_018">別々</span></div>
+<div style="position:absolute;left:265.13px;top:351.69px" class="cls_017"><span class="cls_017">n./</span><span class="cls_018">な</span><span class="cls_017">-adj.</span></div>
+<div style="position:absolute;left:337.15px;top:351.69px" class="cls_017"><span class="cls_017">separation/separately</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_017"><span class="cls_017">44.</span><span class="cls_018">レストラン</span></div>
+<div style="position:absolute;left:265.13px;top:369.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:369.69px" class="cls_017"><span class="cls_017">restaurant</span></div>
+<div style="position:absolute;left:85.10px;top:387.69px" class="cls_017"><span class="cls_017">45.</span><span class="cls_018">ところ</span></div>
+<div style="position:absolute;left:211.13px;top:387.69px" class="cls_018"><span class="cls_018">所</span></div>
+<div style="position:absolute;left:265.13px;top:387.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:387.69px" class="cls_017"><span class="cls_017">place</span></div>
+<div style="position:absolute;left:85.10px;top:405.69px" class="cls_017"><span class="cls_017">46.</span><span class="cls_018">とき</span></div>
+<div style="position:absolute;left:211.13px;top:405.69px" class="cls_018"><span class="cls_018">時</span></div>
+<div style="position:absolute;left:265.13px;top:405.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:405.69px" class="cls_017"><span class="cls_017">time</span></div>
+<div style="position:absolute;left:85.10px;top:423.69px" class="cls_017"><span class="cls_017">47.</span><span class="cls_018">ミス</span></div>
+<div style="position:absolute;left:265.13px;top:423.69px" class="cls_017"><span class="cls_017">n.</span></div>
+<div style="position:absolute;left:337.15px;top:423.69px" class="cls_017"><span class="cls_017">mistake</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_017"><span class="cls_017">48.</span><span class="cls_018">せいかつ</span></div>
+<div style="position:absolute;left:211.13px;top:441.71px" class="cls_018"><span class="cls_018">生活</span></div>
+<div style="position:absolute;left:265.13px;top:441.71px" class="cls_017"><span class="cls_017">n./G3</span></div>
+<div style="position:absolute;left:337.15px;top:441.71px" class="cls_017"><span class="cls_017">life/ to live</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_017"><span class="cls_017">49.</span><span class="cls_018">かえる</span></div>
+<div style="position:absolute;left:211.13px;top:459.71px" class="cls_018"><span class="cls_018">帰る</span></div>
+<div style="position:absolute;left:265.13px;top:459.71px" class="cls_017"><span class="cls_017">G1</span></div>
+<div style="position:absolute;left:337.15px;top:459.71px" class="cls_017"><span class="cls_017">to go back/ return</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_017"><span class="cls_017">50.</span><span class="cls_018">おきる</span></div>
+<div style="position:absolute;left:211.13px;top:477.71px" class="cls_018"><span class="cls_018">起きる</span></div>
+<div style="position:absolute;left:265.13px;top:477.71px" class="cls_017"><span class="cls_017">G2</span></div>
+<div style="position:absolute;left:337.15px;top:477.71px" class="cls_017"><span class="cls_017">to get up</span></div>
+<div style="position:absolute;left:85.10px;top:559.31px" class="cls_018"><span class="cls_018">メモ</span><span class="cls_019">（</span><span class="cls_017">Memo</span><span class="cls_019">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:100.14px" class="cls_018"><span class="cls_018">メモ</span><span class="cls_017">(Memo)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:103.10px;top:102.42px" class="cls_005"><span class="cls_005">ひょうげん</span></div>
+<div style="position:absolute;left:85.10px;top:112.38px" class="cls_013"><span class="cls_013">Ⅳ</span><span class="cls_014">.</span><span class="cls_016"> </span><span class="cls_015">表</span><span class="cls_016"> </span><span class="cls_015">現</span></div>
+<div style="position:absolute;left:106.22px;top:134.70px" class="cls_014"><span class="cls_014">Expressions</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">いらっしゃいませ。</span></div>
+<div style="position:absolute;left:335.11px;top:171.66px" class="cls_017"><span class="cls_017">Welcome! (in shops, etc.)</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">こちらへ</span><span class="cls_019">  </span><span class="cls_018">どうぞ。</span></div>
+<div style="position:absolute;left:335.11px;top:207.66px" class="cls_017"><span class="cls_017">This way, please.</span></div>
+<div style="position:absolute;left:107.06px;top:247.74px" class="cls_005"><span class="cls_005">ちゅうもん</span></div>
+<div style="position:absolute;left:85.10px;top:257.73px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">ご</span><span class="cls_019"> </span><span class="cls_018">注</span><span class="cls_019">  </span><span class="cls_018">文</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">？</span></div>
+<div style="position:absolute;left:339.07px;top:257.73px" class="cls_017"><span class="cls_017">May I take your order?</span></div>
+<div style="position:absolute;left:107.06px;top:301.77px" class="cls_005"><span class="cls_005">ねが</span></div>
+<div style="position:absolute;left:85.10px;top:311.73px" class="cls_017"><span class="cls_017">4.</span><span class="cls_018">お願</span><span class="cls_019"> </span><span class="cls_018">いします。</span></div>
+<div style="position:absolute;left:339.07px;top:311.73px" class="cls_017"><span class="cls_017">Please.</span></div>
+<div style="position:absolute;left:95.06px;top:355.77px" class="cls_005"><span class="cls_005">しょうしょう    ま</span></div>
+<div style="position:absolute;left:85.10px;top:365.73px" class="cls_017"><span class="cls_017">5.</span><span class="cls_019"> </span><span class="cls_018">少</span><span class="cls_019">  </span><span class="cls_018">々</span><span class="cls_019"> </span><span class="cls_018">お待ちください。</span></div>
+<div style="position:absolute;left:335.11px;top:365.73px" class="cls_017"><span class="cls_017">Wait a moment please.</span></div>
+<div style="position:absolute;left:107.06px;top:409.77px" class="cls_005"><span class="cls_005">かいけい</span></div>
+<div style="position:absolute;left:175.10px;top:409.77px" class="cls_005"><span class="cls_005">いっしょ</span></div>
+<div style="position:absolute;left:250.25px;top:409.77px" class="cls_005"><span class="cls_005">べつべつ</span></div>
+<div style="position:absolute;left:85.10px;top:419.73px" class="cls_017"><span class="cls_017">6.</span><span class="cls_018">お会</span><span class="cls_019"> </span><span class="cls_018">計</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">ご</span><span class="cls_019"> </span><span class="cls_018">一</span><span class="cls_019"> </span><span class="cls_018">緒</span><span class="cls_019"> </span><span class="cls_018">ですか、別</span><span class="cls_019"> </span><span class="cls_018">々</span><span class="cls_019"> </span><span class="cls_018">ですか。</span><span class="cls_017"> Are you going to pay all together</span></div>
+<div style="position:absolute;left:337.15px;top:441.95px" class="cls_017"><span class="cls_017">or separately?</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_017"><span class="cls_017">7.</span><span class="cls_018">ごちそうさまでした。</span></div>
+<div style="position:absolute;left:335.11px;top:477.71px" class="cls_017"><span class="cls_017">Thank you for the meal.</span></div>
+<div style="position:absolute;left:90.50px;top:514.19px" class="cls_018"><span class="cls_018">メモ</span><span class="cls_017">(Memo)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:103.10px;top:102.42px" class="cls_005"><span class="cls_005">ぶんぽう</span></div>
+<div style="position:absolute;left:85.10px;top:112.38px" class="cls_013"><span class="cls_013">Ⅴ</span><span class="cls_014">.</span><span class="cls_015">文</span><span class="cls_016"> </span><span class="cls_015">法</span></div>
+<div style="position:absolute;left:106.22px;top:134.70px" class="cls_014"><span class="cls_014">Grammar</span></div>
+<div style="position:absolute;left:107.18px;top:175.74px" class="cls_005"><span class="cls_005">けいよう し</span></div>
+<div style="position:absolute;left:85.10px;top:185.70px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">な形</span><span class="cls_019"> </span><span class="cls_018">容</span><span class="cls_019"> </span><span class="cls_018">詞の</span><span class="cls_019">  </span><span class="cls_018">けい</span></div>
+<div style="position:absolute;left:97.10px;top:207.66px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">-adjective Form</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">-adjectives have 2 tenses: non-past and past. Specifically, there’re 4 types:</span></div>
+<div style="position:absolute;left:85.10px;top:261.93px" class="cls_017"><span class="cls_017">non-past affirmative, non- past negative, past affirmative, and past negative.</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_018"><span class="cls_018">な</span><span class="cls_017">-adjectives don’t conjugate by itself. Rather, the conjugation of “</span><span class="cls_018">です</span><span class="cls_017">” at the</span></div>
+<div style="position:absolute;left:85.10px;top:297.93px" class="cls_017"><span class="cls_017">end of the sentence shows the tense, which is the same rule as noun</span></div>
+<div style="position:absolute;left:85.10px;top:315.93px" class="cls_017"><span class="cls_017">sentences.</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_017"><span class="cls_017">Forms of </span><span class="cls_018">な</span><span class="cls_017">-adjective:</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_018"><span class="cls_018">①</span><span class="cls_020"> </span><span class="cls_017">The non-past affirmative form is </span><span class="cls_018">な</span><span class="cls_017">-adjective + </span><span class="cls_018">です</span><span class="cls_017">.</span></div>
+<div style="position:absolute;left:103.10px;top:387.69px" class="cls_017"><span class="cls_017">Example:</span></div>
+<div style="position:absolute;left:203.69px;top:387.69px" class="cls_018"><span class="cls_018">しずかです</span><span class="cls_017"> (is quiet)</span></div>
+<div style="position:absolute;left:205.13px;top:405.69px" class="cls_018"><span class="cls_018">にぎやかです</span><span class="cls_017"> (is lively)</span></div>
+<div style="position:absolute;left:205.13px;top:423.69px" class="cls_018"><span class="cls_018">きれいです</span><span class="cls_017"> (is beautiful)</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_018"><span class="cls_018">②</span><span class="cls_020"> </span><span class="cls_017">The non-past negative form changes “</span><span class="cls_018">です</span><span class="cls_017">” into the negative form “</span><span class="cls_018">ではあ</span></div>
+<div style="position:absolute;left:103.10px;top:477.71px" class="cls_018"><span class="cls_018">りません</span><span class="cls_017"> or </span><span class="cls_018">じゃありません</span><span class="cls_017">”. “</span><span class="cls_018">では</span><span class="cls_017">” is politer than “</span><span class="cls_018">じゃ</span><span class="cls_017">”.</span></div>
+<div style="position:absolute;left:103.10px;top:495.71px" class="cls_017"><span class="cls_017">Example:</span></div>
+<div style="position:absolute;left:203.69px;top:495.71px" class="cls_018"><span class="cls_018">しずか</span><span class="cls_019">  </span><span class="cls_018">では</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありません</span><span class="cls_017"> (isn’t quiet)</span></div>
+<div style="position:absolute;left:205.13px;top:513.71px" class="cls_018"><span class="cls_018">にぎやか</span><span class="cls_019">  </span><span class="cls_018">では</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありません</span><span class="cls_017">(isn’t lively)</span></div>
+<div style="position:absolute;left:205.13px;top:531.71px" class="cls_018"><span class="cls_018">きれい</span><span class="cls_019">  </span><span class="cls_018">では</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありません</span><span class="cls_017"> (isn’t clean)”</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_018"><span class="cls_018">③</span><span class="cls_020"> </span><span class="cls_017">The past-affirmative form changes “</span><span class="cls_018">です</span><span class="cls_017">” into its past tense “</span><span class="cls_018">でした</span><span class="cls_017">”.</span></div>
+<div style="position:absolute;left:103.10px;top:585.71px" class="cls_017"><span class="cls_017">Example:</span></div>
+<div style="position:absolute;left:203.69px;top:585.71px" class="cls_018"><span class="cls_018">しずかでした</span><span class="cls_017"> (was quiet)</span></div>
+<div style="position:absolute;left:205.13px;top:603.71px" class="cls_018"><span class="cls_018">にぎやかでした</span><span class="cls_017"> (was lively)</span></div>
+<div style="position:absolute;left:205.13px;top:621.74px" class="cls_018"><span class="cls_018">きれいでした</span><span class="cls_017"> (was clean)</span></div>
+<div style="position:absolute;left:85.10px;top:639.74px" class="cls_018"><span class="cls_018">④</span><span class="cls_020"> </span><span class="cls_017">The past-negative form changes “</span><span class="cls_018">です</span><span class="cls_017">” to its past-negative “</span><span class="cls_018">では</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span></div>
+<div style="position:absolute;left:103.10px;top:657.74px" class="cls_018"><span class="cls_018">ありませんでした</span><span class="cls_017">”.</span></div>
+<div style="position:absolute;left:103.10px;top:675.74px" class="cls_017"><span class="cls_017">Example:</span></div>
+<div style="position:absolute;left:203.69px;top:675.74px" class="cls_018"><span class="cls_018">しずかでは</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありませんでした</span><span class="cls_017"> (wasn’t quiet)</span></div>
+<div style="position:absolute;left:205.13px;top:693.74px" class="cls_018"><span class="cls_018">にぎやかでは</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありませんでした</span><span class="cls_017"> (wasn’t lively)</span></div>
+<div style="position:absolute;left:205.13px;top:711.74px" class="cls_018"><span class="cls_018">きれいでは</span><span class="cls_019">（</span><span class="cls_018">じゃ</span><span class="cls_019">）</span><span class="cls_018">ありませんでした</span><span class="cls_017"> (wasn’t clean)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6808px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:354.45px" class="cls_005"><span class="cls_005">れんしゅう</span></div>
+<div style="position:absolute;left:87.98px;top:364.41px" class="cls_015"><span class="cls_015">練 習</span></div>
+<div style="position:absolute;left:85.10px;top:386.73px" class="cls_014"><span class="cls_014">Practice</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7659px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_017"><span class="cls_017">2.N </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_017">-adj  </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:97.10px;top:117.90px" class="cls_017"><span class="cls_017">N is</span></div>
+<div style="position:absolute;left:131.66px;top:117.90px" class="cls_017"><span class="cls_017">….</span></div>
+<div style="position:absolute;left:85.10px;top:135.66px" class="cls_017"><span class="cls_017">This is how to describe a noun using “</span><span class="cls_018">な</span><span class="cls_017">-adjectives”. “N is </span><span class="cls_018">な</span><span class="cls_017">-adjective” is the</span></div>
+<div style="position:absolute;left:85.10px;top:153.66px" class="cls_017"><span class="cls_017">sentence pattern. The subject of the sentence is a noun. Inserting “</span><span class="cls_018">です</span><span class="cls_017">” after</span></div>
+<div style="position:absolute;left:85.10px;top:171.90px" class="cls_017"><span class="cls_017">the conjugated adjective expresses politeness.</span></div>
+<div style="position:absolute;left:85.10px;top:207.66px" class="cls_018"><span class="cls_018">①</span><span class="cls_017"> N</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_019">－</span><span class="cls_017">adj  </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:97.10px;top:225.90px" class="cls_017"><span class="cls_017">N is</span></div>
+<div style="position:absolute;left:131.66px;top:225.90px" class="cls_017"><span class="cls_017">….</span></div>
+<div style="position:absolute;left:119.06px;top:265.77px" class="cls_005"><span class="cls_005">まち</span></div>
+<div style="position:absolute;left:85.10px;top:275.73px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">この町</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">とても</span><span class="cls_019">  </span><span class="cls_018">にぎやかです。</span></div>
+<div style="position:absolute;left:97.10px;top:297.93px" class="cls_017"><span class="cls_017">This town is very lively.</span></div>
+<div style="position:absolute;left:155.06px;top:337.77px" class="cls_005"><span class="cls_005">ゆうめい</span></div>
+<div style="position:absolute;left:85.10px;top:347.73px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">あそこは</span><span class="cls_019">   </span><span class="cls_018">有</span><span class="cls_019"> </span><span class="cls_018">名</span><span class="cls_019"> </span><span class="cls_018">では</span><span class="cls_019">  </span><span class="cls_018">ありません。</span></div>
+<div style="position:absolute;left:97.10px;top:369.93px" class="cls_017"><span class="cls_017">It is not famous there.</span></div>
+<div style="position:absolute;left:95.06px;top:409.77px" class="cls_005"><span class="cls_005">せんしゅう       しごと       たいへん</span></div>
+<div style="position:absolute;left:85.10px;top:419.73px" class="cls_017"><span class="cls_017">3.</span><span class="cls_019"> </span><span class="cls_018">先</span><span class="cls_019">  </span><span class="cls_018">週</span><span class="cls_019"> </span><span class="cls_018">の</span><span class="cls_019">  </span><span class="cls_018">仕事は</span><span class="cls_019">   </span><span class="cls_018">大</span><span class="cls_019"> </span><span class="cls_018">変</span><span class="cls_019"> </span><span class="cls_018">でした。</span></div>
+<div style="position:absolute;left:97.10px;top:441.95px" class="cls_017"><span class="cls_017">Last week's work was difficult.</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_017"><span class="cls_017">4.</span><span class="cls_018">あのホテルは</span><span class="cls_019">  </span><span class="cls_018">あまり</span><span class="cls_019">  </span><span class="cls_018">きれいでは</span><span class="cls_019">  </span><span class="cls_018">ありませんでした。</span></div>
+<div style="position:absolute;left:97.10px;top:495.95px" class="cls_017"><span class="cls_017">That hotel wasn't very clean.</span></div>
+<div style="position:absolute;left:85.10px;top:531.71px" class="cls_017"><span class="cls_017">Note:</span><span class="cls_012"> </span><span class="cls_017">The</span><span class="cls_019"> </span><span class="cls_018">な</span><span class="cls_017">-adjective in example #4 is “</span><span class="cls_018">きれい</span><span class="cls_017">”. Although “</span><span class="cls_018">きれい</span><span class="cls_017">” ends in</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_017"><span class="cls_017">“</span><span class="cls_018">い</span><span class="cls_017">”, it is a </span><span class="cls_018">な</span><span class="cls_017">-adjective. In English, it means “beautiful” as well as being tidy</span></div>
+<div style="position:absolute;left:85.10px;top:567.95px" class="cls_017"><span class="cls_017">or well organized.</span></div>
+<div style="position:absolute;left:85.10px;top:603.71px" class="cls_018"><span class="cls_018">②</span><span class="cls_017"> N</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_019">－</span><span class="cls_017">adj</span><span class="cls_019">  </span><span class="cls_018">ですか。</span></div>
+<div style="position:absolute;left:103.10px;top:621.74px" class="cls_017"><span class="cls_017">Is N </span><span class="cls_019">～</span><span class="cls_017">?</span></div>
+<div style="position:absolute;left:85.10px;top:639.74px" class="cls_017"><span class="cls_017">When you question something with an adjective, you use “N</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_019">－</span><span class="cls_017">adj</span><span class="cls_019">  </span><span class="cls_018">で</span></div>
+<div style="position:absolute;left:85.10px;top:657.74px" class="cls_018"><span class="cls_018">すか。</span><span class="cls_017">”.  It is very similar to a noun interrogative sentence. To answer the</span></div>
+<div style="position:absolute;left:85.10px;top:675.98px" class="cls_017"><span class="cls_017">question, use the adjective once again in your response.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8510px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:205.85px;top:103.74px" class="cls_005"><span class="cls_005">じょうぶ</span></div>
+<div style="position:absolute;left:85.10px;top:113.70px" class="cls_017"><span class="cls_017">1. A:</span><span class="cls_018">その</span><span class="cls_019">  </span><span class="cls_018">かばんは</span><span class="cls_019">   </span><span class="cls_018">丈</span><span class="cls_019"> </span><span class="cls_018">夫ですか。</span></div>
+<div style="position:absolute;left:115.10px;top:135.90px" class="cls_017"><span class="cls_017">Is that bag strong?</span></div>
+<div style="position:absolute;left:145.10px;top:157.74px" class="cls_005"><span class="cls_005">じょうぶ</span></div>
+<div style="position:absolute;left:97.10px;top:167.70px" class="cls_017"><span class="cls_017">B:</span><span class="cls_018">はい、</span><span class="cls_019"> </span><span class="cls_018">丈</span><span class="cls_019"> </span><span class="cls_018">夫</span><span class="cls_019"> </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:115.10px;top:189.90px" class="cls_017"><span class="cls_017">Yes, it is.</span></div>
+<div style="position:absolute;left:157.82px;top:229.74px" class="cls_005"><span class="cls_005">ひま</span></div>
+<div style="position:absolute;left:85.10px;top:239.70px" class="cls_017"><span class="cls_017">2. A:</span><span class="cls_018">きのう</span><span class="cls_019">   </span><span class="cls_018">暇</span><span class="cls_019"> </span><span class="cls_018">でしたか。</span></div>
+<div style="position:absolute;left:115.10px;top:261.93px" class="cls_017"><span class="cls_017">Did you have free time yesterday?</span></div>
+<div style="position:absolute;left:157.10px;top:301.77px" class="cls_005"><span class="cls_005">ひま</span></div>
+<div style="position:absolute;left:365.11px;top:301.77px" class="cls_005"><span class="cls_005">いそが</span></div>
+<div style="position:absolute;left:97.10px;top:311.73px" class="cls_017"><span class="cls_017">B:</span><span class="cls_018">いいえ、</span><span class="cls_019"> </span><span class="cls_018">暇</span><span class="cls_019"> </span><span class="cls_018">では</span><span class="cls_019">  </span><span class="cls_018">ありませんでした。とても</span><span class="cls_019">   </span><span class="cls_018">忙</span><span class="cls_019"> </span><span class="cls_018">しかったです。</span></div>
+<div style="position:absolute;left:115.10px;top:333.93px" class="cls_017"><span class="cls_017">No, I didn't have free time. I was very busy.</span></div>
+<div style="position:absolute;left:85.10px;top:387.69px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">な</span><span class="cls_017">-adj </span><span class="cls_018">な</span><span class="cls_017"> N </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:96.86px;top:405.93px" class="cls_017"><span class="cls_017">It is …N.</span></div>
+<div style="position:absolute;left:85.10px;top:441.71px" class="cls_017"><span class="cls_017">Here, the “</span><span class="cls_018">な</span><span class="cls_017">-adjective” modifies a noun. The sentence structure is “</span><span class="cls_018">な</span><span class="cls_017">-adj</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_019"><span class="cls_019">＋</span><span class="cls_018">な</span><span class="cls_017"> </span><span class="cls_019">＋</span><span class="cls_017">N </span><span class="cls_018">です</span><span class="cls_017">”. Insert “</span><span class="cls_018">な</span><span class="cls_017">” before the noun. When there’s a subject in the</span></div>
+<div style="position:absolute;left:85.10px;top:477.71px" class="cls_017"><span class="cls_017">sentence, the sentence pattern is “N1 is </span><span class="cls_018">な</span><span class="cls_017">-adjective N2”.</span></div>
+<div style="position:absolute;left:143.06px;top:517.79px" class="cls_005"><span class="cls_005">じょうぶ       たてもの</span></div>
+<div style="position:absolute;left:85.10px;top:527.75px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">あれは</span><span class="cls_019">   </span><span class="cls_018">丈</span><span class="cls_019"> </span><span class="cls_018">夫</span><span class="cls_019"> </span><span class="cls_018">な</span><span class="cls_019">   </span><span class="cls_018">建</span><span class="cls_019"> </span><span class="cls_018">物</span><span class="cls_019"> </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:97.10px;top:549.95px" class="cls_017"><span class="cls_017">That is a solid building.</span></div>
+<div style="position:absolute;left:95.06px;top:589.79px" class="cls_005"><span class="cls_005">としょかん       しず</span></div>
+<div style="position:absolute;left:85.10px;top:599.75px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">図書館は</span><span class="cls_019">   </span><span class="cls_018">静</span><span class="cls_019"> </span><span class="cls_018">かな</span><span class="cls_019">  </span><span class="cls_018">ところです。</span></div>
+<div style="position:absolute;left:97.10px;top:621.98px" class="cls_017"><span class="cls_017">The library is a quiet place.</span></div>
+<div style="position:absolute;left:95.06px;top:661.82px" class="cls_005"><span class="cls_005">やまだせんせい       ま じ め       ひと</span></div>
+<div style="position:absolute;left:85.10px;top:671.78px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">山田</span><span class="cls_019"> </span><span class="cls_018">先</span><span class="cls_019"> </span><span class="cls_018">生</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">真面目な</span><span class="cls_019">   </span><span class="cls_018">人</span><span class="cls_019"> </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:97.10px;top:693.98px" class="cls_017"><span class="cls_017">Mr. Yamada is a serious person.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9361px;width:595px;height:841px;border-style:outset;overflow:hidden">
+>
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_017"><span class="cls_017">4.N1</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">どんな</span><span class="cls_019"> </span><span class="cls_017"> N2</span><span class="cls_019">  </span><span class="cls_018">ですか。</span></div>
+<div style="position:absolute;left:97.10px;top:117.90px" class="cls_017"><span class="cls_017">What sort of N2 is N1?</span></div>
+<div style="position:absolute;left:85.10px;top:153.66px" class="cls_017"><span class="cls_017">“</span><span class="cls_018">どんな</span><span class="cls_017">” is an interrogative that modifies a noun. It is used when asking the</span></div>
+<div style="position:absolute;left:85.10px;top:171.90px" class="cls_017"><span class="cls_017">condition of a person or a thing. When providing an answer, you respond</span></div>
+<div style="position:absolute;left:85.10px;top:189.66px" class="cls_017"><span class="cls_017">with either “</span><span class="cls_018">い</span><span class="cls_017">-adjectives” or</span></div>
+<div style="position:absolute;left:256.76px;top:189.66px" class="cls_017"><span class="cls_017">“</span><span class="cls_018">な</span><span class="cls_017">-adjectives”.</span></div>
+<div style="position:absolute;left:107.06px;top:229.74px" class="cls_005"><span class="cls_005">やまだ</span></div>
+<div style="position:absolute;left:227.09px;top:229.74px" class="cls_005"><span class="cls_005">ひと</span></div>
+<div style="position:absolute;left:85.10px;top:239.70px" class="cls_017"><span class="cls_017">1.A:</span><span class="cls_018">山田さんは</span><span class="cls_019">  </span><span class="cls_018">どんな</span><span class="cls_019">   </span><span class="cls_018">人</span><span class="cls_019"> </span><span class="cls_018">ですか。</span></div>
+<div style="position:absolute;left:109.10px;top:261.93px" class="cls_017"><span class="cls_017">What kind of person is Mr. Yamada?</span></div>
+<div style="position:absolute;left:181.10px;top:301.77px" class="cls_005"><span class="cls_005">ひと</span></div>
+<div style="position:absolute;left:97.10px;top:311.73px" class="cls_017"><span class="cls_017">B:</span><span class="cls_018">おもしろい</span><span class="cls_019">   </span><span class="cls_018">人</span><span class="cls_019"> </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:115.10px;top:333.93px" class="cls_017"><span class="cls_017">He is an interesting person.</span></div>
+<div style="position:absolute;left:107.06px;top:373.77px" class="cls_005"><span class="cls_005">あきはばら</span></div>
+<div style="position:absolute;left:85.10px;top:383.73px" class="cls_017"><span class="cls_017">2.A:</span><span class="cls_018">秋</span><span class="cls_019"> </span><span class="cls_018">葉原は</span><span class="cls_019">  </span><span class="cls_018">どんな</span><span class="cls_019">  </span><span class="cls_018">ところですか。</span></div>
+<div style="position:absolute;left:109.10px;top:405.93px" class="cls_017"><span class="cls_017">What kind of place is Akihabara?</span></div>
+<div style="position:absolute;left:97.10px;top:441.71px" class="cls_017"><span class="cls_017">B:</span><span class="cls_018">とても</span><span class="cls_019">  </span><span class="cls_018">にぎやかな</span><span class="cls_019">  </span><span class="cls_018">ところです。</span></div>
+<div style="position:absolute;left:109.10px;top:459.95px" class="cls_017"><span class="cls_017">It is a very busy place.</span></div>
+<div style="position:absolute;left:85.10px;top:513.71px" class="cls_017"><span class="cls_017">5.</span><span class="cls_012"> </span><span class="cls_017">N</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_017">-adj </span><span class="cls_018">で</span><span class="cls_017">….</span></div>
+<div style="position:absolute;left:102.74px;top:531.95px" class="cls_017"><span class="cls_017">It is</span></div>
+<div style="position:absolute;left:137.06px;top:531.95px" class="cls_017"><span class="cls_017">…, and ….</span></div>
+<div style="position:absolute;left:85.10px;top:567.71px" class="cls_017"><span class="cls_017">As with </span><span class="cls_018">い</span><span class="cls_017">-adjectives, you use the </span><span class="cls_018">て</span><span class="cls_017">-form of a </span><span class="cls_018">な</span><span class="cls_017">-adjective to connect</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_017"><span class="cls_017">sentences. The sentence pattern is “N is </span><span class="cls_018">な</span><span class="cls_017">-adjective</span><span class="cls_019">  </span><span class="cls_018">で</span><span class="cls_017">…”. For the </span><span class="cls_018">て</span></div>
+<div style="position:absolute;left:85.10px;top:603.71px" class="cls_017"><span class="cls_017">-form of </span><span class="cls_018">な</span><span class="cls_017">-adjectives, use “</span><span class="cls_018">で</span><span class="cls_017">”.</span></div>
+<div style="position:absolute;left:85.10px;top:621.74px" class="cls_017"><span class="cls_017">For example, “</span><span class="cls_018">だいじょうで</span><span class="cls_017"> (strong)” and “</span><span class="cls_018">しずかで</span><span class="cls_017"> (quiet)”.</span></div>
+<div style="position:absolute;left:138.98px;top:679.82px" class="cls_005"><span class="cls_005">へ や       ひろ</span></div>
+<div style="position:absolute;left:237.05px;top:679.82px" class="cls_005"><span class="cls_005">しず</span></div>
+<div style="position:absolute;left:289.01px;top:679.82px" class="cls_005"><span class="cls_005">やす</span></div>
+<div style="position:absolute;left:91.10px;top:689.78px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">この</span><span class="cls_019">  </span><span class="cls_018">部屋は</span><span class="cls_019">   </span><span class="cls_018">広</span><span class="cls_019"> </span><span class="cls_018">くて</span><span class="cls_019">   </span><span class="cls_018">静</span><span class="cls_019"> </span><span class="cls_018">かで</span><span class="cls_019">   </span><span class="cls_018">安</span><span class="cls_019"> </span><span class="cls_018">いです。</span></div>
+<div style="position:absolute;left:103.10px;top:711.98px" class="cls_017"><span class="cls_017">The room is very big, quiet and cheap.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10212px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:101.06px;top:103.74px" class="cls_005"><span class="cls_005">いえ       とお</span></div>
+<div style="position:absolute;left:193.01px;top:103.74px" class="cls_005"><span class="cls_005">ふべん</span></div>
+<div style="position:absolute;left:91.10px;top:113.70px" class="cls_017"><span class="cls_017">2.</span><span class="cls_019"> </span><span class="cls_018">家は</span><span class="cls_019">   </span><span class="cls_018">遠</span><span class="cls_019"> </span><span class="cls_018">くて</span><span class="cls_019">  </span><span class="cls_018">不便です。</span></div>
+<div style="position:absolute;left:103.10px;top:135.90px" class="cls_017"><span class="cls_017">My home is far and inconvenient.</span></div>
+<div style="position:absolute;left:137.06px;top:175.74px" class="cls_005"><span class="cls_005">かた</span></div>
+<div style="position:absolute;left:225.05px;top:175.74px" class="cls_005"><span class="cls_005">ひと</span></div>
+<div style="position:absolute;left:91.10px;top:185.70px" class="cls_017"><span class="cls_017">3.A:</span><span class="cls_018">あの</span><span class="cls_019"> </span><span class="cls_018">方</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">どんな</span><span class="cls_019">   </span><span class="cls_018">人</span><span class="cls_019"> </span><span class="cls_018">ですか。</span></div>
+<div style="position:absolute;left:115.10px;top:207.90px" class="cls_017"><span class="cls_017">What kind of person is he?</span></div>
+<div style="position:absolute;left:117.02px;top:247.74px" class="cls_005"><span class="cls_005">ま じ め       りっぱ      ひと</span></div>
+<div style="position:absolute;left:103.10px;top:257.73px" class="cls_017"><span class="cls_017">B:</span><span class="cls_018">真面目で</span><span class="cls_019">  </span><span class="cls_018">立派な</span><span class="cls_019">   </span><span class="cls_018">人</span><span class="cls_019"> </span><span class="cls_018">です。</span></div>
+<div style="position:absolute;left:115.10px;top:279.93px" class="cls_017"><span class="cls_017">He is a serious and respectable person.</span></div>
+<div style="position:absolute;left:85.10px;top:315.69px" class="cls_017"><span class="cls_017">Note: When several adjectives are consecutively connected with the </span><span class="cls_018">て</span><span class="cls_017">-form,</span></div>
+<div style="position:absolute;left:85.10px;top:333.93px" class="cls_017"><span class="cls_017">positive and negative meanings cannot be combined together. If you connect</span></div>
+<div style="position:absolute;left:85.10px;top:351.69px" class="cls_017"><span class="cls_017">positive and negative meanings together, use the conjunctive particle“</span><span class="cls_018">が</span><span class="cls_017">”that</span></div>
+<div style="position:absolute;left:85.10px;top:369.93px" class="cls_017"><span class="cls_017">you've learnt in Lesson 8.</span></div>
+<div style="position:absolute;left:85.10px;top:423.69px" class="cls_017"><span class="cls_017">6.N</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">な</span><span class="cls_019">－</span><span class="cls_017">adj </span><span class="cls_018">に</span><span class="cls_019"> </span><span class="cls_017"> V</span></div>
+<div style="position:absolute;left:85.10px;top:459.71px" class="cls_017"><span class="cls_017">This is how to properly conjugate an</span><span class="cls_019"> </span><span class="cls_018">な</span><span class="cls_017">-adjective into an adverb.</span></div>
+<div style="position:absolute;left:85.10px;top:477.95px" class="cls_017"><span class="cls_017">When an adjective modifies a verb, it has to be changed into the adverbial</span></div>
+<div style="position:absolute;left:85.10px;top:495.71px" class="cls_017"><span class="cls_017">usage form. “</span><span class="cls_018">な</span><span class="cls_017">-adjective + </span><span class="cls_018">に</span><span class="cls_017">” is the sentence pattern and is placed before</span></div>
+<div style="position:absolute;left:85.10px;top:513.95px" class="cls_017"><span class="cls_017">the verb.</span></div>
+<div style="position:absolute;left:85.10px;top:531.71px" class="cls_017"><span class="cls_017">For example,  </span><span class="cls_018">しずか</span><span class="cls_019">（</span><span class="cls_017">silent</span><span class="cls_019">）</span><span class="cls_017">→</span><span class="cls_018">しずかに</span><span class="cls_019">（</span><span class="cls_017">silently</span><span class="cls_019">）</span></div>
+<div style="position:absolute;left:169.10px;top:549.71px" class="cls_018"><span class="cls_018">しずか</span><span class="cls_019">  </span><span class="cls_018">に</span><span class="cls_019">  </span><span class="cls_018">べんきょうする</span><span class="cls_017"> (study silently)</span></div>
+<div style="position:absolute;left:95.06px;top:625.82px" class="cls_005"><span class="cls_005">いもうと       しず</span></div>
+<div style="position:absolute;left:205.01px;top:625.82px" class="cls_005"><span class="cls_005">ね</span></div>
+<div style="position:absolute;left:85.10px;top:635.78px" class="cls_017"><span class="cls_017">1.</span><span class="cls_019">  </span><span class="cls_018">妹</span><span class="cls_019">  </span><span class="cls_018">は</span><span class="cls_019">   </span><span class="cls_018">静</span><span class="cls_019"> </span><span class="cls_018">かに</span><span class="cls_019">  </span><span class="cls_018">寝ています。</span></div>
+<div style="position:absolute;left:103.10px;top:657.98px" class="cls_017"><span class="cls_017">My sister is quietly sleeping.</span></div>
+<div style="position:absolute;left:95.06px;top:697.82px" class="cls_005"><span class="cls_005">べつべつ       かいけい</span></div>
+<div style="position:absolute;left:85.10px;top:707.78px" class="cls_017"><span class="cls_017">2.</span><span class="cls_019"> </span><span class="cls_018">別</span><span class="cls_019"> </span><span class="cls_018">々</span><span class="cls_019"> </span><span class="cls_018">に</span><span class="cls_019">   </span><span class="cls_018">会</span><span class="cls_019"> </span><span class="cls_018">計</span><span class="cls_019"> </span><span class="cls_018">します。</span></div>
+<div style="position:absolute;left:97.10px;top:729.98px" class="cls_017"><span class="cls_017">We will pay separately.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11063px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:95.06px;top:103.74px" class="cls_005"><span class="cls_005">やまだ</span></div>
+<div style="position:absolute;left:168.98px;top:103.74px" class="cls_005"><span class="cls_005">ま じ め       はたら</span></div>
+<div style="position:absolute;left:85.10px;top:113.70px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">山田さんは</span><span class="cls_019">  </span><span class="cls_018">真面目に</span><span class="cls_019">   </span><span class="cls_018">働</span><span class="cls_019"> </span><span class="cls_018">いています。</span></div>
+<div style="position:absolute;left:97.10px;top:135.90px" class="cls_017"><span class="cls_017">Mr. Yamada works hard.</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_017"><span class="cls_017">7. …</span><span class="cls_018">から、</span><span class="cls_017">…</span></div>
+<div style="position:absolute;left:96.74px;top:189.90px" class="cls_017"><span class="cls_017">Because …, …</span></div>
+<div style="position:absolute;left:85.10px;top:225.66px" class="cls_017"><span class="cls_017">In previous lessons, “</span><span class="cls_018">から</span><span class="cls_017">” indicates a starting point. In English, it means</span></div>
+<div style="position:absolute;left:85.10px;top:243.66px" class="cls_017"><span class="cls_017">“from”. Here, “</span><span class="cls_018">から</span><span class="cls_017">” is used as a conjunctive particle, and is placed between</span></div>
+<div style="position:absolute;left:85.10px;top:261.93px" class="cls_017"><span class="cls_017">sentences to clarify a cause or a reason.</span></div>
+<div style="position:absolute;left:85.10px;top:279.69px" class="cls_017"><span class="cls_017">“…</span><span class="cls_018">から、</span><span class="cls_017">…” is the sentence pattern. A sentence that precedes “</span><span class="cls_018">から</span><span class="cls_017">” is the</span></div>
+<div style="position:absolute;left:85.10px;top:297.69px" class="cls_017"><span class="cls_017">cause, and a sentence that follows “</span><span class="cls_018">から</span><span class="cls_017">” is the result.</span></div>
+<div style="position:absolute;left:161.06px;top:337.77px" class="cls_005"><span class="cls_005">はや   かえ</span></div>
+<div style="position:absolute;left:349.03px;top:337.77px" class="cls_005"><span class="cls_005">えいが       み</span></div>
+<div style="position:absolute;left:91.10px;top:347.73px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">きょうは</span><span class="cls_019">   </span><span class="cls_018">早</span><span class="cls_019"> </span><span class="cls_018">く帰</span><span class="cls_019"> </span><span class="cls_018">りますから、いっしょに</span><span class="cls_019">  </span><span class="cls_018">映画を</span><span class="cls_019">  </span><span class="cls_018">見ましょう。</span></div>
+<div style="position:absolute;left:103.10px;top:369.93px" class="cls_017"><span class="cls_017">Because I will come back early today, let's watch a movie together.</span></div>
+<div style="position:absolute;left:101.06px;top:409.77px" class="cls_005"><span class="cls_005">てんき</span></div>
+<div style="position:absolute;left:245.09px;top:409.77px" class="cls_005"><span class="cls_005">さんぽ</span></div>
+<div style="position:absolute;left:91.10px;top:419.73px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">天気が</span><span class="cls_019">  </span><span class="cls_018">いいですから、</span><span class="cls_019">  </span><span class="cls_018">散歩しましょう</span><span class="cls_019">！</span></div>
+<div style="position:absolute;left:103.10px;top:441.95px" class="cls_017"><span class="cls_017">Because it is nice weather, let's go for a walk.</span></div>
+<div style="position:absolute;left:101.06px;top:481.79px" class="cls_005"><span class="cls_005">あした   はや    お</span></div>
+<div style="position:absolute;left:249.05px;top:481.79px" class="cls_005"><span class="cls_005">こんばん   はや    ね</span></div>
+<div style="position:absolute;left:91.10px;top:491.75px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">明日</span><span class="cls_019">   </span><span class="cls_018">早</span><span class="cls_019"> </span><span class="cls_018">く起きますから、</span><span class="cls_019"> </span><span class="cls_018">今</span><span class="cls_019"> </span><span class="cls_018">晩</span><span class="cls_019">    </span><span class="cls_018">早</span><span class="cls_019"> </span><span class="cls_018">く寝ます。</span></div>
+<div style="position:absolute;left:103.10px;top:513.95px" class="cls_017"><span class="cls_017">Because I will get up early tomorrow, I will sleep early tonight.</span></div>
+<div style="position:absolute;left:85.10px;top:549.71px" class="cls_017"><span class="cls_017">Furthermore, “</span><span class="cls_018">から</span><span class="cls_017">”not only connects sentences, but it can also indicate the</span></div>
+<div style="position:absolute;left:85.10px;top:567.95px" class="cls_017"><span class="cls_017">cause, by being placed at the end of the last sentence. The sentence that</span></div>
+<div style="position:absolute;left:85.10px;top:585.71px" class="cls_017"><span class="cls_017">indicates the result comes first, and the cause follows. “…</span><span class="cls_018">、</span><span class="cls_017">…</span><span class="cls_018">から</span><span class="cls_017">” is the</span></div>
+<div style="position:absolute;left:85.10px;top:603.95px" class="cls_017"><span class="cls_017">sentence pattern.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11914px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.10px;top:99.66px" class="cls_017"><span class="cls_017">8. </span><span class="cls_018">よ</span></div>
+<div style="position:absolute;left:85.10px;top:117.90px" class="cls_017"><span class="cls_017">Particle at the end of a sentence used to indicate certainty, emphasis, etc.</span></div>
+<div style="position:absolute;left:85.10px;top:153.66px" class="cls_017"><span class="cls_017">“</span><span class="cls_018">よ</span><span class="cls_017">” is a sentence ending particle. Sentences that have “</span><span class="cls_018">よ</span><span class="cls_017">” are used as a</span></div>
+<div style="position:absolute;left:85.10px;top:171.66px" class="cls_017"><span class="cls_017">means to inform the listener, or to stress information. Thus, “</span><span class="cls_018">よ</span><span class="cls_017">” is used to</span></div>
+<div style="position:absolute;left:85.10px;top:189.90px" class="cls_017"><span class="cls_017">emphasize the speaker’s opinion or facts.</span></div>
+<div style="position:absolute;left:119.06px;top:229.74px" class="cls_005"><span class="cls_005">みせ</span></div>
+<div style="position:absolute;left:201.05px;top:229.74px" class="cls_005"><span class="cls_005">ゆうめい</span></div>
+<div style="position:absolute;left:85.10px;top:239.70px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">この店</span><span class="cls_019"> </span><span class="cls_018">は</span><span class="cls_019">  </span><span class="cls_018">とても</span><span class="cls_017"> </span><span class="cls_019"> </span><span class="cls_018">有</span><span class="cls_019"> </span><span class="cls_018">名</span><span class="cls_019"> </span><span class="cls_018">ですよ。</span></div>
+<div style="position:absolute;left:97.10px;top:261.93px" class="cls_017"><span class="cls_017">This restaurant is very famous, you know.</span></div>
+<div style="position:absolute;left:149.06px;top:301.77px" class="cls_005"><span class="cls_005">いえ</span></div>
+<div style="position:absolute;left:195.05px;top:301.77px" class="cls_005"><span class="cls_005">えき</span></div>
+<div style="position:absolute;left:259.01px;top:301.77px" class="cls_005"><span class="cls_005">とお</span></div>
+<div style="position:absolute;left:85.10px;top:311.73px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">わたしの</span><span class="cls_017"> </span><span class="cls_019"> </span><span class="cls_018">家</span><span class="cls_019"> </span><span class="cls_018">から</span><span class="cls_017"> </span><span class="cls_019"> </span><span class="cls_018">駅</span><span class="cls_019"> </span><span class="cls_018">までは</span><span class="cls_019">   </span><span class="cls_018">遠</span><span class="cls_019"> </span><span class="cls_018">いですよ。</span></div>
+<div style="position:absolute;left:97.10px;top:333.93px" class="cls_017"><span class="cls_017">My house is far from the station!</span></div>
+<div style="position:absolute;left:85.10px;top:369.69px" class="cls_017"><span class="cls_017">3.</span><span class="cls_018">これは</span><span class="cls_019">  </span><span class="cls_018">あなたの</span><span class="cls_019">  </span><span class="cls_018">かさですよ。</span></div>
+<div style="position:absolute;left:97.10px;top:387.93px" class="cls_017"><span class="cls_017">This is your umbrella!</span></div>
+<div style="position:absolute;left:85.10px;top:424.17px" class="cls_018"><span class="cls_018">「ね」と「よ」</span></div>
+<div style="position:absolute;left:155.06px;top:464.27px" class="cls_005"><span class="cls_005">あつ</span></div>
+<div style="position:absolute;left:85.10px;top:474.23px" class="cls_017"><span class="cls_017">1.</span><span class="cls_018">きょうは</span><span class="cls_019">   </span><span class="cls_018">暑</span><span class="cls_019"> </span><span class="cls_018">い</span><span class="cls_019">  </span><span class="cls_018">ですね。</span><span class="cls_019">     </span><span class="cls_017"> Today is hot, isn't it?</span></div>
+<div style="position:absolute;left:155.06px;top:500.27px" class="cls_005"><span class="cls_005">あつ</span></div>
+<div style="position:absolute;left:85.10px;top:510.23px" class="cls_017"><span class="cls_017">2.</span><span class="cls_018">あしたは</span><span class="cls_019">   </span><span class="cls_018">暑</span><span class="cls_019"> </span><span class="cls_018">い</span><span class="cls_019">  </span><span class="cls_018">ですよ。</span><span class="cls_017">      Tomorrow will be hot, you know.</span></div>
+<div style="position:absolute;left:85.10px;top:550.19px" class="cls_017"><span class="cls_017">#1 uses “</span><span class="cls_018">ね</span><span class="cls_017">” to ask for approval of others to gain support. “</span><span class="cls_018">きょう</span><span class="cls_017"> </span><span class="cls_018">は</span><span class="cls_017"> </span><span class="cls_018">あつ</span></div>
+<div style="position:absolute;left:85.10px;top:568.19px" class="cls_018"><span class="cls_018">いです</span><span class="cls_017">” is known by both the speaker and listener. Assuming what is said</span></div>
+<div style="position:absolute;left:85.10px;top:586.43px" class="cls_017"><span class="cls_017">is a fact, the speaker gives the information to acquire empathy from the</span></div>
+<div style="position:absolute;left:85.10px;top:604.43px" class="cls_017"><span class="cls_017">listener.</span></div>
+<div style="position:absolute;left:85.10px;top:622.22px" class="cls_017"><span class="cls_017">#2 uses “</span><span class="cls_018">よ</span><span class="cls_017">” to give new information that is unknown to the listener. “</span><span class="cls_018">あし</span></div>
+<div style="position:absolute;left:85.10px;top:640.22px" class="cls_018"><span class="cls_018">たは</span><span class="cls_019">  </span><span class="cls_018">あついです</span><span class="cls_017">” is only known by the speaker. Therefore, the speaker</span></div>
+<div style="position:absolute;left:85.10px;top:658.46px" class="cls_017"><span class="cls_017">gives the information to the listener and emphasizes his/her opinion.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12765px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:85.70px;top:102.42px" class="cls_005"><span class="cls_005">ふろく</span></div>
+<div style="position:absolute;left:216.29px;top:102.42px" class="cls_005"><span class="cls_005">にほん    たべ   もの</span></div>
+<div style="position:absolute;left:85.10px;top:112.38px" class="cls_015"><span class="cls_015">付録</span></div>
+<div style="position:absolute;left:215.69px;top:112.38px" class="cls_015"><span class="cls_015">日本の食べ物</span></div>
+<div style="position:absolute;left:210.77px;top:134.70px" class="cls_014"><span class="cls_014">Japanese food</span></div>
+<div style="position:absolute;left:90.02px;top:173.94px" class="cls_018"><span class="cls_018">うどん</span></div>
+<div style="position:absolute;left:243.41px;top:174.18px" class="cls_017"><span class="cls_017">udon (wheat noodle)</span></div>
+<div style="position:absolute;left:102.02px;top:231.90px" class="cls_005"><span class="cls_005">この    や</span></div>
+<div style="position:absolute;left:243.41px;top:228.06px" class="cls_017"><span class="cls_017">okonomiyaki (pancake containing meat or</span></div>
+<div style="position:absolute;left:90.02px;top:241.86px" class="cls_018"><span class="cls_018">お好み焼き</span></div>
+<div style="position:absolute;left:243.41px;top:246.06px" class="cls_017"><span class="cls_017">seafood, and vegetables)</span></div>
+<div style="position:absolute;left:90.02px;top:284.13px" class="cls_018"><span class="cls_018">おにぎり</span></div>
+<div style="position:absolute;left:243.41px;top:284.37px" class="cls_017"><span class="cls_017">onigiri (rice ball)</span></div>
+<div style="position:absolute;left:90.02px;top:339.57px" class="cls_018"><span class="cls_018">オムライス</span></div>
+<div style="position:absolute;left:243.41px;top:339.81px" class="cls_017"><span class="cls_017">omelet rice</span></div>
+<div style="position:absolute;left:243.41px;top:357.81px" class="cls_017"><span class="cls_017">(omelet with a filling of ketchup-seasoned fried</span></div>
+<div style="position:absolute;left:243.41px;top:375.81px" class="cls_017"><span class="cls_017">rice)</span></div>
+<div style="position:absolute;left:115.94px;top:399.93px" class="cls_005"><span class="cls_005">あ</span></div>
+<div style="position:absolute;left:243.41px;top:396.09px" class="cls_017"><span class="cls_017">karaage (deep-fried food)</span></div>
+<div style="position:absolute;left:90.02px;top:409.89px" class="cls_018"><span class="cls_018">から揚げ</span></div>
+<div style="position:absolute;left:90.02px;top:449.75px" class="cls_018"><span class="cls_018">カレーライス</span></div>
+<div style="position:absolute;left:243.41px;top:449.99px" class="cls_017"><span class="cls_017">curry and rice (Japanese style curry)</span></div>
+<div style="position:absolute;left:90.02px;top:503.63px" class="cls_018"><span class="cls_018">しゃぶしゃぶ</span></div>
+<div style="position:absolute;left:243.41px;top:503.87px" class="cls_017"><span class="cls_017">shabu-shabu(thin slices of beef parboiled in a</span></div>
+<div style="position:absolute;left:243.41px;top:521.87px" class="cls_017"><span class="cls_017">savory soup)</span></div>
+<div style="position:absolute;left:114.02px;top:563.99px" class="cls_005"><span class="cls_005">や</span></div>
+<div style="position:absolute;left:243.41px;top:560.15px" class="cls_017"><span class="cls_017">sukiyaki</span></div>
+<div style="position:absolute;left:90.02px;top:573.95px" class="cls_018"><span class="cls_018">すき焼き</span></div>
+<div style="position:absolute;left:243.41px;top:578.15px" class="cls_017"><span class="cls_017">(meat, tofu, and various vegetables mixed</span></div>
+<div style="position:absolute;left:243.41px;top:596.15px" class="cls_017"><span class="cls_017">together in a hotpot).</span></div>
+<div style="position:absolute;left:91.94px;top:620.30px" class="cls_005"><span class="cls_005">す し</span></div>
+<div style="position:absolute;left:243.41px;top:616.46px" class="cls_017"><span class="cls_017">sushi (raw fish on vinegar rice)</span></div>
+<div style="position:absolute;left:90.02px;top:630.26px" class="cls_018"><span class="cls_018">寿司</span></div>
+<div style="position:absolute;left:90.02px;top:674.18px" class="cls_005"><span class="cls_005">ぞうに</span></div>
+<div style="position:absolute;left:243.41px;top:670.34px" class="cls_017"><span class="cls_017">zouni</span></div>
+<div style="position:absolute;left:90.02px;top:684.14px" class="cls_018"><span class="cls_018">雑煮</span></div>
+<div style="position:absolute;left:243.41px;top:688.34px" class="cls_017"><span class="cls_017">(rice cakes boiled with vegetables. A special dish</span></div>
+<div style="position:absolute;left:243.41px;top:706.34px" class="cls_017"><span class="cls_017">made on New Year's Day)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13616px;width:595px;height:841px;border-style:outset;overflow:hidden">
+
+<div style="position:absolute;left:91.94px;top:106.02px" class="cls_005"><span class="cls_005">そ ば</span></div>
+<div style="position:absolute;left:243.41px;top:102.18px" class="cls_017"><span class="cls_017">soba (Japanese buckwheat noodles)</span></div>
+<div style="position:absolute;left:90.02px;top:115.98px" class="cls_018"><span class="cls_018">蕎麦</span></div>
+<div style="position:absolute;left:127.94px;top:159.90px" class="cls_005"><span class="cls_005">や</span></div>
+<div style="position:absolute;left:243.41px;top:156.06px" class="cls_017"><span class="cls_017">tamagoyaki (rolled omelette)</span></div>
+<div style="position:absolute;left:90.02px;top:169.86px" class="cls_018"><span class="cls_018">たまご焼き</span></div>
+<div style="position:absolute;left:115.94px;top:213.78px" class="cls_005"><span class="cls_005">や</span></div>
+<div style="position:absolute;left:243.41px;top:209.94px" class="cls_017"><span class="cls_017">takoyaki (octopus dumplings)</span></div>
+<div style="position:absolute;left:90.02px;top:223.74px" class="cls_018"><span class="cls_018">たこ焼き</span></div>
+<div style="position:absolute;left:90.02px;top:267.69px" class="cls_005"><span class="cls_005">てん</span></div>
+<div style="position:absolute;left:243.41px;top:263.85px" class="cls_017"><span class="cls_017">tempura (deep-fried fish and vegetables)</span></div>
+<div style="position:absolute;left:91.94px;top:277.65px" class="cls_018"><span class="cls_018">天 ぷら</span></div>
+<div style="position:absolute;left:90.02px;top:320.13px" class="cls_005"><span class="cls_005">とうふ</span></div>
+<div style="position:absolute;left:243.41px;top:316.29px" class="cls_017"><span class="cls_017">tofu (bean curd)</span></div>
+<div style="position:absolute;left:90.02px;top:330.09px" class="cls_018"><span class="cls_018">豆腐</span></div>
+<div style="position:absolute;left:90.02px;top:371.49px" class="cls_018"><span class="cls_018">とんかつ</span></div>
+<div style="position:absolute;left:243.41px;top:371.73px" class="cls_017"><span class="cls_017">tonkatsu (pork cutlets)</span></div>
+<div style="position:absolute;left:90.02px;top:427.89px" class="cls_005"><span class="cls_005">にく</span></div>
+<div style="position:absolute;left:243.41px;top:424.05px" class="cls_017"><span class="cls_017">niku-jaga (meat and potato stew)</span></div>
+<div style="position:absolute;left:91.94px;top:437.87px" class="cls_018"><span class="cls_018">肉 じゃが</span></div>
+<div style="position:absolute;left:90.50px;top:483.47px" class="cls_005"><span class="cls_005">みそしる</span></div>
+<div style="position:absolute;left:243.41px;top:479.63px" class="cls_017"><span class="cls_017">miso soup</span></div>
+<div style="position:absolute;left:90.02px;top:493.43px" class="cls_018"><span class="cls_018">味噌汁</span></div>
+<div style="position:absolute;left:91.94px;top:535.79px" class="cls_005"><span class="cls_005">や</span></div>
+<div style="position:absolute;left:243.41px;top:531.95px" class="cls_017"><span class="cls_017">yakisoba (fried soba noodles)</span></div>
+<div style="position:absolute;left:90.02px;top:545.75px" class="cls_018"><span class="cls_018">焼きそば</span></div>
+<div style="position:absolute;left:90.02px;top:587.27px" class="cls_018"><span class="cls_018">ラーメン</span></div>
+<div style="position:absolute;left:243.41px;top:587.51px" class="cls_017"><span class="cls_017">ramen (chinese-style noodles)</span></div>
+<p>Copyright 2018 &copy; Vemula Shanmukha Srinivas & Bhuma Jeswanth Reddy.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,738 @@
+<html>
+    <head>
+        <title>N-5 Nihongo</title>
+        <style type="text/css">
+            <!--
+            span.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_003{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_004{font-family:"Century",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_006{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_006{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_007{font-family:"Century",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_007{font-family:"Century",serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_008{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_008{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_009{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_009{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_011{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_011{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_012{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_012{font-family:"Century",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_013{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_013{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_014{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_014{font-family:"Century",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_015{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_015{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_016{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_016{font-family:"MS Mincho",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_017{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_017{font-family:"Century",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            span.cls_019{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            div.cls_019{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+            -->
+            
+            .video-background{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width:100%;
+                height: 100%;
+                z-index: -100;
+                margin-left:25%;
+                padding:1px 16px;
+                position: fixed;
+            }
+            @media(min-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+
+            }
+            @media(max-aspect-ratio:16/9){
+                .video-background{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .menu{
+                float: right;
+                list-style: none;
+                margin:20px;
+            }
+            .header{
+                background: rgba(0,0,255,500);
+                height: 100vh;
+            }
+            ul{
+                float:right;
+                list-style: none;
+                margin: 20px;
+                top:0px;
+            }
+            li{
+                display: inline-block;
+                margin: 10px 5px;
+            }
+            li a{
+                text-decoration: none;
+                color: #ffffff;
+                padding:5px 10px;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+                border-bottom: 1px solid #ffffff;
+            }
+            li a:hover{
+                background: coral;
+                border-bottom:1px solid coral;
+                transition: .42s; 
+            }
+            li a.active{
+              background: coral;
+              border-bottom:1px solid coral;
+               }
+            .nav{
+                background-color: rgba(0,0,0,0.5);
+                height:110px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="nav" align="center" style="top:0px;">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="l1.html">Lesson-01</a></li>
+            <li><a href="l2.html">Lesson-02</a></li>
+            <li><a href="l3.html">Lesson-03</a></li>
+            <li><a href="l4.html">Lesson-04</a></li>
+            <li><a class="active" href="l5.html">Lesson-05</a></li>
+            <li><a href="l6.html">Lesson-06</a></li>
+            <li><a href="l7.html">Lesson-07</a></li>
+            <li><a href="l8.html">Lesson-08</a></li>
+            <li><a href="l9.html">Lesson-09</a></li>
+            <li><a href="l10.html">Lesson-10</a></li>
+            <li><a href="l11.html">Lesson-11</a></li>
+            <li><a href="l12.html">Lesson-12</a></li>
+            <li><a href="l13.html">Lesson-13</a></li>
+            <li><a href="l14.html">Lesson-14</a></li>
+            <li><a href="l15.html">Lesson-15</a></li>
+        </ul>
+            </div>
+            <div style="margin-left:10%;padding:1px 16px;height:auto;">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/vkbREpvZ8ao?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/hpcm_2RUGuw?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/myqmU12pFYs?list=PL8dhMOKO4oIfIe7XxG0sRUe4wv5YOZOXe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<div style="position:absolute;left:50%;margin-left:-306px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:129.26px;top:99.38px" class="cls_002"><span class="cls_002">オンライン</span><span class="cls_003">  </span><span class="cls_002">にほんご</span><span class="cls_003"> </span><span class="cls_004"> N5</span><span class="cls_003"> </span><span class="cls_002">コース</span></div>
+<div style="position:absolute;left:164.06px;top:127.46px" class="cls_004"><span class="cls_004">Online Japanese N5 Course</span></div>
+<div style="position:absolute;left:122.78px;top:202.34px" class="cls_006"><span class="cls_006">だい</span><span class="cls_007"> 5</span><span class="cls_008"> </span><span class="cls_006">か</span><span class="cls_008"> </span><span class="cls_007">     </span><span class="cls_006">かようびに</span><span class="cls_008">  </span><span class="cls_006">ひろしまへ</span><span class="cls_008">  </span><span class="cls_006">いきます。</span></div>
+<div style="position:absolute;left:138.50px;top:221.54px" class="cls_007"><span class="cls_007">Lesson 5</span></div>
+<div style="position:absolute;left:236.93px;top:221.54px" class="cls_007"><span class="cls_007">I will go to Hiroshima on Tuesday.</span></div>
+<div style="position:absolute;left:106.10px;top:275.81px" class="cls_009"><span class="cls_009">れ っ す ん</span></div>
+<div style="position:absolute;left:85.10px;top:284.81px" class="cls_011"><span class="cls_011">Ⅰ</span><span class="cls_012">.</span><span class="cls_013">レッスン</span><span class="cls_011">  </span><span class="cls_013">もくひょう</span></div>
+<div style="position:absolute;left:106.22px;top:302.81px" class="cls_012"><span class="cls_012">Goals of this lesson</span></div>
+<div style="position:absolute;left:283.01px;top:334.25px" class="cls_009"><span class="cls_009">ふ ぉ お む</span></div>
+<div style="position:absolute;left:85.10px;top:343.25px" class="cls_014"><span class="cls_014">1. </span><span class="cls_015">どうしの</span><span class="cls_016">  </span><span class="cls_015">しゅるいと</span><span class="cls_016">  </span><span class="cls_015">どうしのフォーム</span></div>
+<div style="position:absolute;left:103.10px;top:358.61px" class="cls_014"><span class="cls_014">Learn the types and forms of verbs</span></div>
+<div style="position:absolute;left:85.10px;top:387.65px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">「じしょけい」</span><span class="cls_016">  </span><span class="cls_015">と</span><span class="cls_016">  </span><span class="cls_015">「ますけい」をりかいする</span></div>
+<div style="position:absolute;left:103.10px;top:403.25px" class="cls_014"><span class="cls_014">Understand the dictionary form and</span><span class="cls_016"> </span><span class="cls_015">ます</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:433.27px" class="cls_014"><span class="cls_014">3. </span><span class="cls_015">助詞「へ」、「に」、「を」</span><span class="cls_014"> </span><span class="cls_015">の</span><span class="cls_016">  </span><span class="cls_015">つかいかた</span></div>
+<div style="position:absolute;left:103.10px;top:448.75px" class="cls_014"><span class="cls_014">How to use particles“</span><span class="cls_015">へ</span><span class="cls_014">”,“</span><span class="cls_015">に</span><span class="cls_014">”,“</span><span class="cls_015">を</span><span class="cls_014">”.</span></div>
+<div style="position:absolute;left:85.10px;top:493.15px" class="cls_011"><span class="cls_011">Ⅱ</span><span class="cls_012">. </span><span class="cls_013">かいわ</span></div>
+<div style="position:absolute;left:106.22px;top:511.15px" class="cls_012"><span class="cls_012">Conversation</span></div>
+<div style="position:absolute;left:85.10px;top:556.99px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:556.99px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">ただいま。</span></div>
+<div style="position:absolute;left:85.10px;top:587.02px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">おかえりなさい。</span><span class="cls_016">  </span><span class="cls_015">おおさかのしゅっちょうは</span><span class="cls_016">  </span><span class="cls_015">いかがでしたか。</span></div>
+<div style="position:absolute;left:85.10px;top:617.02px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:617.02px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">じゅんちょうです。</span><span class="cls_016">  </span><span class="cls_015">でも、ちょっとつかれました。</span></div>
+<div style="position:absolute;left:145.10px;top:632.62px" class="cls_015"><span class="cls_015">これ、おおさかの  おみやげです。</span></div>
+<div style="position:absolute;left:85.10px;top:662.62px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">ああ、ありがとうございます。</span></div>
+<div style="position:absolute;left:145.10px;top:678.22px" class="cls_015"><span class="cls_015">おおさかのどこへ  いきましたか。</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:113.66px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:113.66px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">せんしゅうのきんようびに、おおさかししゃへ</span><span class="cls_016">  </span><span class="cls_015">いきました。</span><span class="cls_014"> </span><span class="cls_015">よるに</span></div>
+<div style="position:absolute;left:145.10px;top:129.26px" class="cls_015"><span class="cls_015">どうとんぼりに  いきました。</span></div>
+<div style="position:absolute;left:85.10px;top:159.26px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">なにを</span><span class="cls_016">  </span><span class="cls_015">たべましたか。</span></div>
+<div style="position:absolute;left:85.10px;top:189.26px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:189.26px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">おこのみやきを</span><span class="cls_016">  </span><span class="cls_015">たべました。</span></div>
+<div style="position:absolute;left:85.10px;top:219.26px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">いいですね。</span><span class="cls_016">  </span><span class="cls_015">しゅうまつに</span><span class="cls_016">  </span><span class="cls_015">あそびましたか。</span></div>
+<div style="position:absolute;left:85.10px;top:249.29px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:249.29px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">はい、どようびに</span><span class="cls_016">  </span><span class="cls_015">おおさかじょうにいきました。</span><span class="cls_016">  </span><span class="cls_015">にちようびに</span></div>
+<div style="position:absolute;left:145.10px;top:264.77px" class="cls_015"><span class="cls_015">ゆうえんちに  いきました。</span></div>
+<div style="position:absolute;left:85.10px;top:294.77px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">そうですか。</span><span class="cls_016">  </span><span class="cls_015">ああ、こんばん、いっしょにおさけを</span><span class="cls_016">  </span><span class="cls_015">のみますか。</span></div>
+<div style="position:absolute;left:85.10px;top:324.77px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:324.77px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">すみません、きょうは</span><span class="cls_016">  </span><span class="cls_015">ちょっと</span><span class="cls_014">…</span><span class="cls_015">。</span></div>
+<div style="position:absolute;left:85.10px;top:354.77px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">だめですか。</span></div>
+<div style="position:absolute;left:85.10px;top:384.77px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:384.77px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">ええ、ざんねんですが、こんばん、しごとのレポートを</span><span class="cls_016">  </span><span class="cls_015">かきます。</span></div>
+<div style="position:absolute;left:145.10px;top:400.37px" class="cls_015"><span class="cls_015">あした、またしゅっちょうが  あります。</span></div>
+<div style="position:absolute;left:85.10px;top:430.27px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">こんどは</span><span class="cls_016">  </span><span class="cls_015">どこへいきますか。</span></div>
+<div style="position:absolute;left:85.10px;top:460.27px" class="cls_015"><span class="cls_015">ラン</span></div>
+<div style="position:absolute;left:133.10px;top:460.27px" class="cls_016"><span class="cls_016">：</span><span class="cls_015">かようびに</span><span class="cls_016">  </span><span class="cls_015">ひろしまへ</span><span class="cls_016">  </span><span class="cls_015">いきます。</span></div>
+<div style="position:absolute;left:85.10px;top:490.27px" class="cls_015"><span class="cls_015">あんどう</span><span class="cls_016">：</span><span class="cls_015">そうですか。</span><span class="cls_016">  </span><span class="cls_015">おつかれさまです。</span><span class="cls_016">  </span><span class="cls_015">また、こんどね。</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_011"><span class="cls_011">Ⅲ</span><span class="cls_012">.</span><span class="cls_013">ごい</span></div>
+<div style="position:absolute;left:106.22px;top:117.14px" class="cls_012"><span class="cls_012">Vocabulary</span></div>
+<div style="position:absolute;left:85.10px;top:148.70px" class="cls_014"><span class="cls_014">1.</span><span class="cls_015">おおさか</span></div>
+<div style="position:absolute;left:211.13px;top:148.70px" class="cls_015"><span class="cls_015">大阪</span></div>
+<div style="position:absolute;left:289.13px;top:148.70px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:148.70px" class="cls_014"><span class="cls_014">Osaka</span></div>
+<div style="position:absolute;left:85.10px;top:164.30px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">きょうと</span></div>
+<div style="position:absolute;left:211.13px;top:164.30px" class="cls_015"><span class="cls_015">京都</span></div>
+<div style="position:absolute;left:289.13px;top:164.30px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:164.30px" class="cls_014"><span class="cls_014">Kyoto</span></div>
+<div style="position:absolute;left:85.10px;top:179.78px" class="cls_014"><span class="cls_014">3.</span><span class="cls_015">とうきょう</span></div>
+<div style="position:absolute;left:211.13px;top:179.78px" class="cls_015"><span class="cls_015">東京</span></div>
+<div style="position:absolute;left:289.13px;top:179.78px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:179.78px" class="cls_014"><span class="cls_014">Tokyo</span></div>
+<div style="position:absolute;left:85.10px;top:195.38px" class="cls_014"><span class="cls_014">4.</span><span class="cls_015">ひろしま</span></div>
+<div style="position:absolute;left:211.13px;top:195.38px" class="cls_015"><span class="cls_015">広島</span></div>
+<div style="position:absolute;left:289.13px;top:195.38px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:195.38px" class="cls_014"><span class="cls_014">Hiroshima</span></div>
+<div style="position:absolute;left:85.10px;top:210.98px" class="cls_014"><span class="cls_014">5.</span><span class="cls_015">なら</span></div>
+<div style="position:absolute;left:209.09px;top:210.98px" class="cls_015"><span class="cls_015">奈良</span></div>
+<div style="position:absolute;left:289.13px;top:210.98px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:210.98px" class="cls_014"><span class="cls_014">Nara</span></div>
+<div style="position:absolute;left:85.10px;top:226.46px" class="cls_014"><span class="cls_014">6.</span><span class="cls_015">こうべ</span></div>
+<div style="position:absolute;left:211.13px;top:226.46px" class="cls_015"><span class="cls_015">神戸</span></div>
+<div style="position:absolute;left:289.13px;top:226.46px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:226.46px" class="cls_014"><span class="cls_014">Kobe</span></div>
+<div style="position:absolute;left:85.10px;top:242.09px" class="cls_014"><span class="cls_014">7.</span><span class="cls_015">よこはま</span></div>
+<div style="position:absolute;left:211.13px;top:242.09px" class="cls_015"><span class="cls_015">横浜</span></div>
+<div style="position:absolute;left:289.13px;top:242.09px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:242.09px" class="cls_014"><span class="cls_014">Yokohama</span></div>
+<div style="position:absolute;left:85.10px;top:257.69px" class="cls_014"><span class="cls_014">8.</span><span class="cls_015">おおさかじょう</span></div>
+<div style="position:absolute;left:211.13px;top:257.69px" class="cls_015"><span class="cls_015">大阪城</span></div>
+<div style="position:absolute;left:289.13px;top:257.69px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:257.69px" class="cls_014"><span class="cls_014">Osaka Castle</span></div>
+<div style="position:absolute;left:85.10px;top:273.17px" class="cls_014"><span class="cls_014">9.</span><span class="cls_015">どうとんぼり</span></div>
+<div style="position:absolute;left:211.13px;top:273.17px" class="cls_015"><span class="cls_015">道頓堀</span></div>
+<div style="position:absolute;left:289.13px;top:273.17px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:273.17px" class="cls_014"><span class="cls_014">Dotonbori (a place name)</span></div>
+<div style="position:absolute;left:85.10px;top:288.77px" class="cls_014"><span class="cls_014">10.</span><span class="cls_015">ゆうえんち</span></div>
+<div style="position:absolute;left:211.13px;top:288.77px" class="cls_015"><span class="cls_015">遊園地</span></div>
+<div style="position:absolute;left:289.13px;top:288.77px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:288.77px" class="cls_014"><span class="cls_014">amusement park</span></div>
+<div style="position:absolute;left:85.10px;top:304.37px" class="cls_014"><span class="cls_014">11.</span><span class="cls_015">きんかくじ</span></div>
+<div style="position:absolute;left:211.13px;top:304.37px" class="cls_015"><span class="cls_015">金閣寺</span></div>
+<div style="position:absolute;left:289.13px;top:304.37px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:304.37px" class="cls_014"><span class="cls_014">Kinkakuji (Golden</span></div>
+<div style="position:absolute;left:379.15px;top:319.61px" class="cls_014"><span class="cls_014">Pavilion in Kyoto)</span></div>
+<div style="position:absolute;left:85.10px;top:334.37px" class="cls_014"><span class="cls_014">12.</span><span class="cls_015">しゅっちょう</span></div>
+<div style="position:absolute;left:211.13px;top:334.37px" class="cls_015"><span class="cls_015">出張</span></div>
+<div style="position:absolute;left:289.13px;top:334.37px" class="cls_014"><span class="cls_014">n./G3</span></div>
+<div style="position:absolute;left:379.15px;top:334.37px" class="cls_014"><span class="cls_014">a business trip</span></div>
+<div style="position:absolute;left:85.10px;top:349.85px" class="cls_014"><span class="cls_014">13.</span><span class="cls_015">おみやげ</span></div>
+<div style="position:absolute;left:289.13px;top:349.85px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:349.85px" class="cls_014"><span class="cls_014">souvenir</span></div>
+<div style="position:absolute;left:85.10px;top:365.45px" class="cls_014"><span class="cls_014">14.</span><span class="cls_015">ちょっと</span></div>
+<div style="position:absolute;left:289.13px;top:365.45px" class="cls_014"><span class="cls_014">adv.</span></div>
+<div style="position:absolute;left:379.15px;top:365.45px" class="cls_014"><span class="cls_014">a little</span></div>
+<div style="position:absolute;left:85.10px;top:381.05px" class="cls_014"><span class="cls_014">15.</span><span class="cls_015">つかれる</span></div>
+<div style="position:absolute;left:211.13px;top:381.05px" class="cls_015"><span class="cls_015">疲れる</span></div>
+<div style="position:absolute;left:289.13px;top:381.05px" class="cls_014"><span class="cls_014">G2</span></div>
+<div style="position:absolute;left:379.15px;top:381.05px" class="cls_014"><span class="cls_014">to get tired</span></div>
+<div style="position:absolute;left:85.10px;top:396.53px" class="cls_014"><span class="cls_014">16.</span><span class="cls_015">ししゃ</span></div>
+<div style="position:absolute;left:211.13px;top:396.53px" class="cls_015"><span class="cls_015">支社</span></div>
+<div style="position:absolute;left:289.13px;top:396.53px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:396.53px" class="cls_014"><span class="cls_014">branch office</span></div>
+<div style="position:absolute;left:85.10px;top:412.15px" class="cls_014"><span class="cls_014">17.</span><span class="cls_015">なに</span></div>
+<div style="position:absolute;left:211.13px;top:412.15px" class="cls_015"><span class="cls_015">何</span></div>
+<div style="position:absolute;left:289.13px;top:412.15px" class="cls_014"><span class="cls_014">pron.</span></div>
+<div style="position:absolute;left:379.15px;top:412.15px" class="cls_014"><span class="cls_014">what</span></div>
+<div style="position:absolute;left:85.10px;top:427.75px" class="cls_014"><span class="cls_014">18.</span><span class="cls_015">たべる</span></div>
+<div style="position:absolute;left:211.13px;top:427.75px" class="cls_015"><span class="cls_015">食べる</span></div>
+<div style="position:absolute;left:289.13px;top:427.75px" class="cls_014"><span class="cls_014">G2</span></div>
+<div style="position:absolute;left:379.15px;top:427.75px" class="cls_014"><span class="cls_014">to eat</span></div>
+<div style="position:absolute;left:85.10px;top:443.23px" class="cls_014"><span class="cls_014">19.</span><span class="cls_015">のむ</span></div>
+<div style="position:absolute;left:211.13px;top:443.23px" class="cls_015"><span class="cls_015">飲む</span></div>
+<div style="position:absolute;left:289.13px;top:443.23px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:443.23px" class="cls_014"><span class="cls_014">to drink</span></div>
+<div style="position:absolute;left:85.10px;top:458.83px" class="cls_014"><span class="cls_014">20.</span><span class="cls_015">あそぶ</span></div>
+<div style="position:absolute;left:211.13px;top:458.83px" class="cls_015"><span class="cls_015">遊ぶ</span></div>
+<div style="position:absolute;left:289.13px;top:458.83px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:458.83px" class="cls_014"><span class="cls_014">to play</span></div>
+<div style="position:absolute;left:85.10px;top:474.43px" class="cls_014"><span class="cls_014">21.</span><span class="cls_015">おこのみやき</span></div>
+<div style="position:absolute;left:211.13px;top:474.43px" class="cls_015"><span class="cls_015">お好み焼き</span></div>
+<div style="position:absolute;left:289.13px;top:474.43px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:474.43px" class="cls_014"><span class="cls_014">okonomiyaki (savoury</span></div>
+<div style="position:absolute;left:379.15px;top:489.79px" class="cls_014"><span class="cls_014">pancake containing meat</span></div>
+<div style="position:absolute;left:379.15px;top:504.19px" class="cls_014"><span class="cls_014">or seafood and</span></div>
+<div style="position:absolute;left:379.15px;top:518.59px" class="cls_014"><span class="cls_014">vegetables)</span></div>
+<div style="position:absolute;left:85.10px;top:533.23px" class="cls_014"><span class="cls_014">22.</span><span class="cls_015">たこやき</span></div>
+<div style="position:absolute;left:211.13px;top:533.23px" class="cls_015"><span class="cls_015">たこ焼き</span></div>
+<div style="position:absolute;left:289.13px;top:533.23px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:533.23px" class="cls_014"><span class="cls_014">takoyaki (octopus</span></div>
+<div style="position:absolute;left:379.15px;top:548.59px" class="cls_014"><span class="cls_014">dumplings)</span></div>
+<div style="position:absolute;left:85.10px;top:563.23px" class="cls_014"><span class="cls_014">23.</span><span class="cls_015">もどる</span></div>
+<div style="position:absolute;left:211.13px;top:563.23px" class="cls_015"><span class="cls_015">戻る</span></div>
+<div style="position:absolute;left:289.13px;top:563.23px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:563.23px" class="cls_014"><span class="cls_014">to return; to come back</span></div>
+<div style="position:absolute;left:85.10px;top:578.86px" class="cls_014"><span class="cls_014">24.</span><span class="cls_015">いっしょ</span></div>
+<div style="position:absolute;left:289.13px;top:578.86px" class="cls_014"><span class="cls_014">adv.</span></div>
+<div style="position:absolute;left:379.15px;top:578.86px" class="cls_014"><span class="cls_014">together/with</span></div>
+<div style="position:absolute;left:85.10px;top:594.34px" class="cls_014"><span class="cls_014">25.</span><span class="cls_015">ごはん</span></div>
+<div style="position:absolute;left:211.13px;top:594.34px" class="cls_015"><span class="cls_015">ご飯</span></div>
+<div style="position:absolute;left:289.13px;top:594.34px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:594.34px" class="cls_014"><span class="cls_014">a meal</span></div>
+<div style="position:absolute;left:85.10px;top:609.94px" class="cls_014"><span class="cls_014">26.</span><span class="cls_015">おさけ</span></div>
+<div style="position:absolute;left:211.13px;top:609.94px" class="cls_015"><span class="cls_015">お酒</span></div>
+<div style="position:absolute;left:289.13px;top:609.94px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:609.94px" class="cls_014"><span class="cls_014">alcohol</span></div>
+<div style="position:absolute;left:85.10px;top:625.54px" class="cls_014"><span class="cls_014">27.</span><span class="cls_015">りょうり</span></div>
+<div style="position:absolute;left:211.13px;top:625.54px" class="cls_015"><span class="cls_015">料理</span></div>
+<div style="position:absolute;left:289.13px;top:625.54px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:625.54px" class="cls_014"><span class="cls_014">cooking</span></div>
+<div style="position:absolute;left:85.10px;top:641.02px" class="cls_014"><span class="cls_014">28.</span><span class="cls_015">じかん</span></div>
+<div style="position:absolute;left:211.13px;top:641.02px" class="cls_015"><span class="cls_015">時間</span></div>
+<div style="position:absolute;left:289.13px;top:641.02px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:641.02px" class="cls_014"><span class="cls_014">time</span></div>
+<div style="position:absolute;left:85.10px;top:656.62px" class="cls_014"><span class="cls_014">29.</span><span class="cls_015">おしえる</span></div>
+<div style="position:absolute;left:211.13px;top:656.62px" class="cls_015"><span class="cls_015">教える</span></div>
+<div style="position:absolute;left:289.13px;top:656.62px" class="cls_014"><span class="cls_014">G2</span></div>
+<div style="position:absolute;left:379.15px;top:656.62px" class="cls_014"><span class="cls_014">to teach</span></div>
+<div style="position:absolute;left:85.10px;top:672.22px" class="cls_014"><span class="cls_014">30.</span><span class="cls_015">ならう</span></div>
+<div style="position:absolute;left:211.13px;top:672.22px" class="cls_015"><span class="cls_015">習う</span></div>
+<div style="position:absolute;left:289.13px;top:672.22px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:672.22px" class="cls_014"><span class="cls_014">to learn</span></div>
+<div style="position:absolute;left:85.10px;top:687.82px" class="cls_014"><span class="cls_014">31.</span><span class="cls_015">する</span></div>
+<div style="position:absolute;left:289.13px;top:687.82px" class="cls_014"><span class="cls_014">G3</span></div>
+<div style="position:absolute;left:379.15px;top:687.82px" class="cls_014"><span class="cls_014">to do</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">32.</span><span class="cls_015">かす</span></div>
+<div style="position:absolute;left:211.13px;top:99.26px" class="cls_015"><span class="cls_015">貸す</span></div>
+<div style="position:absolute;left:289.13px;top:99.26px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:99.26px" class="cls_014"><span class="cls_014">to lend</span></div>
+<div style="position:absolute;left:85.10px;top:114.86px" class="cls_014"><span class="cls_014">33.</span><span class="cls_015">かりる</span></div>
+<div style="position:absolute;left:211.13px;top:114.86px" class="cls_015"><span class="cls_015">借りる</span></div>
+<div style="position:absolute;left:289.13px;top:114.86px" class="cls_014"><span class="cls_014">G2</span></div>
+<div style="position:absolute;left:379.15px;top:114.86px" class="cls_014"><span class="cls_014">to borrow</span></div>
+<div style="position:absolute;left:85.10px;top:130.34px" class="cls_014"><span class="cls_014">34.</span><span class="cls_015">およぐ</span></div>
+<div style="position:absolute;left:211.13px;top:130.34px" class="cls_015"><span class="cls_015">泳ぐ</span></div>
+<div style="position:absolute;left:289.13px;top:130.34px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:130.34px" class="cls_014"><span class="cls_014">to swim</span></div>
+<div style="position:absolute;left:85.10px;top:145.94px" class="cls_014"><span class="cls_014">35.</span><span class="cls_015">はしる</span></div>
+<div style="position:absolute;left:211.13px;top:145.94px" class="cls_015"><span class="cls_015">走る</span></div>
+<div style="position:absolute;left:289.13px;top:145.94px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:145.94px" class="cls_014"><span class="cls_014">to run</span></div>
+<div style="position:absolute;left:85.10px;top:161.54px" class="cls_014"><span class="cls_014">36.</span><span class="cls_015">あるく</span></div>
+<div style="position:absolute;left:211.13px;top:161.54px" class="cls_015"><span class="cls_015">歩く</span></div>
+<div style="position:absolute;left:289.13px;top:161.54px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:161.54px" class="cls_014"><span class="cls_014">to walk</span></div>
+<div style="position:absolute;left:85.10px;top:177.14px" class="cls_014"><span class="cls_014">37.</span><span class="cls_015">けっこん</span></div>
+<div style="position:absolute;left:211.13px;top:177.14px" class="cls_015"><span class="cls_015">結婚</span></div>
+<div style="position:absolute;left:289.13px;top:177.14px" class="cls_014"><span class="cls_014">n./G3</span></div>
+<div style="position:absolute;left:379.15px;top:177.14px" class="cls_014"><span class="cls_014">marriage/to get married</span></div>
+<div style="position:absolute;left:85.10px;top:192.62px" class="cls_014"><span class="cls_014">38.</span><span class="cls_015">さんぽ</span></div>
+<div style="position:absolute;left:211.13px;top:192.62px" class="cls_015"><span class="cls_015">散歩</span></div>
+<div style="position:absolute;left:289.13px;top:192.62px" class="cls_014"><span class="cls_014">n./G3</span></div>
+<div style="position:absolute;left:379.15px;top:192.62px" class="cls_014"><span class="cls_014">a walk/a stroll</span></div>
+<div style="position:absolute;left:85.10px;top:208.22px" class="cls_014"><span class="cls_014">39</span><span class="cls_016"> </span><span class="cls_015">かう</span></div>
+<div style="position:absolute;left:211.13px;top:208.22px" class="cls_015"><span class="cls_015">買う</span></div>
+<div style="position:absolute;left:289.13px;top:208.22px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:208.22px" class="cls_014"><span class="cls_014">to buy</span></div>
+<div style="position:absolute;left:85.10px;top:223.82px" class="cls_014"><span class="cls_014">40.</span><span class="cls_015">かく</span></div>
+<div style="position:absolute;left:211.13px;top:223.82px" class="cls_015"><span class="cls_015">書く</span></div>
+<div style="position:absolute;left:289.13px;top:223.82px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:223.82px" class="cls_014"><span class="cls_014">to write</span></div>
+<div style="position:absolute;left:85.10px;top:239.30px" class="cls_014"><span class="cls_014">41.</span><span class="cls_015">だめ</span></div>
+<div style="position:absolute;left:289.13px;top:239.30px" class="cls_015"><span class="cls_015">な</span><span class="cls_014">-adj.</span></div>
+<div style="position:absolute;left:379.15px;top:239.30px" class="cls_014"><span class="cls_014">no good/</span></div>
+<div style="position:absolute;left:379.15px;top:254.69px" class="cls_014"><span class="cls_014">no use/impossible</span></div>
+<div style="position:absolute;left:85.10px;top:269.33px" class="cls_014"><span class="cls_014">42.</span><span class="cls_015">ざんねん</span></div>
+<div style="position:absolute;left:211.13px;top:269.33px" class="cls_015"><span class="cls_015">残念</span></div>
+<div style="position:absolute;left:289.13px;top:269.33px" class="cls_015"><span class="cls_015">な</span><span class="cls_014">-adj.</span></div>
+<div style="position:absolute;left:379.15px;top:269.33px" class="cls_014"><span class="cls_014">regret/pity</span></div>
+<div style="position:absolute;left:85.10px;top:284.93px" class="cls_014"><span class="cls_014">43.</span><span class="cls_015">レポート</span></div>
+<div style="position:absolute;left:211.13px;top:284.93px" class="cls_014"><span class="cls_014">(</span><span class="cls_015">れぽおと</span><span class="cls_014">)</span></div>
+<div style="position:absolute;left:291.05px;top:284.93px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:284.93px" class="cls_014"><span class="cls_014">report</span></div>
+<div style="position:absolute;left:85.10px;top:300.53px" class="cls_014"><span class="cls_014">44.</span><span class="cls_015">こんど</span></div>
+<div style="position:absolute;left:211.13px;top:300.53px" class="cls_015"><span class="cls_015">今度</span></div>
+<div style="position:absolute;left:289.13px;top:300.53px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:300.53px" class="cls_014"><span class="cls_014">this time/next time/</span></div>
+<div style="position:absolute;left:379.15px;top:315.77px" class="cls_014"><span class="cls_014">in the near future</span></div>
+<div style="position:absolute;left:85.10px;top:330.41px" class="cls_014"><span class="cls_014">45.</span><span class="cls_015">すし</span></div>
+<div style="position:absolute;left:211.13px;top:330.41px" class="cls_015"><span class="cls_015">寿司</span></div>
+<div style="position:absolute;left:289.13px;top:330.41px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:330.41px" class="cls_014"><span class="cls_014">sushi</span></div>
+<div style="position:absolute;left:85.10px;top:346.01px" class="cls_014"><span class="cls_014">46.</span><span class="cls_015">みそしる</span></div>
+<div style="position:absolute;left:211.13px;top:346.01px" class="cls_015"><span class="cls_015">みそ汁</span></div>
+<div style="position:absolute;left:289.13px;top:346.01px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:346.01px" class="cls_014"><span class="cls_014">miso soup</span></div>
+<div style="position:absolute;left:85.10px;top:361.61px" class="cls_014"><span class="cls_014">47.</span><span class="cls_015">ラーメン</span></div>
+<div style="position:absolute;left:211.13px;top:361.61px" class="cls_014"><span class="cls_014">(</span><span class="cls_015">らあめん</span><span class="cls_014">)</span></div>
+<div style="position:absolute;left:291.05px;top:361.61px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:361.61px" class="cls_014"><span class="cls_014">ramen (Chinese-style</span></div>
+<div style="position:absolute;left:379.15px;top:376.97px" class="cls_014"><span class="cls_014">noodles)</span></div>
+<div style="position:absolute;left:85.10px;top:391.61px" class="cls_014"><span class="cls_014">48.</span><span class="cls_015">コーラ</span></div>
+<div style="position:absolute;left:211.13px;top:391.61px" class="cls_014"><span class="cls_014">(</span><span class="cls_015">こおら</span><span class="cls_014">)</span></div>
+<div style="position:absolute;left:291.05px;top:391.61px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:391.61px" class="cls_014"><span class="cls_014">cola</span></div>
+<div style="position:absolute;left:85.10px;top:407.09px" class="cls_014"><span class="cls_014">49.</span><span class="cls_015">おにぎり</span></div>
+<div style="position:absolute;left:289.13px;top:407.09px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:407.09px" class="cls_014"><span class="cls_014">rice ball</span></div>
+<div style="position:absolute;left:85.10px;top:422.71px" class="cls_014"><span class="cls_014">50.</span><span class="cls_015">てんぷら</span></div>
+<div style="position:absolute;left:289.13px;top:422.71px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:422.71px" class="cls_014"><span class="cls_014">tempura (deep-fried fish</span></div>
+<div style="position:absolute;left:379.15px;top:438.07px" class="cls_014"><span class="cls_014">and vegetables)</span></div>
+<div style="position:absolute;left:85.10px;top:452.71px" class="cls_014"><span class="cls_014">51.</span><span class="cls_015">やすむ</span></div>
+<div style="position:absolute;left:211.13px;top:452.71px" class="cls_015"><span class="cls_015">休む</span></div>
+<div style="position:absolute;left:289.13px;top:452.71px" class="cls_014"><span class="cls_014">G1</span></div>
+<div style="position:absolute;left:379.15px;top:452.71px" class="cls_014"><span class="cls_014">to rest</span></div>
+<div style="position:absolute;left:85.10px;top:468.31px" class="cls_014"><span class="cls_014">52.</span><span class="cls_015">じゅんちょう</span></div>
+<div style="position:absolute;left:211.13px;top:468.31px" class="cls_015"><span class="cls_015">順調</span></div>
+<div style="position:absolute;left:289.13px;top:468.31px" class="cls_015"><span class="cls_015">な</span><span class="cls_014">-adj.</span></div>
+<div style="position:absolute;left:379.15px;top:468.31px" class="cls_014"><span class="cls_014">satisfactory/smooth</span></div>
+<div style="position:absolute;left:85.10px;top:483.79px" class="cls_014"><span class="cls_014">53.</span><span class="cls_015">こうえん</span></div>
+<div style="position:absolute;left:211.13px;top:483.79px" class="cls_015"><span class="cls_015">公園</span></div>
+<div style="position:absolute;left:289.13px;top:483.79px" class="cls_014"><span class="cls_014">n.</span></div>
+<div style="position:absolute;left:379.15px;top:483.79px" class="cls_014"><span class="cls_014">park</span></div>
+<div style="position:absolute;left:85.10px;top:499.39px" class="cls_014"><span class="cls_014">54.</span><span class="cls_015">また</span></div>
+<div style="position:absolute;left:289.13px;top:499.39px" class="cls_014"><span class="cls_014">adv.</span></div>
+<div style="position:absolute;left:379.15px;top:499.39px" class="cls_014"><span class="cls_014">again</span></div>
+<div style="position:absolute;left:85.10px;top:529.87px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_014">(Memo)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:116.06px" class="cls_011"><span class="cls_011">Ⅳ</span><span class="cls_012">.</span><span class="cls_013">ひょうげん</span></div>
+<div style="position:absolute;left:106.22px;top:134.06px" class="cls_012"><span class="cls_012">Expressions</span></div>
+<div style="position:absolute;left:85.10px;top:165.50px" class="cls_014"><span class="cls_014">1.</span><span class="cls_015">ただいま。</span></div>
+<div style="position:absolute;left:215.09px;top:165.50px" class="cls_014"><span class="cls_014">I'm back (home). (A greeting used when arriving back</span></div>
+<div style="position:absolute;left:217.13px;top:180.86px" class="cls_014"><span class="cls_014">home or someplace)</span></div>
+<div style="position:absolute;left:85.10px;top:209.90px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">おかえりなさい。</span><span class="cls_016">   </span><span class="cls_014"> Welcome home/Welcome back.</span></div>
+<div style="position:absolute;left:85.10px;top:239.93px" class="cls_014"><span class="cls_014">3.</span><span class="cls_015">いかがでしたか。</span><span class="cls_014">    How was it? /Was it ok?</span></div>
+<div style="position:absolute;left:85.10px;top:269.93px" class="cls_014"><span class="cls_014">4.</span><span class="cls_015">いいですね。</span></div>
+<div style="position:absolute;left:215.09px;top:269.93px" class="cls_014"><span class="cls_014">Sounds good!</span></div>
+<div style="position:absolute;left:85.10px;top:299.93px" class="cls_014"><span class="cls_014">5.</span><span class="cls_015">ちょっと</span><span class="cls_014">…</span></div>
+<div style="position:absolute;left:214.94px;top:299.93px" class="cls_014"><span class="cls_014">It is a little bit difficult. (an euphemistic way of</span></div>
+<div style="position:absolute;left:217.13px;top:315.29px" class="cls_014"><span class="cls_014">declining an invitation)</span></div>
+<div style="position:absolute;left:85.10px;top:329.93px" class="cls_014"><span class="cls_014">6.</span><span class="cls_015">だめですか。</span></div>
+<div style="position:absolute;left:215.09px;top:329.93px" class="cls_014"><span class="cls_014">Is it bad?</span></div>
+<div style="position:absolute;left:85.10px;top:359.93px" class="cls_014"><span class="cls_014">7.</span><span class="cls_015">ざんねんですが。</span><span class="cls_014">    I'm afraid that.../I am sorry, but...</span></div>
+<div style="position:absolute;left:85.10px;top:390.41px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_014">(Memo)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_011"><span class="cls_011">Ⅴ</span><span class="cls_012">.</span><span class="cls_013">ぶんぽう</span></div>
+<div style="position:absolute;left:106.22px;top:117.14px" class="cls_012"><span class="cls_012">Grammar</span></div>
+<div style="position:absolute;left:85.10px;top:146.90px" class="cls_014"><span class="cls_014">1. </span><span class="cls_015">どうしの</span><span class="cls_016">  </span><span class="cls_015">しゅるい</span></div>
+<div style="position:absolute;left:103.22px;top:162.26px" class="cls_014"><span class="cls_014">Types of verbs</span></div>
+<div style="position:absolute;left:85.10px;top:438.55px" class="cls_014"><span class="cls_014">In Japanese, there are three verb types. They are divided into Group 1, 2, and 3.</span></div>
+<div style="position:absolute;left:85.10px;top:453.07px" class="cls_015"><span class="cls_015">①</span><span class="cls_014">Group 1 verbs end in “u”.</span></div>
+<div style="position:absolute;left:85.10px;top:467.47px" class="cls_015"><span class="cls_015">②</span><span class="cls_014">Group 2 verbs end in "iru" or "eru".</span></div>
+<div style="position:absolute;left:97.10px;top:496.27px" class="cls_014"><span class="cls_014">Special verbs in Group 1 that end in "-iru" or "-eru":</span></div>
+<div style="position:absolute;left:97.10px;top:511.03px" class="cls_015"><span class="cls_015">いる</span><span class="cls_014">   to need</span></div>
+<div style="position:absolute;left:239.33px;top:511.03px" class="cls_015"><span class="cls_015">はいる</span><span class="cls_014">  to enter</span></div>
+<div style="position:absolute;left:97.10px;top:526.51px" class="cls_015"><span class="cls_015">かえる</span><span class="cls_014"> to go back</span></div>
+<div style="position:absolute;left:236.69px;top:526.51px" class="cls_015"><span class="cls_015">きる</span><span class="cls_014"> to cut</span></div>
+<div style="position:absolute;left:97.10px;top:542.11px" class="cls_015"><span class="cls_015">しる</span><span class="cls_014">   to know</span></div>
+<div style="position:absolute;left:236.93px;top:542.11px" class="cls_015"><span class="cls_015">はしる</span><span class="cls_014"> to run</span></div>
+<div style="position:absolute;left:85.10px;top:572.11px" class="cls_015"><span class="cls_015">③</span><span class="cls_014">Group 3 verbs are </span><span class="cls_015">くる</span><span class="cls_014"> (to come) and </span><span class="cls_015">する</span><span class="cls_014"> (to do)</span><span class="cls_015">。</span><span class="cls_014">In addition, any words</span></div>
+<div style="position:absolute;left:85.10px;top:587.62px" class="cls_014"><span class="cls_014">that end in "</span><span class="cls_015">する</span><span class="cls_014">" also appear in this group.</span></div>
+<div style="position:absolute;left:85.10px;top:603.22px" class="cls_014"><span class="cls_014">For example</span></div>
+<div style="position:absolute;left:196.25px;top:603.22px" class="cls_015"><span class="cls_015">けっこんする</span><span class="cls_014">  to get married</span></div>
+<div style="position:absolute;left:193.13px;top:618.82px" class="cls_015"><span class="cls_015">さんぽする</span><span class="cls_014">    to go for a walk</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:163.46px;top:99.26px" class="cls_009"><span class="cls_009">ふ ぉ お む</span></div>
+<div style="position:absolute;left:85.10px;top:108.26px" class="cls_014"><span class="cls_014">2. </span><span class="cls_015">どうしの</span><span class="cls_016">  </span><span class="cls_015">フォーム</span></div>
+<div style="position:absolute;left:103.22px;top:123.62px" class="cls_014"><span class="cls_014">Forms of verbs</span></div>
+<div style="position:absolute;left:85.10px;top:154.82px" class="cls_014"><span class="cls_014">There are five forms of Japanese verbs:</span></div>
+<div style="position:absolute;left:85.10px;top:169.46px" class="cls_014"><span class="cls_014">The dictionary form, </span><span class="cls_015">ます</span><span class="cls_014">-form, </span><span class="cls_015">ない</span><span class="cls_014">-form, </span><span class="cls_015">た</span><span class="cls_014">-form, and </span><span class="cls_015">て</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:199.46px" class="cls_015"><span class="cls_015">①</span><span class="cls_014"> Dictionary form</span></div>
+<div style="position:absolute;left:85.10px;top:214.82px" class="cls_014"><span class="cls_014">The dictionary form is the basic form of a verb used as it’s original dictionary</span></div>
+<div style="position:absolute;left:85.10px;top:229.22px" class="cls_014"><span class="cls_014">entry. All of the dictionary forms end in "u".</span></div>
+<div style="position:absolute;left:85.10px;top:243.89px" class="cls_014"><span class="cls_014">For example  Group1  </span><span class="cls_015">のむ</span></div>
+<div style="position:absolute;left:163.10px;top:259.49px" class="cls_014"><span class="cls_014">Group2   </span><span class="cls_015">たべる</span></div>
+<div style="position:absolute;left:163.10px;top:275.09px" class="cls_014"><span class="cls_014">Group3   </span><span class="cls_015">する</span></div>
+<div style="position:absolute;left:85.10px;top:304.97px" class="cls_015"><span class="cls_015">②</span><span class="cls_014"> </span><span class="cls_015">ます</span><span class="cls_014">-form</span></div>
+<div style="position:absolute;left:85.10px;top:320.57px" class="cls_014"><span class="cls_014">The</span><span class="cls_016"> </span><span class="cls_015">ます</span><span class="cls_014">-form ends in "</span><span class="cls_015">ます</span><span class="cls_014">". They're dubbed "</span><span class="cls_015">ていねいけい</span><span class="cls_014"> (polite form)".</span></div>
+<div style="position:absolute;left:85.10px;top:336.17px" class="cls_014"><span class="cls_014">Saying something in the</span><span class="cls_016"> </span><span class="cls_015">ます</span><span class="cls_014">-form sounds polite and shows respect.</span></div>
+<div style="position:absolute;left:85.10px;top:351.77px" class="cls_014"><span class="cls_014">For example   Group1  </span><span class="cls_015">のみます</span></div>
+<div style="position:absolute;left:169.10px;top:367.25px" class="cls_014"><span class="cls_014">Group2   </span><span class="cls_015">たべます</span></div>
+<div style="position:absolute;left:169.10px;top:382.85px" class="cls_014"><span class="cls_014">Group3   </span><span class="cls_015">します</span></div>
+<div style="position:absolute;left:85.10px;top:412.87px" class="cls_015"><span class="cls_015">③ない</span><span class="cls_018">-</span><span class="cls_014">form</span></div>
+<div style="position:absolute;left:85.10px;top:428.47px" class="cls_014"><span class="cls_014">The</span><span class="cls_016"> </span><span class="cls_015">ない</span><span class="cls_014">-form is a present negative form. The form of a verb that attaches to “</span><span class="cls_015">な</span></div>
+<div style="position:absolute;left:85.10px;top:443.95px" class="cls_015"><span class="cls_015">い</span><span class="cls_014">”.</span></div>
+<div style="position:absolute;left:85.10px;top:459.55px" class="cls_014"><span class="cls_014">For example  Group1   </span><span class="cls_015">のまない</span></div>
+<div style="position:absolute;left:169.10px;top:475.15px" class="cls_014"><span class="cls_014">Group2   </span><span class="cls_015">たべない</span></div>
+<div style="position:absolute;left:169.10px;top:490.63px" class="cls_014"><span class="cls_014">Group3   </span><span class="cls_015">しない</span></div>
+<div style="position:absolute;left:85.10px;top:520.63px" class="cls_015"><span class="cls_015">④た</span><span class="cls_014">-form</span></div>
+<div style="position:absolute;left:85.10px;top:536.23px" class="cls_014"><span class="cls_014">The </span><span class="cls_015">た</span><span class="cls_014">-form is the form of a verb ending in “</span><span class="cls_015">た</span><span class="cls_014">”or “</span><span class="cls_015">だ</span><span class="cls_014">”. It shows a past positive</span></div>
+<div style="position:absolute;left:85.10px;top:551.59px" class="cls_014"><span class="cls_014">and past perfect action.</span></div>
+<div style="position:absolute;left:85.10px;top:566.23px" class="cls_014"><span class="cls_014">For example  Group 1   </span><span class="cls_015">のんだ</span></div>
+<div style="position:absolute;left:169.10px;top:581.74px" class="cls_014"><span class="cls_014">Group2   </span><span class="cls_015">たべた</span></div>
+<div style="position:absolute;left:169.10px;top:597.34px" class="cls_014"><span class="cls_014">Group3  </span><span class="cls_016">  </span><span class="cls_015">した</span></div>
+<div style="position:absolute;left:85.10px;top:612.94px" class="cls_015"><span class="cls_015">⑤て</span><span class="cls_014">-form</span></div>
+<div style="position:absolute;left:85.10px;top:628.54px" class="cls_014"><span class="cls_014">The </span><span class="cls_015">て</span><span class="cls_014">-form is a verb form that ends with “</span><span class="cls_015">て</span><span class="cls_014">” or “</span><span class="cls_015">で</span><span class="cls_014">”. It is used to connect</span></div>
+<div style="position:absolute;left:85.10px;top:643.78px" class="cls_014"><span class="cls_014">sentences. It also expresses the cause or means of something.</span></div>
+<div style="position:absolute;left:85.10px;top:658.42px" class="cls_014"><span class="cls_014">For example  Group 1   </span><span class="cls_015">のんで</span></div>
+<div style="position:absolute;left:169.10px;top:674.02px" class="cls_014"><span class="cls_014">Group2   </span><span class="cls_015">たべて</span></div>
+<div style="position:absolute;left:169.10px;top:689.62px" class="cls_014"><span class="cls_014">Group3  </span><span class="cls_016">  </span><span class="cls_015">して</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:90.50px;top:376.13px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_016">（</span><span class="cls_014">memo</span><span class="cls_016">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">3. </span><span class="cls_015">じしょ</span><span class="cls_016">  </span><span class="cls_015">けい</span></div>
+<div style="position:absolute;left:103.22px;top:114.62px" class="cls_014"><span class="cls_014">Dictionary form</span></div>
+<div style="position:absolute;left:85.10px;top:143.42px" class="cls_014"><span class="cls_014">The dictionary form is the base of the verbs. This form is used to search verbs in</span></div>
+<div style="position:absolute;left:85.10px;top:158.06px" class="cls_014"><span class="cls_014">Japanese dictionaries. For example, when searching for "</span><span class="cls_015">のみます</span><span class="cls_014">", you would</span></div>
+<div style="position:absolute;left:85.10px;top:173.66px" class="cls_014"><span class="cls_014">search "</span><span class="cls_015">のむ</span><span class="cls_014">". When searching for "</span><span class="cls_015">あります</span><span class="cls_014">", you would search</span><span class="cls_016"> </span><span class="cls_014"> "</span><span class="cls_015">ある</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:189.02px" class="cls_014"><span class="cls_014">The dictionary form ends in “u”.</span></div>
+<div style="position:absolute;left:85.10px;top:203.66px" class="cls_014"><span class="cls_014">“</span><span class="cls_015">のむ</span><span class="cls_014">(nomu)” is the dictionary form. It ends with "u".</span></div>
+<div style="position:absolute;left:85.10px;top:219.26px" class="cls_014"><span class="cls_014">“</span><span class="cls_015">ある</span><span class="cls_014">(aru)” is the dictionary form. It ends with "u".</span></div>
+<div style="position:absolute;left:85.10px;top:484.51px" class="cls_014"><span class="cls_014">In addition, the dictionary form is frequently used on casual occasions. Among</span></div>
+<div style="position:absolute;left:85.10px;top:498.91px" class="cls_014"><span class="cls_014">friends or family, the dictionary form is commonly used.</span></div>
+<div style="position:absolute;left:85.10px;top:513.43px" class="cls_014"><span class="cls_014">For example:</span></div>
+<div style="position:absolute;left:85.10px;top:528.07px" class="cls_015"><span class="cls_015">おかあさん</span><span class="cls_016">：</span><span class="cls_015">あした、だれと</span><span class="cls_016">  </span><span class="cls_015">あうの。</span></div>
+<div style="position:absolute;left:157.10px;top:543.31px" class="cls_014"><span class="cls_014">Who will you meet tomorrow?</span></div>
+<div style="position:absolute;left:85.10px;top:558.07px" class="cls_015"><span class="cls_015">むすめ</span><span class="cls_016">： </span><span class="cls_014">   </span><span class="cls_015">あした、ともだちと</span><span class="cls_016">  </span><span class="cls_015">あう。</span></div>
+<div style="position:absolute;left:157.10px;top:573.31px" class="cls_014"><span class="cls_014">I'll meet my friend tomorrow.</span></div>
+<div style="position:absolute;left:85.10px;top:588.10px" class="cls_014"><span class="cls_014">Note: "</span><span class="cls_015">の</span><span class="cls_014">"is a sentence-ending particle used to question something.</span></div>
+<div style="position:absolute;left:90.50px;top:618.58px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_016">（</span><span class="cls_014">memo</span><span class="cls_016">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">4. </span><span class="cls_015">ます</span><span class="cls_016">  </span><span class="cls_015">けい</span></div>
+<div style="position:absolute;left:102.74px;top:114.86px" class="cls_015"><span class="cls_015">ます</span><span class="cls_014">-form</span></div>
+<div style="position:absolute;left:85.10px;top:144.86px" class="cls_014"><span class="cls_014">The</span><span class="cls_016"> </span><span class="cls_015">ます</span><span class="cls_014">-form is also called “</span><span class="cls_015">ていねいけい</span><span class="cls_014">(the polite form)”. It is widely used in</span></div>
+<div style="position:absolute;left:85.10px;top:160.10px" class="cls_014"><span class="cls_014">various situations.</span></div>
+<div style="position:absolute;left:85.10px;top:174.62px" class="cls_014"><span class="cls_014">There are only two tenses: past tense and non-past tense. Non-past means</span></div>
+<div style="position:absolute;left:85.10px;top:189.02px" class="cls_014"><span class="cls_014">present and future tense.</span></div>
+<div style="position:absolute;left:85.10px;top:203.66px" class="cls_014"><span class="cls_014">Non-past is V + </span><span class="cls_015">ます</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:234.65px;top:203.66px" class="cls_014"><span class="cls_014">Non-past negative is V + </span><span class="cls_015">ません</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:85.10px;top:219.26px" class="cls_014"><span class="cls_014">Past tense is V + </span><span class="cls_015">ました</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:235.61px;top:219.26px" class="cls_014"><span class="cls_014">Past negative is V + </span><span class="cls_015">ませんでした</span><span class="cls_014">.</span></div>
+<div style="position:absolute;left:85.10px;top:249.05px" class="cls_014"><span class="cls_014">Example:</span></div>
+<div style="position:absolute;left:85.10px;top:527.11px" class="cls_014"><span class="cls_014">In order to change the dictionary form of a verb into the proper</span><span class="cls_016"> </span><span class="cls_015">ます</span><span class="cls_014">-form, the</span></div>
+<div style="position:absolute;left:85.10px;top:542.47px" class="cls_014"><span class="cls_014">following conjugation rules must be applied:</span></div>
+<div style="position:absolute;left:85.10px;top:557.11px" class="cls_015"><span class="cls_015">①</span><span class="cls_014"> Group 1 Verbs:</span></div>
+<div style="position:absolute;left:85.10px;top:572.71px" class="cls_014"><span class="cls_014">Change "u" at the end of the dictionary form word into "</span><span class="cls_015">い</span><span class="cls_014">" and add "</span><span class="cls_015">ます</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:588.22px" class="cls_014"><span class="cls_014">For example,  </span><span class="cls_015">かう</span></div>
+<div style="position:absolute;left:205.61px;top:588.22px" class="cls_014"><span class="cls_014">→</span><span class="cls_016">  </span><span class="cls_015">かいます</span><span class="cls_014"> (to buy)</span></div>
+<div style="position:absolute;left:169.10px;top:603.82px" class="cls_014"><span class="cls_014">change "</span><span class="cls_015">う</span><span class="cls_014">" into "</span><span class="cls_015">い</span><span class="cls_014">"and add "</span><span class="cls_015">ます</span><span class="cls_014">" to the end</span></div>
+<div style="position:absolute;left:169.10px;top:619.42px" class="cls_015"><span class="cls_015">かく</span><span class="cls_014">→</span><span class="cls_015">かきます</span><span class="cls_014"> (to write)</span></div>
+<div style="position:absolute;left:169.10px;top:634.90px" class="cls_014"><span class="cls_014">change "</span><span class="cls_015">く</span><span class="cls_014">" into "</span><span class="cls_015">き</span><span class="cls_014">" and add "</span><span class="cls_015">ます</span><span class="cls_014">" to the end</span></div>
+<div style="position:absolute;left:169.10px;top:650.50px" class="cls_015"><span class="cls_015">おわる</span><span class="cls_014">→</span><span class="cls_015">おわります</span><span class="cls_014"> (to finish)</span></div>
+<div style="position:absolute;left:169.10px;top:666.10px" class="cls_014"><span class="cls_014">change "</span><span class="cls_015">る</span><span class="cls_014">" into "</span><span class="cls_015">り</span><span class="cls_014">"and add "</span><span class="cls_015">ます</span><span class="cls_014">" to the end</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">Write the following dictionary forms into the </span><span class="cls_015">ます</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:129.26px" class="cls_015"><span class="cls_015">ならう</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:144.86px" class="cls_015"><span class="cls_015">おくる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:160.34px" class="cls_015"><span class="cls_015">もどる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:175.94px" class="cls_015"><span class="cls_015">あるく</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:205.94px" class="cls_015"><span class="cls_015">②</span><span class="cls_014">Group 2 Verbs:</span></div>
+<div style="position:absolute;left:85.10px;top:221.54px" class="cls_014"><span class="cls_014">Delete the dictionary form verb's final "ru" ending and replace it with "</span><span class="cls_015">ます</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:237.02px" class="cls_014"><span class="cls_014">For example,  </span><span class="cls_015">たべる</span><span class="cls_014">→</span><span class="cls_015">たべます</span><span class="cls_014"> (to eat)</span></div>
+<div style="position:absolute;left:169.10px;top:252.65px" class="cls_014"><span class="cls_014">Take out "</span><span class="cls_015">る</span><span class="cls_014">" and add "</span><span class="cls_015">ます</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:169.10px;top:268.25px" class="cls_015"><span class="cls_015">ねる</span><span class="cls_014">→</span><span class="cls_015">ねます</span><span class="cls_014"> (to sleep)</span></div>
+<div style="position:absolute;left:169.10px;top:283.73px" class="cls_014"><span class="cls_014">Take out "</span><span class="cls_015">る</span><span class="cls_014">" and add "</span><span class="cls_015">ます</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:169.10px;top:299.33px" class="cls_015"><span class="cls_015">おしえる</span><span class="cls_014">→</span><span class="cls_015">おしえます</span><span class="cls_014"> (to teach)</span></div>
+<div style="position:absolute;left:169.10px;top:314.93px" class="cls_014"><span class="cls_014">Take out "</span><span class="cls_015">る</span><span class="cls_014">" and add "</span><span class="cls_015">ます</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:344.93px" class="cls_014"><span class="cls_014">Write the following dictionary forms into the </span><span class="cls_015">ます</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:374.93px" class="cls_015"><span class="cls_015">かんがえる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:390.41px" class="cls_015"><span class="cls_015">かんがえます</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:406.01px" class="cls_015"><span class="cls_015">かりる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:421.63px" class="cls_015"><span class="cls_015">つかれる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:437.11px" class="cls_015"><span class="cls_015">でかける</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:466.87px" class="cls_014"><span class="cls_014">Please note that among the verbs that end in "-iru" or "-eru", there are some</span></div>
+<div style="position:absolute;left:85.10px;top:481.51px" class="cls_014"><span class="cls_014">that belong to Group 1. These verbs follow the same format as Group 1’s </span><span class="cls_015">ます</span></div>
+<div style="position:absolute;left:85.10px;top:496.87px" class="cls_014"><span class="cls_014">-form conjugation rules.</span></div>
+<div style="position:absolute;left:85.10px;top:526.03px" class="cls_014"><span class="cls_014">For example,   </span><span class="cls_015">いる</span><span class="cls_014">→</span><span class="cls_015">いります</span><span class="cls_014"> (to need)</span></div>
+<div style="position:absolute;left:174.38px;top:541.51px" class="cls_015"><span class="cls_015">はいる</span><span class="cls_014">→</span><span class="cls_015">はいります</span><span class="cls_014"> (to enter)</span></div>
+<div style="position:absolute;left:174.38px;top:557.11px" class="cls_015"><span class="cls_015">かえる</span><span class="cls_014">→</span><span class="cls_015">かえります</span><span class="cls_014"> (to return)</span></div>
+<div style="position:absolute;left:174.38px;top:572.71px" class="cls_015"><span class="cls_015">きる</span><span class="cls_014">→</span><span class="cls_015">きります</span><span class="cls_014"> (to cut)</span></div>
+<div style="position:absolute;left:174.38px;top:588.22px" class="cls_015"><span class="cls_015">しる</span><span class="cls_014">→</span><span class="cls_015">しります</span><span class="cls_016"> </span><span class="cls_014"> (to know)</span></div>
+<div style="position:absolute;left:174.38px;top:603.82px" class="cls_015"><span class="cls_015">はしる</span><span class="cls_014">→</span><span class="cls_015">はしります</span><span class="cls_014"> (to run)</span></div>
+<div style="position:absolute;left:85.10px;top:633.82px" class="cls_015"><span class="cls_015">③</span><span class="cls_014">Group 3 Verbs:</span></div>
+<div style="position:absolute;left:85.10px;top:649.18px" class="cls_014"><span class="cls_014">Group 3 verbs are irregular conjugation words.</span></div>
+<div style="position:absolute;left:175.10px;top:663.82px" class="cls_015"><span class="cls_015">くる</span><span class="cls_014">→</span><span class="cls_015">きます</span><span class="cls_014"> (to come)</span></div>
+<div style="position:absolute;left:175.10px;top:679.30px" class="cls_015"><span class="cls_015">する</span><span class="cls_014">→</span><span class="cls_015">します</span><span class="cls_014"> (to do)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">Write the following dictionary forms into the </span><span class="cls_015">ます</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:129.26px" class="cls_015"><span class="cls_015">くる</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:144.86px" class="cls_015"><span class="cls_015">けっこんする</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:160.34px" class="cls_015"><span class="cls_015">しゅっちょうする</span><span class="cls_014">→</span></div>
+<div style="position:absolute;left:85.10px;top:190.34px" class="cls_015"><span class="cls_015">れんしゅう</span></div>
+<div style="position:absolute;left:85.10px;top:205.70px" class="cls_014"><span class="cls_014">Practice</span></div>
+<div style="position:absolute;left:85.10px;top:220.34px" class="cls_014"><span class="cls_014">Write the non-past tense and past tense of </span><span class="cls_015">ます</span><span class="cls_014">-form.</span></div>
+<div style="position:absolute;left:85.10px;top:522.79px" class="cls_014"><span class="cls_014">1.</span><span class="cls_015">わたしは</span><span class="cls_016">  </span><span class="cls_015">まいにち</span><span class="cls_016">  </span><span class="cls_015">さんぽします。</span></div>
+<div style="position:absolute;left:97.10px;top:538.15px" class="cls_014"><span class="cls_014">I go for a walk every day.</span></div>
+<div style="position:absolute;left:96.98px;top:567.19px" class="cls_009"><span class="cls_009">わ ん</span></div>
+<div style="position:absolute;left:85.10px;top:577.18px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">ワンさんは</span><span class="cls_016">  </span><span class="cls_015">がっこうに</span><span class="cls_016">  </span><span class="cls_015">いきませんでした。</span></div>
+<div style="position:absolute;left:97.10px;top:592.54px" class="cls_014"><span class="cls_014">Mr. Wang didn't go to school.</span></div>
+<div style="position:absolute;left:85.10px;top:621.70px" class="cls_014"><span class="cls_014">3.</span><span class="cls_015">こんばん、すしを</span><span class="cls_016">  </span><span class="cls_015">たべますか。</span></div>
+<div style="position:absolute;left:97.10px;top:636.94px" class="cls_014"><span class="cls_014">Will you eat sushi tonight?</span></div>
+<div style="position:absolute;left:85.10px;top:666.10px" class="cls_014"><span class="cls_014">4.</span><span class="cls_015">せんしゅうのにちようびに</span><span class="cls_016">  </span><span class="cls_015">おおさかじょに</span><span class="cls_016">  </span><span class="cls_015">いきました。</span></div>
+<div style="position:absolute;left:97.10px;top:681.34px" class="cls_014"><span class="cls_014">I went to Osaka castle last Sunday.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9624px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:93.14px;top:99.74px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_016">（</span><span class="cls_014">memo</span><span class="cls_016">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:10426px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">5.  P  </span><span class="cls_015">へ</span><span class="cls_016"> </span><span class="cls_014"> V</span></div>
+<div style="position:absolute;left:109.22px;top:114.62px" class="cls_014"><span class="cls_014">…to somewhere</span></div>
+<div style="position:absolute;left:85.10px;top:143.66px" class="cls_014"><span class="cls_014">This explains how to use the particle "</span><span class="cls_015">へ</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:159.26px" class="cls_014"><span class="cls_014">"Place + </span><span class="cls_015">へ</span><span class="cls_014"> + verb" is the common pattern. "</span><span class="cls_015">へ</span><span class="cls_014">" is pronounced "</span><span class="cls_015">え</span><span class="cls_014">" when used</span></div>
+<div style="position:absolute;left:85.10px;top:174.86px" class="cls_014"><span class="cls_014">as a post-positional particle. The post-positional particle "</span><span class="cls_015">へ</span><span class="cls_014">" is placed after a</span></div>
+<div style="position:absolute;left:85.10px;top:190.34px" class="cls_014"><span class="cls_014">place name. It indicates a travel destination or reaching point. "</span><span class="cls_015">に</span><span class="cls_014">" can also be</span></div>
+<div style="position:absolute;left:85.10px;top:205.94px" class="cls_014"><span class="cls_014">used. Movement verbs such as "</span><span class="cls_015">いく</span><span class="cls_014"> (to go)", "</span><span class="cls_015">くる</span><span class="cls_014"> (to come)" frequently follow</span></div>
+<div style="position:absolute;left:85.10px;top:221.54px" class="cls_014"><span class="cls_014">"</span><span class="cls_015">へ</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:251.57px" class="cls_016"><span class="cls_016">１．</span><span class="cls_014">  </span><span class="cls_015">ひろしまへ</span><span class="cls_016">    </span><span class="cls_015">いきます。</span><span class="cls_016">     </span><span class="cls_014"> I will go to Hiroshima.</span></div>
+<div style="position:absolute;left:85.10px;top:267.05px" class="cls_016"><span class="cls_016">２．</span><span class="cls_014">  </span><span class="cls_015">おおさかへ</span><span class="cls_016"> </span><span class="cls_014">   </span><span class="cls_015">いきました。</span><span class="cls_014">    I went to Osaka.</span></div>
+<div style="position:absolute;left:85.10px;top:282.65px" class="cls_016"><span class="cls_016">３．  </span><span class="cls_015">かいしゃへ</span><span class="cls_016">    </span><span class="cls_015">もどります。</span><span class="cls_014">    I will go back to the company.</span></div>
+<div style="position:absolute;left:85.10px;top:298.25px" class="cls_016"><span class="cls_016">４．</span><span class="cls_014">  </span><span class="cls_015">にほんへ</span><span class="cls_016">      </span><span class="cls_015">きました。</span><span class="cls_016"> </span><span class="cls_018">    </span><span class="cls_014"> I came to Japan.</span></div>
+<div style="position:absolute;left:85.10px;top:342.65px" class="cls_014"><span class="cls_014">6. N</span><span class="cls_016">（</span><span class="cls_014">time</span><span class="cls_016">）</span><span class="cls_015">に</span><span class="cls_014">  V</span></div>
+<div style="position:absolute;left:97.10px;top:357.89px" class="cls_014"><span class="cls_014">This indicates the time occurrence of an action</span></div>
+<div style="position:absolute;left:85.10px;top:386.81px" class="cls_014"><span class="cls_014">When you want to indicate the time occurrence of an action, use the post</span></div>
+<div style="position:absolute;left:85.10px;top:401.45px" class="cls_014"><span class="cls_014">positional particle "</span><span class="cls_015">に</span><span class="cls_014">". "time + </span><span class="cls_015">に</span><span class="cls_014"> + verb" is the common pattern. "</span><span class="cls_015">に</span><span class="cls_014">"is used</span></div>
+<div style="position:absolute;left:85.10px;top:416.83px" class="cls_014"><span class="cls_014">after the time given.</span></div>
+<div style="position:absolute;left:85.10px;top:445.87px" class="cls_014"><span class="cls_014">1. 9:00</span><span class="cls_016"> </span><span class="cls_015">に</span><span class="cls_016">  </span><span class="cls_015">かいしゃへ</span><span class="cls_016">  </span><span class="cls_015">いきます。</span></div>
+<div style="position:absolute;left:97.10px;top:461.23px" class="cls_014"><span class="cls_014">I go to the company at 9:00.</span></div>
+<div style="position:absolute;left:85.10px;top:490.27px" class="cls_014"><span class="cls_014">2. 8</span><span class="cls_016"> </span><span class="cls_015">がつ</span><span class="cls_014"> 21</span><span class="cls_016"> </span><span class="cls_015">にちに</span><span class="cls_016">  </span><span class="cls_015">おおさかへ</span><span class="cls_016">  </span><span class="cls_015">いきました。</span></div>
+<div style="position:absolute;left:97.10px;top:505.63px" class="cls_014"><span class="cls_014">I went to Osaka on August 21st.</span></div>
+<div style="position:absolute;left:85.10px;top:534.67px" class="cls_014"><span class="cls_014">Note: Usually, “</span><span class="cls_015">に</span><span class="cls_014">” follows “time”. Please note that there're some exceptional</span></div>
+<div style="position:absolute;left:85.10px;top:550.03px" class="cls_014"><span class="cls_014">cases.</span></div>
+<div style="position:absolute;left:85.10px;top:579.22px" class="cls_014"><span class="cls_014">“</span><span class="cls_015">に</span><span class="cls_014">” does not follow these nouns:</span><span class="cls_017"> </span><span class="cls_015">きょう、あした、あさって、きのう、おととい、</span></div>
+<div style="position:absolute;left:85.10px;top:594.70px" class="cls_015"><span class="cls_015">けさ、こんばん、いま、まいあさ、まいばん、まいにち、せんしゅう、こんしゅう、</span></div>
+<div style="position:absolute;left:85.10px;top:610.30px" class="cls_015"><span class="cls_015">らいしゅう、いつ、せんげつ、こんげつ、らいげつ、ことし、らいねん、きょねん</span></div>
+<div style="position:absolute;left:85.10px;top:640.30px" class="cls_014"><span class="cls_014">1.</span><span class="cls_015">あさって</span><span class="cls_016">  </span><span class="cls_015">がっこうにいきます。</span></div>
+<div style="position:absolute;left:121.10px;top:655.54px" class="cls_014"><span class="cls_014">I will go to school the day after tomorrow.</span></div>
+<div style="position:absolute;left:85.10px;top:684.70px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">らいげつ</span><span class="cls_016">  </span><span class="cls_015">けっこんします。</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:11228px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:121.10px;top:99.02px" class="cls_014"><span class="cls_014">I will get married next month.</span></div>
+<div style="position:absolute;left:85.10px;top:128.18px" class="cls_014"><span class="cls_014">“</span><span class="cls_015">に</span><span class="cls_014">” is optional following these nouns:</span><span class="cls_017"> </span><span class="cls_016">～</span><span class="cls_015">ようび、あさ、ひる、ばん、よる</span></div>
+<div style="position:absolute;left:97.10px;top:158.06px" class="cls_014"><span class="cls_014">1. </span><span class="cls_015">ひる</span><span class="cls_016">（</span><span class="cls_015">に</span><span class="cls_016">）  </span><span class="cls_015">ゆうえんちに</span><span class="cls_016">  </span><span class="cls_015">いきました。</span></div>
+<div style="position:absolute;left:121.10px;top:173.42px" class="cls_014"><span class="cls_014">I went to the amusement park in the afternoon.</span></div>
+<div style="position:absolute;left:97.10px;top:202.58px" class="cls_014"><span class="cls_014">2. </span><span class="cls_015">よる</span><span class="cls_016">（</span><span class="cls_015">に</span><span class="cls_016">）  </span><span class="cls_015">おにぎりを</span><span class="cls_016">  </span><span class="cls_015">たべます。</span></div>
+<div style="position:absolute;left:121.10px;top:217.82px" class="cls_014"><span class="cls_014">I am going to eat onigiri at night.</span></div>
+<div style="position:absolute;left:85.10px;top:261.41px" class="cls_014"><span class="cls_014">7.  N</span><span class="cls_016">  </span><span class="cls_015">を</span><span class="cls_016"> </span><span class="cls_014"> V</span></div>
+<div style="position:absolute;left:109.10px;top:276.77px" class="cls_014"><span class="cls_014">This indicates an action.</span></div>
+<div style="position:absolute;left:85.10px;top:305.81px" class="cls_014"><span class="cls_014">An action is usually indicated by using the post positional particle "</span><span class="cls_015">を</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:321.41px" class="cls_014"><span class="cls_014">"noun + </span><span class="cls_015">を</span><span class="cls_014"> + verb" is the pattern. "</span><span class="cls_015">を</span><span class="cls_014">" is the case particle and has three usages.</span></div>
+<div style="position:absolute;left:85.10px;top:351.41px" class="cls_015"><span class="cls_015">①</span><span class="cls_014"> It indicates movement of an object. The sentences below are typical</span></div>
+<div style="position:absolute;left:85.10px;top:366.65px" class="cls_014"><span class="cls_014">examples.</span></div>
+<div style="position:absolute;left:85.10px;top:381.29px" class="cls_015"><span class="cls_015">ごはんを  たべる     おさけを  のむ</span></div>
+<div style="position:absolute;left:343.15px;top:381.29px" class="cls_015"><span class="cls_015">なにをする</span></div>
+<div style="position:absolute;left:85.10px;top:396.65px" class="cls_014"><span class="cls_014">to eat a meal</span></div>
+<div style="position:absolute;left:210.84px;top:396.65px" class="cls_014"><span class="cls_014">to drink alcohol</span></div>
+<div style="position:absolute;left:339.67px;top:396.65px" class="cls_014"><span class="cls_014">what to do</span></div>
+<div style="position:absolute;left:85.10px;top:425.59px" class="cls_014"><span class="cls_014">When another person is the subject of the movement, a typical sentence could be</span></div>
+<div style="position:absolute;left:85.10px;top:440.23px" class="cls_014"><span class="cls_014">like "N1 </span><span class="cls_015">は</span><span class="cls_014"> N2 </span><span class="cls_015">を</span><span class="cls_014"> Verb".</span></div>
+<div style="position:absolute;left:85.10px;top:470.23px" class="cls_014"><span class="cls_014">1.</span><span class="cls_015">けさ</span><span class="cls_016"> </span><span class="cls_014">  </span><span class="cls_015">みそしると</span><span class="cls_014"> </span><span class="cls_015">すしを</span><span class="cls_016">  </span><span class="cls_015">たべました。</span></div>
+<div style="position:absolute;left:97.10px;top:485.47px" class="cls_014"><span class="cls_014">I ate miso soup and sushi this morning.</span></div>
+<div style="position:absolute;left:85.10px;top:514.63px" class="cls_014"><span class="cls_014">2.</span><span class="cls_015">あんどうさんは</span><span class="cls_016">  </span><span class="cls_015">ほんを</span><span class="cls_014"> </span><span class="cls_015">かります。</span></div>
+<div style="position:absolute;left:97.10px;top:529.99px" class="cls_014"><span class="cls_014">Miss Ando borrows a book.</span></div>
+<div style="position:absolute;left:85.10px;top:559.03px" class="cls_015"><span class="cls_015">②</span><span class="cls_014">It indicates the starting point of travel, etc.</span></div>
+<div style="position:absolute;left:85.10px;top:574.63px" class="cls_015"><span class="cls_015">かいしゃを  でる</span></div>
+<div style="position:absolute;left:229.13px;top:574.63px" class="cls_015"><span class="cls_015">とうきょうを  はなれる</span></div>
+<div style="position:absolute;left:85.10px;top:589.90px" class="cls_014"><span class="cls_014">to leave the company</span></div>
+<div style="position:absolute;left:249.84px;top:589.90px" class="cls_014"><span class="cls_014">to leave Tokyo</span></div>
+<div style="position:absolute;left:85.10px;top:604.42px" class="cls_014"><span class="cls_014">When indicating a travel's starting point, it comes with a movement verb.</span></div>
+<div style="position:absolute;left:85.10px;top:633.46px" class="cls_015"><span class="cls_015">③</span><span class="cls_014">.It indicates a transit spot and time.</span></div>
+<div style="position:absolute;left:85.10px;top:649.06px" class="cls_015"><span class="cls_015">こうえんを  はしる</span></div>
+<div style="position:absolute;left:85.10px;top:664.30px" class="cls_014"><span class="cls_014">to run in the park</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12030px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.26px" class="cls_014"><span class="cls_014">Among above three usages, </span><span class="cls_015">①</span><span class="cls_014"> is most commonly used.</span></div>
+<div style="position:absolute;left:85.10px;top:129.26px" class="cls_015"><span class="cls_015">なにを</span><span class="cls_016">  </span><span class="cls_015">しますか。</span><span class="cls_014">/</span><span class="cls_016">  </span><span class="cls_015">なにを</span><span class="cls_016">  </span><span class="cls_015">しましたか。</span></div>
+<div style="position:absolute;left:85.10px;top:144.62px" class="cls_014"><span class="cls_014">The question to ask about somebody's action/The question to ask about</span></div>
+<div style="position:absolute;left:85.10px;top:159.02px" class="cls_014"><span class="cls_014">somebody's past action.</span></div>
+<div style="position:absolute;left:85.10px;top:188.06px" class="cls_014"><span class="cls_014">"</span><span class="cls_015">を</span><span class="cls_014">" frequently accompanies the verb "</span><span class="cls_015">する</span><span class="cls_014">". Its polite forms are "N</span><span class="cls_016"> </span><span class="cls_015">をします</span><span class="cls_014">",</span></div>
+<div style="position:absolute;left:85.10px;top:203.66px" class="cls_014"><span class="cls_014">"N</span><span class="cls_016"> </span><span class="cls_015">をしました</span><span class="cls_014">".</span></div>
+<div style="position:absolute;left:85.10px;top:233.66px" class="cls_015"><span class="cls_015">パーティーを  します</span></div>
+<div style="position:absolute;left:253.13px;top:233.66px" class="cls_015"><span class="cls_015">かいぎを  します     しごとを  しました</span></div>
+<div style="position:absolute;left:85.10px;top:249.05px" class="cls_014"><span class="cls_014">to hold a party</span></div>
+<div style="position:absolute;left:256.26px;top:249.05px" class="cls_014"><span class="cls_014">to hold a meeting</span></div>
+<div style="position:absolute;left:388.50px;top:249.05px" class="cls_014"><span class="cls_014">did the work</span></div>
+<div style="position:absolute;left:85.10px;top:278.09px" class="cls_014"><span class="cls_014">"</span><span class="cls_015">なにを</span><span class="cls_016">  </span><span class="cls_015">しますか</span><span class="cls_014">" or "</span><span class="cls_015">なにを</span><span class="cls_014"> </span><span class="cls_015">しましたか</span><span class="cls_014">" is used to ask a question.</span></div>
+<div style="position:absolute;left:85.10px;top:308.09px" class="cls_015"><span class="cls_015">なにを  しますか。</span></div>
+<div style="position:absolute;left:85.10px;top:323.45px" class="cls_014"><span class="cls_014">The question to ask about somebody's action.</span></div>
+<div style="position:absolute;left:85.10px;top:352.49px" class="cls_014"><span class="cls_014">A</span><span class="cls_016">：</span><span class="cls_015">らいしゅうのどようび、なにを</span><span class="cls_016">  </span><span class="cls_015">しますか。</span></div>
+<div style="position:absolute;left:109.10px;top:367.85px" class="cls_014"><span class="cls_014">What are you going to do next Saturday.</span></div>
+<div style="position:absolute;left:85.10px;top:396.89px" class="cls_014"><span class="cls_014">B</span><span class="cls_016">：</span><span class="cls_015">よこはまへ</span><span class="cls_016">  </span><span class="cls_015">いきます。</span></div>
+<div style="position:absolute;left:109.10px;top:412.27px" class="cls_014"><span class="cls_014">I will go to Yokohama.</span></div>
+<div style="position:absolute;left:85.10px;top:441.31px" class="cls_015"><span class="cls_015">なにを  しましたか</span></div>
+<div style="position:absolute;left:85.10px;top:456.67px" class="cls_014"><span class="cls_014">The question to ask about somebody's past action.</span></div>
+<div style="position:absolute;left:85.10px;top:485.71px" class="cls_014"><span class="cls_014">A: </span><span class="cls_015">しゅくじつ</span><span class="cls_016">  </span><span class="cls_015">なにをしましたか。</span></div>
+<div style="position:absolute;left:103.10px;top:501.07px" class="cls_014"><span class="cls_014">What did you do on your day off?</span></div>
+<div style="position:absolute;left:85.10px;top:530.23px" class="cls_014"><span class="cls_014">B</span><span class="cls_016">：</span><span class="cls_015">えいがかんに</span><span class="cls_016">  </span><span class="cls_015">いきました。</span></div>
+<div style="position:absolute;left:103.10px;top:545.47px" class="cls_014"><span class="cls_014">I went to the movie theatre.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12832px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:99.74px" class="cls_015"><span class="cls_015">メモ</span><span class="cls_016">（</span><span class="cls_014">Memo</span><span class="cls_016">）</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:13634px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.70px;top:99.38px" class="cls_019"><span class="cls_019">ふろく</span></div>
+<div style="position:absolute;left:238.97px;top:99.38px" class="cls_019"><span class="cls_019">ばしょめい</span></div>
+<div style="position:absolute;left:85.10px;top:111.26px" class="cls_013"><span class="cls_013">付録</span></div>
+<div style="position:absolute;left:240.29px;top:111.26px" class="cls_013"><span class="cls_013">場所名</span></div>
+<div style="position:absolute;left:227.93px;top:129.14px" class="cls_014"><span class="cls_014">Place Names</span></div>
+<div style="position:absolute;left:85.10px;top:150.14px" class="cls_019"><span class="cls_019">びじゅつかん</span></div>
+<div style="position:absolute;left:329.23px;top:149.78px" class="cls_012"><span class="cls_012">art museum</span></div>
+<div style="position:absolute;left:88.10px;top:162.02px" class="cls_013"><span class="cls_013">美 術 館</span></div>
+<div style="position:absolute;left:85.10px;top:204.02px" class="cls_019"><span class="cls_019">どうぶつえん</span></div>
+<div style="position:absolute;left:329.23px;top:203.66px" class="cls_012"><span class="cls_012">zoo</span></div>
+<div style="position:absolute;left:88.10px;top:215.90px" class="cls_013"><span class="cls_013">動 物 園</span></div>
+<div style="position:absolute;left:85.10px;top:256.37px" class="cls_019"><span class="cls_019">しょくぶつえん</span></div>
+<div style="position:absolute;left:329.23px;top:256.01px" class="cls_012"><span class="cls_012">botanical garden</span></div>
+<div style="position:absolute;left:89.66px;top:268.25px" class="cls_013"><span class="cls_013">植 物 園</span></div>
+<div style="position:absolute;left:85.10px;top:311.93px" class="cls_019"><span class="cls_019">こうえん</span></div>
+<div style="position:absolute;left:329.23px;top:311.57px" class="cls_012"><span class="cls_012">park</span></div>
+<div style="position:absolute;left:88.10px;top:323.81px" class="cls_013"><span class="cls_013">公 園</span></div>
+<div style="position:absolute;left:85.10px;top:365.81px" class="cls_019"><span class="cls_019">はくぶつかん</span></div>
+<div style="position:absolute;left:329.23px;top:365.45px" class="cls_012"><span class="cls_012">museum</span></div>
+<div style="position:absolute;left:88.10px;top:377.69px" class="cls_013"><span class="cls_013">博 物 館</span></div>
+<div style="position:absolute;left:85.10px;top:419.71px" class="cls_019"><span class="cls_019">すいぞくかん</span></div>
+<div style="position:absolute;left:329.23px;top:419.35px" class="cls_012"><span class="cls_012">aquarium</span></div>
+<div style="position:absolute;left:88.10px;top:431.59px" class="cls_013"><span class="cls_013">水 族 館</span></div>
+<div style="position:absolute;left:87.14px;top:473.59px" class="cls_019"><span class="cls_019">ぷ ら ね た り う む</span></div>
+<div style="position:absolute;left:329.23px;top:473.23px" class="cls_012"><span class="cls_012">planetarium</span></div>
+<div style="position:absolute;left:85.10px;top:485.47px" class="cls_013"><span class="cls_013">プラネタリウム</span></div>
+<div style="position:absolute;left:85.10px;top:527.59px" class="cls_019"><span class="cls_019">ゆうえんち</span></div>
+<div style="position:absolute;left:329.23px;top:527.23px" class="cls_012"><span class="cls_012">amusement park</span></div>
+<div style="position:absolute;left:86.42px;top:539.47px" class="cls_013"><span class="cls_013">遊園地</span></div>
+<div style="position:absolute;left:85.10px;top:581.50px" class="cls_019"><span class="cls_019">えいがかん</span></div>
+<div style="position:absolute;left:329.23px;top:581.14px" class="cls_012"><span class="cls_012">movie theater</span></div>
+<div style="position:absolute;left:86.42px;top:593.38px" class="cls_013"><span class="cls_013">映画館</span></div>
+<div style="position:absolute;left:87.14px;top:635.38px" class="cls_019"><span class="cls_019">ぼ う り ん ぐ じょう</span></div>
+<div style="position:absolute;left:329.23px;top:635.02px" class="cls_012"><span class="cls_012">bowling alley</span></div>
+<div style="position:absolute;left:85.10px;top:647.26px" class="cls_013"><span class="cls_013">ボーリング 場</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:14436px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:85.10px;top:101.66px" class="cls_019"><span class="cls_019">じんじゃ</span></div>
+<div style="position:absolute;left:329.23px;top:101.30px" class="cls_012"><span class="cls_012">shrine</span></div>
+<div style="position:absolute;left:88.10px;top:113.54px" class="cls_013"><span class="cls_013">神 社</span></div>
+<div style="position:absolute;left:85.10px;top:155.54px" class="cls_019"><span class="cls_019">てら</span></div>
+<div style="position:absolute;left:329.23px;top:155.18px" class="cls_012"><span class="cls_012">temple</span></div>
+<div style="position:absolute;left:88.10px;top:167.42px" class="cls_013"><span class="cls_013">寺</span></div>
+<div style="position:absolute;left:87.14px;top:209.42px" class="cls_019"><span class="cls_019">か ぶ き ざ</span></div>
+<div style="position:absolute;left:329.23px;top:209.06px" class="cls_012"><span class="cls_012">kabuki troupe</span></div>
+<div style="position:absolute;left:85.10px;top:221.30px" class="cls_013"><span class="cls_013">歌舞伎座</span></div>
+<div style="position:absolute;left:85.10px;top:263.33px" class="cls_019"><span class="cls_019">てんぼうだい</span></div>
+<div style="position:absolute;left:329.23px;top:262.97px" class="cls_012"><span class="cls_012">sightseeing tower</span></div>
+<div style="position:absolute;left:88.10px;top:275.21px" class="cls_013"><span class="cls_013">展 望 台</span></div>
+<p>Copyright 2018 &copy; Vemula Shanmukha Srinivas & Bhuma Jeswanth Reddy.</p>
+</div>
+</div>
+</body>
+</html>
+
